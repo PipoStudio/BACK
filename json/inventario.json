@@ -1,6 +1,6 @@
 {
   "categorias": {
-    "preventas_hardware": "Preventas (Hardware Moderno para Retro)",
+    "preventas_hardware": "Preventas COLECCIONISTAS",
     "accesorios": "Accesorios"
   },
   "productos": [
@@ -639,15 +639,11 @@
       "descripcion_tecnica": "Basada en el procesador IBM Gekko a 485 MHz. Utiliza un lector de discos ópticos de 8 cm (Panasonic) que reduce los tiempos de acceso a datos respecto al formato DVD estándar.",
       "dimensiones": "149 × 160 × 112 mm",
       "especificaciones": "24 MB de RAM principal, chip gráfico ATI Flipper, 4 puertos de mando, 2 slots para tarjetas de memoria, salida analógica de video.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp",
+      "imagen_principal": "",
       "imagenes": [
 
 
-         "https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp",
-     
-               "https://res.cloudinary.com/dn8pns203/image/upload/v1777401928/geekwave_catalog/g8uw7xptynpndg9ugp0c.webp",
-               
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401929/geekwave_catalog/i1fuembe1f5kulh7mfdq.webp"
+       
       ],
       
       "colores": [
@@ -2200,7 +2196,7 @@
       "sku": "GW-048",
       "categoria": "Accesorios",
       "subcategoria": "Mandos",
-      "nombre": "Mando Inalámbrico Xbox 360",
+      "nombre": "The Art of Fallout 4",
       "precio_usd": 35,
       "año": 2005,
       "color": "White / Black / Silver",
@@ -2208,33 +2204,23 @@
       "dimensiones": "152 × 107 × 54 mm",
       "especificaciones": "peso: 265 gramos (incluyendo baterías); conexiones: Puerto de expansión inferior para auriculares (2.5mm)",
       "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "48-white",
-          "nombre": "Mando Inalámbrico Xbox 360 - White",
-          "color": "White",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "48-black",
-          "nombre": "Mando Inalámbrico Xbox 360 - Black",
-          "color": "Black",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "48-silver",
-          "nombre": "Mando Inalámbrico Xbox 360 - Silver",
-          "color": "Silver",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagenes": [
+  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401880/geekwave_catalog/ogtgawobobaflvus2og8.webp",
+  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401879/geekwave_catalog/cbt3signpym8ciyvbvym.webp",
+  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401881/geekwave_catalog/reebyaw8fyswxsmswh2u.webp",
+
+  
+  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401880/geekwave_catalog/c4qllyxxartrievr5uv5.webp"
+  
+
+
+
+        
       ],
+      
+      
       "colores": [
-        "White",
-        "Black",
+        
         "Silver"
       ],
       "highlights": [
@@ -2507,7 +2493,7 @@
     {
       "id": 55,
       "sku": "GW-055",
-      "categoria": "Preventas (Hardware Moderno para Retro)",
+      "categoria": "Preventas COLECCIONISTAS",
       "subcategoria": "Figuras/Merch",
       "nombre": "Estatua Master Chief (Halo 3 Edition)",
       "precio_usd": 60,

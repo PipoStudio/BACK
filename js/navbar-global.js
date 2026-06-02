@@ -358,8 +358,8 @@ function renderCategories() {
     const categories = [...new Set(categoriasLimpias)];
 
     // 3. Forzamos la existencia exacta de Preventas si el JSON no la trae correctamente
-    if (!categories.includes("Preventas (Hardware Moderno para Retro)")) {
-        categories.push("Preventas (Hardware Moderno para Retro)");
+    if (!categories.includes("Preventas COLECCIONISTAS")) {
+        categories.push("Preventas COLECCIONISTAS");
     }
 
     list.innerHTML = `
