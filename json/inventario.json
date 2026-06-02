@@ -16,27 +16,9 @@
       "descripcion_tecnica": "Revisión de hardware (Serie CECH-2000) con litografía de 45nm en el procesador Cell y 40nm en la GPU RSX, reduciendo el consumo energético a 250W máximo.",
       "dimensiones": "290 × 65 × 290 mm",
       "especificaciones": "256 MB XDR Main RAM, 256 MB GDDR3 VRAM, 2 puertos USB 2.0, salida HDMI 1.3a, audio digital óptico, Wi-Fi 802.11b/g.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/pvzil9yzibs1mktaxwnk.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/pvzil9yzibs1mktaxwnk.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401907/geekwave_catalog/fucuedv8c4nyyktzis8i.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401928/geekwave_catalog/g8uw7xptynpndg9ugp0c.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401918/geekwave_catalog/edeobsebvqyrbwgrjsgl.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401896/geekwave_catalog/cy4wurv790fke6oc8ajn.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401899/geekwave_catalog/kl1ytyl5vcu8xxlco5hp.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401866/geekwave_catalog/hkrzlxmzvc9eshbknmke.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401869/geekwave_catalog/a2g9i4u6ohsqho69m0sr.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401868/geekwave_catalog/nikslcdfdvc4clryr6mq.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401920/geekwave_catalog/htsgvexumpvbksybcoiu.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401913/geekwave_catalog/qbxamixpip4ineysjguh.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401867/geekwave_catalog/nspu2swszxvtxwi1j61w.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401870/geekwave_catalog/rvmk6xk4o8xtufcchu3a.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401877/geekwave_catalog/zplchsfkwmijvhrruik9.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401908/geekwave_catalog/d4durphj3rknoqew9naw.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401919/geekwave_catalog/dskfvzpxdldep119e7bg.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401870/geekwave_catalog/z7bzskq2lovfmewlydao.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401921/geekwave_catalog/ilqajtb2996ajrmdpsfm.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401871/geekwave_catalog/kpkh9te8cqn4roufdkhn.webp"
+       
       ],
       "variantes": [
         {
@@ -85,27 +67,9 @@
       "descripcion_tecnica": "Variante inicial (CECHA/CECHB) que integra físicamente los chips Emotion Engine y Graphics Synthesizer para la ejecución nativa de software de PS2 por hardware.",
       "dimensiones": "325 × 98 × 274 mm",
       "especificaciones": "4 puertos USB 2.0 frontales, lector de tarjetas multiformato (SD, Memory Stick, CompactFlash), salida HDMI 1.3, Wi-Fi b/g.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401922/geekwave_catalog/jjbj3xs3fmjjvsxafe3f.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401922/geekwave_catalog/jjbj3xs3fmjjvsxafe3f.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401882/geekwave_catalog/hr7cnkbha0moga9dx7se.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401901/geekwave_catalog/pgcad8wh4ba0g9se5dz2.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401924/geekwave_catalog/dnlzatizinmlock8jwu0.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401909/geekwave_catalog/bpmmniewz1qp0dvaxrkr.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401905/geekwave_catalog/y2n5fcmmq3bcb5n4jotn.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401923/geekwave_catalog/phxocqnax803f6obnsmc.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401883/geekwave_catalog/z69tvjbvht10dzktrl0a.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401901/geekwave_catalog/mujgrk2ibhknc2t05gsc.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401925/geekwave_catalog/bvmob8ejvnjyxlbhh6jq.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401922/geekwave_catalog/dm7roxkdbgqdte1iflml.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401882/geekwave_catalog/m9mteddjgixafycjrvyd.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401925/geekwave_catalog/dtjtacsxzbd4jlxrfpsu.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401917/geekwave_catalog/qtouljrzqnhunad4vftc.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401883/geekwave_catalog/bnrx6rod9qnkkf8t2net.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401926/geekwave_catalog/gn6pmut3am2ycqput9l5.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401902/geekwave_catalog/r9co9xz3ageckz2wkyy2.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401911/geekwave_catalog/gml6ghanmeuufsitedxf.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401908/geekwave_catalog/blesr7qjqqm4zio2emfl.webp"
+       
       ],
       "variantes": [
         {
@@ -158,17 +122,9 @@
       "descripcion_tecnica": "Rediseño final (Serie CECH-4000) con mecanismo de carga superior manual. Optimización de placa base para un peso total de 2.1 kg y consumo de 190W.",
       "dimensiones": "290 × 60 × 230 mm",
       "especificaciones": "Salida HDMI, salida digital óptica, AV Multi Out, 2 puertos USB 2.0, Bluetooth 2.0 (EDR).",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401880/geekwave_catalog/ogtgawobobaflvus2og8.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401880/geekwave_catalog/ogtgawobobaflvus2og8.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401879/geekwave_catalog/cbt3signpym8ciyvbvym.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401931/geekwave_catalog/boqptgmgdcdbtsucalsf.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401880/geekwave_catalog/c4qllyxxartrievr5uv5.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401932/geekwave_catalog/yaykwqdwyrlgm1xjubmy.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401931/geekwave_catalog/jkfdmhqtuxiefkayxvs3.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401933/geekwave_catalog/n1ru9mu5fugdwe4swopb.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401881/geekwave_catalog/reebyaw8fyswxsmswh2u.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401933/geekwave_catalog/mzfrpvriit5jyfopbvlv.webp"
+       
       ],
       "variantes": [
         {
@@ -217,26 +173,9 @@
       "descripcion_tecnica": "Hardware basado en el procesador Emotion Engine de 128 bits. Incluye bahía de expansión de 3.5\" para la integración del adaptador de red y disco duro oficial.",
       "dimensiones": "301 × 182 × 78 mm",
       "especificaciones": "32 MB RDRAM, 4 MB VRAM, 2 puertos de mando, 2 slots de memoria, 2 puertos USB 1.1, conector i.LINK (IEEE 1394).",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401891/geekwave_catalog/jd871pa3clglj7wnxvno.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401891/geekwave_catalog/jd871pa3clglj7wnxvno.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401902/geekwave_catalog/ddl55goehcqsubdef1uu.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401884/geekwave_catalog/ajrdpdwgtgvbz1enicxk.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401909/geekwave_catalog/cbpse1rlrzxacghqtavh.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401874/geekwave_catalog/ywos3mcw8lwsv4aghdku.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401934/geekwave_catalog/mwh54ot9lrcmwaeptpdb.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401875/geekwave_catalog/nd9yy2izwhplgli7avxo.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401892/geekwave_catalog/yrmpfcvykyqwpuprfwic.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401903/geekwave_catalog/qz9dsndluj8rvmyb2ydp.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401875/geekwave_catalog/l9roi8hkdwqztfbbdurm.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401873/geekwave_catalog/zfex0gmyocthd8qpgwqj.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401904/geekwave_catalog/lhzgyadr9jddethegj9u.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401893/geekwave_catalog/bgfdnglxfe3kpk5xg4he.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401904/geekwave_catalog/gxygyljqhbdvlhnayet1.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401886/geekwave_catalog/ncjs6xp2iodctjcwztuy.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401876/geekwave_catalog/xejjdgcatgzvd9a7k2qp.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401936/geekwave_catalog/rwetjrvipnzinukpi2or.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401879/geekwave_catalog/nksijwp3couppdxleru1.webp"
+        
       ],
       "variantes": [
         {
@@ -285,17 +224,9 @@
       "descripcion_tecnica": "Reducción drástica de volumen. Integra el puerto Ethernet (RJ-45) y módem de 56k directamente en la placa principal, eliminando la bahía de expansión.",
       "dimensiones": "230 × 28 × 152 mm",
       "especificaciones": "Salida AV Multi Out, salida digital óptica, 2 puertos USB 1.1, requiere transformador externo de 8.5V DC.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401916/geekwave_catalog/nnmxdnuvxkc9is5zakuy.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401916/geekwave_catalog/nnmxdnuvxkc9is5zakuy.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401876/geekwave_catalog/oko5qzyn1gb6zv5eqhqp.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401914/geekwave_catalog/kw4tok5mmp7cretjqrzp.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401917/geekwave_catalog/xu72b2ypi5jot1d1bqbd.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401878/geekwave_catalog/yaucamnmjb8ghev3b5na.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401867/geekwave_catalog/oy8r05atdieabn8viei1.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401923/geekwave_catalog/hux4cqjbcndcyicq5m6j.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401869/geekwave_catalog/uyubzfnvg5xxulrrp3ox.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401915/geekwave_catalog/gkrju9qa53tcv6zxgiy0.webp"
+       
       ],
       "variantes": [
         {
@@ -351,10 +282,9 @@
       "descripcion_tecnica": "Revisión final del chasis Slim. Integra la fuente de alimentación dentro de la carcasa, unificando el diseño y facilitando la conexión directa a corriente alterna.",
       "dimensiones": "230 × 28 × 152 mm",
       "especificaciones": "Fuente integrada 100-240V AC, puerto Ethernet integrado, peso total reducido a 720 gramos.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401886/geekwave_catalog/ngtpdkbgkolwnmuscta7.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401886/geekwave_catalog/ngtpdkbgkolwnmuscta7.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401885/geekwave_catalog/bf3jbec6e4rni7ubanjv.webp"
+        
       ],
       "variantes": [
         {
@@ -410,20 +340,9 @@
       "descripcion_tecnica": "Mejora del panel LCD con una gama de colores ampliada y reducción del tiempo de respuesta. Incorpora un micrófono integrado para aplicaciones de comunicación.",
       "dimensiones": "169.4 × 18.6 × 71.4 mm",
       "especificaciones": "CPU MIPS R4000 a 333 MHz, 64 MB RAM, pantalla de 4.3\" (480 x 272 px), altavoces estéreo, Wi-Fi 802.11b.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401889/geekwave_catalog/z5nufnxhmwhcqiytwj1c.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401889/geekwave_catalog/z5nufnxhmwhcqiytwj1c.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401895/geekwave_catalog/vdahw6nnonh2c1etnvgz.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401893/geekwave_catalog/jhesav1wu8wbzyeoa79j.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401890/geekwave_catalog/b7mj0uvbnp27yyjeytxl.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401930/geekwave_catalog/unkewjbowzkq23qxguku.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401910/geekwave_catalog/k1gp81kle7gcmgj6jhic.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401935/geekwave_catalog/i4qqz6zgx1eqzrmo6vhm.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401890/geekwave_catalog/frmytthvht0uxwnwediq.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401929/geekwave_catalog/dmkk4koxbisiqyrpcfsp.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401891/geekwave_catalog/rddmwdajhvm6h3dflrmc.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401906/geekwave_catalog/dxocrcqzadr3rcc8z1mk.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401930/geekwave_catalog/hcr8hu5n69zwbx7wgr2h.webp"
+       
       ],
       "variantes": [
         {
@@ -494,11 +413,9 @@
       "descripcion_tecnica": "Modelo original con arquitectura RISC de 32 bits. Este modelo específico es valorado por audiófilos debido a su convertidor digital-analógico (DAC) AKM.",
       "dimensiones": "270 × 60 × 188 mm",
       "especificaciones": "CPU a 33.86 MHz, 2 MB RAM, 1 MB VRAM, unidad de CD-ROM de 2x de velocidad, salida AV Multi Out.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401888/geekwave_catalog/gbiof9u0xzueu6yvw198.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401889/geekwave_catalog/kstzjkzxtn3thtb1wg7p.webp"
+        
       ],
       "variantes": [
         {
@@ -540,78 +457,26 @@
       "sku": "GW-009",
       "categoria": "Consolas",
       "subcategoria": "Nintendo",
-      "nombre": "Nintendo Wii (RVL-001)",
+      "nombre": "Nintendo GameCube",
       "precio_usd": 110,
       "año": 2006,
       "color": "White, Black, Red",
       "descripcion_tecnica": "Sistema basado en el procesador IBM Broadway y GPU ATI Hollywood. Este modelo específico conserva la arquitectura interna para soporte nativo de software y hardware de GameCube.",
       "dimensiones": "44 × 157 × 215.4 mm",
       "especificaciones": "4 puertos para mandos de GameCube, 2 ranuras para Memory Cards de GC, Wi-Fi 802.11b/g, almacenamiento interno Flash de 512 MB.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/whmfohauiqcid9c6iu3z.webp",
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401897/geekwave_catalog/iiajuwmldkxfgffxed1t.webp",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/whmfohauiqcid9c6iu3z.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401897/geekwave_catalog/iiajuwmldkxfgffxed1t.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401911/geekwave_catalog/c2pzbyuennr9hfidrvrx.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401899/geekwave_catalog/nryoa2l3xw4fpwj6pby5.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/bxumvrnbtsoch0rvygkk.webp",
+
+
+       "https://res.cloudinary.com/dn8pns203/image/upload/v1777401897/geekwave_catalog/iiajuwmldkxfgffxed1t.webp",
+      
         "https://res.cloudinary.com/dn8pns203/image/upload/v1777401897/geekwave_catalog/me8z1jfr9mcagazhzh4z.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/r8qze5x8v9jmqdk99l5g.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401906/geekwave_catalog/zutqplaisstwtwukif0d.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/uoxurtxbwgwmmfm2c8ow.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401935/geekwave_catalog/k175obmbodbi65ezmm7a.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401929/geekwave_catalog/i1fuembe1f5kulh7mfdq.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401898/geekwave_catalog/mvtgddg1nwadebskm6tf.webp",
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401900/geekwave_catalog/xgm4zduvw8qaesbuovgx.webp"
+      
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401898/geekwave_catalog/mvtgddg1nwadebskm6tf.webp"
+       
+    
       ],
-      "variantes": [
-        {
-          "id": "9-white",
-          "nombre": "Nintendo Wii (RVL-001) - White",
-          "color": "White",
-          "imagenes": [
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401906/geekwave_catalog/zutqplaisstwtwukif0d.webp"
-          ],
-          "imagen_principal": ""
-        },
-        {
-          "id": "9-black",
-          "nombre": "Nintendo Wii (RVL-001) - Black",
-          "color": "Black",
-          "imagenes": [
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/whmfohauiqcid9c6iu3z.webp",
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401911/geekwave_catalog/c2pzbyuennr9hfidrvrx.webp",
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/bxumvrnbtsoch0rvygkk.webp",
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/r8qze5x8v9jmqdk99l5g.webp",
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/uoxurtxbwgwmmfm2c8ow.webp"
-          ],
-          "imagen_principal": ""
-        },
-        {
-          "id": "9-red",
-          "nombre": "Nintendo Wii (RVL-001) - Red",
-          "color": "Red",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "9-indigo",
-          "nombre": "Nintendo Wii (RVL-001) - Indigo",
-          "color": "Indigo",
-          "imagenes": [
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401897/geekwave_catalog/iiajuwmldkxfgffxed1t.webp",
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401897/geekwave_catalog/me8z1jfr9mcagazhzh4z.webp",
-            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401898/geekwave_catalog/mvtgddg1nwadebskm6tf.webp"
-          ],
-          "imagen_principal": ""
-        }
-      ],
-      "colores": [
-        "White",
-        "Black",
-        "Red",
-        "Indigo"
-      ],
+      
       "highlights": [
         "Compatibilidad con GameCube en modelos específicos — soporte nativo de hardware y software.",
         "Diseño orientado a control por movimiento (Wiimote) y amplia compatibilidad de accesorios.",
@@ -707,36 +572,33 @@
       "descripcion_tecnica": "Variante de gran formato con pantallas de 4.2 pulgadas. Incluye una arquitectura revisada con mayor memoria RAM y dos cámaras integradas (vGA) para funciones multimedia.",
       "dimensiones": "161 × 91.4 × 21.2 mm",
       "especificaciones": "Pantallas con ángulo de visión mejorado, ranura para tarjetas SD (hasta 32 GB), CPU a 133 MHz, 16 MB de RAM.",
-      "imagen_principal": "",
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401909/geekwave_catalog/cbpse1rlrzxacghqtavh.webp",
       "imagenes": [],
       "variantes": [
-        {
-          "id": "11-bronze",
-          "nombre": "Nintendo DSi XL - Bronze",
-          "color": "Bronze",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "11-burgundy",
-          "nombre": "Nintendo DSi XL - Burgundy",
-          "color": "Burgundy",
-          "imagen_principal": "",
-          "imagenes": []
-        },
+       
+    
         {
           "id": "11-midnight-blue",
           "nombre": "Nintendo DSi XL - Midnight Blue",
           "color": "Midnight Blue",
           "imagen_principal": "",
-          "imagenes": []
+          "imagenes": [
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401909/geekwave_catalog/bpmmniewz1qp0dvaxrkr.webp",
+      "https://res.cloudinary.com/dn8pns203/image/upload/v1777401910/geekwave_catalog/k1gp81kle7gcmgj6jhic.webp",
+      "https://res.cloudinary.com/dn8pns203/image/upload/v1777401911/geekwave_catalog/gml6ghanmeuufsitedxf.webp"
+
+
+          ]
         },
         {
           "id": "11-satin-silver",
           "nombre": "Nintendo DSi XL - Satin Silver",
           "color": "Satin Silver",
-          "imagen_principal": "",
-          "imagenes": []
+          "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401909/geekwave_catalog/cbpse1rlrzxacghqtavh.webp",
+          "imagenes": [
+
+
+          ]
         }
       ],
       "colores": [
@@ -777,27 +639,20 @@
       "descripcion_tecnica": "Basada en el procesador IBM Gekko a 485 MHz. Utiliza un lector de discos ópticos de 8 cm (Panasonic) que reduce los tiempos de acceso a datos respecto al formato DVD estándar.",
       "dimensiones": "149 × 160 × 112 mm",
       "especificaciones": "24 MB de RAM principal, chip gráfico ATI Flipper, 4 puertos de mando, 2 slots para tarjetas de memoria, salida analógica de video.",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "12-indigo-p-rpura",
-          "nombre": "Nintendo GameCube (Indigo) - Indigo (Púrpura)",
-          "color": "Indigo (Púrpura)",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "12-jet-black",
-          "nombre": "Nintendo GameCube (Indigo) - Jet Black",
-          "color": "Jet Black",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp",
+      "imagenes": [
+
+
+         "https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp",
+     
+               "https://res.cloudinary.com/dn8pns203/image/upload/v1777401928/geekwave_catalog/g8uw7xptynpndg9ugp0c.webp",
+               
+            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401929/geekwave_catalog/i1fuembe1f5kulh7mfdq.webp"
       ],
+      
       "colores": [
-        "Indigo (Púrpura)",
-        "Jet Black"
+        "Indigo (Púrpura)"
+      
       ],
       "highlights": [
         "CPU IBM Gekko a 485 MHz con GPU ATI Flipper para rendimiento 3D eficiente.",
@@ -827,29 +682,17 @@
       "descripcion_tecnica": "Arquitectura de 16 bits basada en la CPU Ricoh 5A22. Introduce el chip gráfico con capacidad de \"Mode 7\" para rotación y escalado de planos de fondo por hardware.",
       "dimensiones": "200 × 242 × 72 mm",
       "especificaciones": "Resolución máxima de 512 × 448 px, paleta de 32,768 colores, 128 KB de RAM, procesador de sonido Sony SPC700 de 8 canales.",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401913/geekwave_catalog/kvj3dcgw7c0bmlkzdetp.webp",
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401913/geekwave_catalog/kvj3dcgw7c0bmlkzdetp.webp"
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp",
+        
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401929/geekwave_catalog/i1fuembe1f5kulh7mfdq.webp",
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401928/geekwave_catalog/g8uw7xptynpndg9ugp0c.webp"
+       
       ],
-      "variantes": [
-        {
-          "id": "13-grey",
-          "nombre": "Super Nintendo (SNES) - Grey",
-          "color": "Grey",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "13-classic-grey",
-          "nombre": "Super Nintendo (SNES) - Classic Grey",
-          "color": "Classic Grey",
-          "imagen_principal": "",
-          "imagenes": []
-        }
-      ],
+      
       "colores": [
-        "Grey",
-        "Classic Grey"
+        "Grey"
       ],
       "highlights": [
         "Arquitectura de 16 bits con chip Mode 7 para rotación/escalado por hardware.",
@@ -878,44 +721,9 @@
       "descripcion_tecnica": "Revisión del diseño plegable original. La principal diferencia técnica es su pantalla LCD de matriz activa con retroiluminación interna (Backlit), superior a la iluminación frontal del modelo AGS-001.",
       "dimensiones": "84 × 82 × 24 mm",
       "especificaciones": "CPU ARM7TDMI a 16.7 MHz, batería de Ion-Litio recargable, retrocompatibilidad con toda la línea GameBoy original y Color.",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "14-graphite",
-          "nombre": "GameBoy Advance SP (AGS-101) - Graphite",
-          "color": "Graphite",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "14-pearl-blue",
-          "nombre": "GameBoy Advance SP (AGS-101) - Pearl Blue",
-          "color": "Pearl Blue",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "14-pearl-pink",
-          "nombre": "GameBoy Advance SP (AGS-101) - Pearl Pink",
-          "color": "Pearl Pink",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "14-silver",
-          "nombre": "GameBoy Advance SP (AGS-101) - Silver",
-          "color": "Silver",
-          "imagen_principal": "",
-          "imagenes": []
-        }
-      ],
-      "colores": [
-        "Graphite",
-        "Pearl Blue",
-        "Pearl Pink",
-        "Silver"
-      ],
+      "imagen_principal":"https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/whmfohauiqcid9c6iu3z.webp",
+      "imagenes": ["https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/bxumvrnbtsoch0rvygkk.webp",  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/whmfohauiqcid9c6iu3z.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401895/geekwave_catalog/vdahw6nnonh2c1etnvgz.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401896/geekwave_catalog/cy4wurv790fke6oc8ajn.webp"], 
+      
       "highlights": [
         "Pantalla AGS-101 con retroiluminación interna — imagen más brillante y contraste superior.",
         "Retrocompatibilidad total con cartuchos GameBoy / GameBoy Color.",
@@ -1175,9 +983,9 @@
       "descripcion_tecnica": "Revisión final del hardware de Microsoft. Sustituye el codificador de video por el chip Xcalibur y utiliza memoria RAM marca Hynix o Samsung.",
       "dimensiones": "320 x 100 x 260 mm",
       "especificaciones": "hardware: Procesador Intel Pentium III a 733 MHz, 64MB de memoria RAM unificada",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/uoxurtxbwgwmmfm2c8ow.webp",
+      "imagen_principal": "",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/uoxurtxbwgwmmfm2c8ow.webp"
+
       ],
       "variantes": [
         {
@@ -1275,8 +1083,18 @@
       "descripcion_tecnica": "Rediseño de costo optimizado del hardware de 16 bits. Elimina el conector de auriculares frontal y el control de volumen, integrando la salida de audio estéreo directamente en el puerto AV trasero.",
       "dimensiones": "220 x 212 x 59 mm",
       "especificaciones": "hardware: Procesador principal Motorola 68000 a 7.6 MHz y coprocesador Zilog Z80",
-      "imagen_principal": "",
-      "imagenes": [],
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401924/geekwave_catalog/dnlzatizinmlock8jwu0.webp",
+      "imagenes": [
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401924/geekwave_catalog/dnlzatizinmlock8jwu0.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401925/geekwave_catalog/dtjtacsxzbd4jlxrfpsu.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401926/geekwave_catalog/gn6pmut3am2ycqput9l5.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401925/geekwave_catalog/bvmob8ejvnjyxlbhh6jq.webp"
+
+
+
+
+
+      ],
       "variantes": [
         {
           "id": "21-negro",
@@ -1421,16 +1239,18 @@
       "descripcion_tecnica": "Implementación final de la arquitectura PowerPC de 64 bits en Apple. Utiliza dos procesadores PowerPC 970MP (Dual-Core) y un sistema de refrigeración líquida.",
       "dimensiones": "511 x 206 x 475 mm",
       "especificaciones": "hardware: 4 núcleos físicos a 2.5 GHz, 1 MB de caché L2 por núcleo, hasta 16GB de RAM DDR2; expansion: 3 ranuras PCI Express, 2 puertos Gigabit Ethernet",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "24-aluminio-anodizado",
-          "nombre": "PowerMac G5 (Edición Quad Core) - Aluminio Anodizado",
-          "color": "Aluminio Anodizado",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401913/geekwave_catalog/kvj3dcgw7c0bmlkzdetp.webp",
+
+      "imagenes": [
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401913/geekwave_catalog/kvj3dcgw7c0bmlkzdetp.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401914/geekwave_catalog/bz9h9pf7tfuytibblu6a.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401915/geekwave_catalog/gkrju9qa53tcv6zxgiy0.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401914/geekwave_catalog/kw4tok5mmp7cretjqrzp.webp"
+
+
+
+
+   
       ],
       "colores": [
         "Aluminio Anodizado"
@@ -1462,8 +1282,21 @@
       "descripcion_tecnica": "Desarrollado sobre el Naughty Dog Game Engine 3.0. Implementa técnicas de renderizado volumétrico para efectos de arena y agua.",
       "dimensiones": "19.0 x 13.5 x 1.5 mm",
       "especificaciones": "Género de acción-aventura. Resolución nativa de 1280x720p con soporte para 3D estereoscópico.",
-      "imagen_principal": "",
-      "imagenes": [],
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401931/geekwave_catalog/boqptgmgdcdbtsucalsf.webp",
+      "imagenes": [
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401931/geekwave_catalog/boqptgmgdcdbtsucalsf.webp",
+
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401932/geekwave_catalog/yaykwqdwyrlgm1xjubmy.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401931/geekwave_catalog/jkfdmhqtuxiefkayxvs3.webp",
+
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401933/geekwave_catalog/n1ru9mu5fugdwe4swopb.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401933/geekwave_catalog/mzfrpvriit5jyfopbvlv.webp"
+
+
+
+
+
+      ],
       "variantes": [
         {
           "id": "28-clear-transparente",
@@ -1503,17 +1336,16 @@
       "descripcion_tecnica": "Utiliza un motor propietario con tecnología de \"Malla de Piel Dinámica\" (Dynamic Skin Mesh), permitiendo modelos de personajes con hasta 35,000 polígonos.",
       "dimensiones": "19.0 x 13.5 x 1.5 mm",
       "especificaciones": "Género Hack and Slash. Soporta resolución de 720p con salida escalada a 1080i.",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "29-clear-transparente",
-          "nombre": "God of War III - Clear (Transparente)",
-          "color": "Clear (Transparente)",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401899/geekwave_catalog/nryoa2l3xw4fpwj6pby5.webp",
+      "imagenes": [
+ "https://res.cloudinary.com/dn8pns203/image/upload/v1777401899/geekwave_catalog/nryoa2l3xw4fpwj6pby5.webp",
+ "https://res.cloudinary.com/dn8pns203/image/upload/v1777401900/geekwave_catalog/xgm4zduvw8qaesbuovgx.webp",
+ "https://res.cloudinary.com/dn8pns203/image/upload/v1777401899/geekwave_catalog/kl1ytyl5vcu8xxlco5hp.webp"
+
+
+
       ],
+      
       "colores": [
         "Clear (Transparente)"
       ],
@@ -1544,17 +1376,20 @@
       "descripcion_tecnica": "Primera implementación masiva del motor de Kojima Productions en PS3. Utiliza procesamiento en paralelo mediante las unidades SPU del procesador Cell.",
       "dimensiones": "19.0 x 13.5 x 1.5 mm",
       "especificaciones": "Acción táctica y sigilo. Formato de almacenamiento Blu-ray de doble capa (50GB).",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "30-clear",
-          "nombre": "Metal Gear Solid 4: Guns of the Patriots - Clear",
-          "color": "Clear",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401902/geekwave_catalog/ddl55goehcqsubdef1uu.webp",
+      "imagenes": [
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401902/geekwave_catalog/ddl55goehcqsubdef1uu.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401903/geekwave_catalog/qz9dsndluj8rvmyb2ydp.webp",
+
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401904/geekwave_catalog/lhzgyadr9jddethegj9u.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401904/geekwave_catalog/gxygyljqhbdvlhnayet1.webp"
+
+
+
+
+
       ],
+      
       "colores": [
         "Clear"
       ],
@@ -1584,27 +1419,19 @@
       "descripcion_tecnica": "Software diseñado estrictamente para el uso del periférico Wii MotionPlus. Utiliza un estilo artístico de filtrado de \"pintura impresionista\".",
       "dimensiones": "19.0 x 13.5 x 1.5 mm",
       "especificaciones": "Plataforma Wii. Resolución 480p (proporción 16:9). Requiere control con giroscopio.",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "31-white",
-          "nombre": "The Legend of Zelda: Skyward Sword - White",
-          "color": "White",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "31-blanco",
-          "nombre": "The Legend of Zelda: Skyward Sword - Blanco",
-          "color": "Blanco",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401934/geekwave_catalog/mwh54ot9lrcmwaeptpdb.webp",
+      "imagenes": [
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401934/geekwave_catalog/mwh54ot9lrcmwaeptpdb.webp",
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401935/geekwave_catalog/k175obmbodbi65ezmm7a.webp",
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401935/geekwave_catalog/i4qqz6zgx1eqzrmo6vhm.webp",
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401936/geekwave_catalog/rwetjrvipnzinukpi2or.webp"
+
+
       ],
+     
       "colores": [
-        "White",
-        "Blanco"
+        "White"
+        
       ],
       "highlights": [
         "Requiere Wii MotionPlus para una experiencia de control por movimiento precisa.",
@@ -1633,27 +1460,19 @@
       "descripcion_tecnica": "Evolución del motor físico de gravedad variable. Implementa sombreado de celdas (cel-shading) y efectos de partículas optimizados para el procesador gráfico ATI Hollywood.",
       "dimensiones": "19.0 x 13.5 x 1.5 mm",
       "especificaciones": "Plataforma Wii. Género plataformas 3D. Frecuencia de actualización constante de 60 FPS.",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "32-white",
-          "nombre": "Super Mario Galaxy 2 - White",
-          "color": "White",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "32-blanco",
-          "nombre": "Super Mario Galaxy 2 - Blanco",
-          "color": "Blanco",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401901/geekwave_catalog/pgcad8wh4ba0g9se5dz2.webp",
+      "imagenes": [
+
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401901/geekwave_catalog/pgcad8wh4ba0g9se5dz2.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401901/geekwave_catalog/mujgrk2ibhknc2t05gsc.webp",
+"https://res.cloudinary.com/dn8pns203/image/upload/v1777401902/geekwave_catalog/r9co9xz3ageckz2wkyy2.webp"
+
+
+
       ],
+      
       "colores": [
-        "White",
-        "Blanco"
+        "White"
       ],
       "highlights": [
         "Motor de gravedad variable con diseño de niveles esféricos y jugabilidad fluida.",
@@ -1675,34 +1494,24 @@
       "sku": "GW-033",
       "categoria": "Juegos",
       "subcategoria": "Juegos de Nintendo DS",
-      "nombre": "Pokémon Black / White",
+      "nombre": "Pokémon Black",
       "precio_usd": 25,
       "año": 2011,
       "color": "Black (Cartridge IR)",
       "descripcion_tecnica": "Quinta generación de la franquicia. Introduce una cámara con perspectiva dinámica en 3D y sprites de Pokémon con animación constante.",
       "dimensiones": "Cartucho estándar DS",
       "especificaciones": "Plataforma Nintendo DS. Género RPG por turnos. Cartucho con infrarrojo integrado para comunicación local.",
-      "imagen_principal": "",
-      "imagenes": [],
-      "variantes": [
-        {
-          "id": "33-black",
-          "nombre": "Pokémon Black / White - Black",
-          "color": "Black",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "33-cartridge-ir",
-          "nombre": "Pokémon Black / White - Cartridge IR",
-          "color": "Cartridge IR",
-          "imagen_principal": "",
-          "imagenes": []
-        }
+      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401911/geekwave_catalog/c2pzbyuennr9hfidrvrx.webp",
+      "imagenes": ["https://res.cloudinary.com/dn8pns203/image/upload/v1777401911/geekwave_catalog/c2pzbyuennr9hfidrvrx.webp",
+      "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/uoxurtxbwgwmmfm2c8ow.webp",
+      "https://res.cloudinary.com/dn8pns203/image/upload/v1777401912/geekwave_catalog/r8qze5x8v9jmqdk99l5g.webp",
+      "https://res.cloudinary.com/dn8pns203/image/upload/v1777401913/geekwave_catalog/qbxamixpip4ineysjguh.webp"
+
       ],
+      
       "colores": [
-        "Black",
-        "Cartridge IR"
+        "Black"
+       
       ],
       "highlights": [
         "Quinta generación con gráficos mejorados y animaciones de sprites continuas.",
@@ -2011,10 +1820,10 @@
       "sku": "GW-040",
       "categoria": "Juegos",
       "subcategoria": "Juegos de PC",
-      "nombre": "Batman: Arkham City",
+      "nombre": "Analogue Pocket",
       "precio_usd": 40,
       "año": 2011,
-      "color": "Black / Steel",
+      "color": "Steel",
       "descripcion_tecnica": "Ejecutado sobre una versión altamente modificada del motor Unreal Engine 3. Implementa el sistema de físicas APEX de NVIDIA para la simulación de telas.",
       "dimensiones": "19.0 x 13.5 x 1.5 mm",
       "especificaciones": "genero: Acción-aventura / Mundo abierto; motor_grafico: Unreal Engine 3; formato: Disco óptico / Digital",
@@ -2035,14 +1844,8 @@
             "https://res.cloudinary.com/dn8pns203/image/upload/v1777401874/geekwave_catalog/cq6hbuxovqkfm3zuwnfn.webp"
           ],
           "imagen_principal": ""
-        },
-        {
-          "id": "40-steel",
-          "nombre": "Batman: Arkham City - Steel",
-          "color": "Steel",
-          "imagen_principal": "",
-          "imagenes": []
         }
+       
       ],
       "colores": [
         "Black",
@@ -2117,36 +1920,29 @@
       "sku": "GW-042",
       "categoria": "Juegos",
       "subcategoria": "Juegos de PC",
-      "nombre": "Minecraft (Versión 1.0)",
+      "nombre": "Retroid Pocket",
       "precio_usd": 35,
       "año": 2011,
-      "color": "Brown",
+      "color": "gray",
       "descripcion_tecnica": "Basado íntegramente en Java y OpenGL. Utiliza algoritmos de ruido de Perlin para la generación procedural de terrenos.",
       "dimensiones": "Digital",
       "especificaciones": "género: Sandbox / Supervivencia; entorno: Java Runtime Environment (JRE)",
       "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401918/geekwave_catalog/s42l1acctnh9zj1anfqp.webp",
       "imagenes": [
-        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401918/geekwave_catalog/s42l1acctnh9zj1anfqp.webp"
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401918/geekwave_catalog/s42l1acctnh9zj1anfqp.webp",
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401917/geekwave_catalog/qtouljrzqnhunad4vftc.webp",
+     
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401918/geekwave_catalog/s42l1acctnh9zj1anfqp.webp",
+        "https://res.cloudinary.com/dn8pns203/image/upload/v1777401917/geekwave_catalog/xu72b2ypi5jot1d1bqbd.webp"
+        
+    
+
+        
+
       ],
-      "variantes": [
-        {
-          "id": "42-brown",
-          "nombre": "Minecraft (Versión 1.0) - Brown",
-          "color": "Brown",
-          "imagen_principal": "",
-          "imagenes": []
-        },
-        {
-          "id": "42-pixel-green",
-          "nombre": "Minecraft (Versión 1.0) - Pixel Green",
-          "color": "Pixel Green",
-          "imagen_principal": "",
-          "imagenes": []
-        }
-      ],
+      
       "colores": [
-        "Brown",
-        "Pixel Green"
+        "gray"
       ],
       "highlights": [
         "Generación procedural de mundos basada en ruido Perlin — infinitas combinaciones de terreno.",
@@ -2721,7 +2517,7 @@
       "dimensiones": "254 mm (Alto) x 140 mm (Ancho)",
       "especificaciones": "Peso: ~850 g; material: PVC de alta densidad; base de resina con tornillo de anclaje; acabado: pintura weathering",
       "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp",
-      "imagenes": ["https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/pvzil9yzibs1mktaxwnk.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401888/geekwave_catalog/gbiof9u0xzueu6yvw198.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401888/geekwave_catalog/gbiof9u0xzueu6yvw198.webp"],
+      "imagenes": ["https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/pvzil9yzibs1mktaxwnk.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401888/geekwave_catalog/gbiof9u0xzueu6yvw198.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401889/geekwave_catalog/kstzjkzxtn3thtb1wg7p.webp"],
       "variantes": [
         {
           "id": "55-verde-oliva",
