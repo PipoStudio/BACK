@@ -1816,3 +1816,81 @@ button {
 .product-details-grid {
   min-height: 120px; /* ajusta según tu layout */
 }
+
+
+/* Checkout - layout seguro para título + botón eliminar */
+.checkout-product {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.checkout-product-image {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f5f5f5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.checkout-product-image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* Info: columnas y espacio para la X */
+.checkout-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1 1 auto;
+  min-width: 0; /* importante para que el truncado funcione dentro de flex */
+}
+
+/* Top row: título a la izquierda, boton eliminar a la derecha */
+.checkout-product-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Título: truncado si es muy largo */
+.checkout-product-top h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 48px); /* deja espacio para el botón eliminar */
+}
+
+/* Botón eliminar: tamaño fijo y centrado */
+.remove-product-btn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.04);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  flex: 0 0 36px;
+}
+
+/* Asegurar buen aspecto móvil */
+@media (max-width: 600px) {
+  .checkout-product-image { width: 60px; height: 60px; flex:0 0 60px; }
+  .checkout-product-top h4 { max-width: calc(100% - 44px); font-size: 0.9rem; }
+  .remove-product-btn { width: 32px; height: 32px; flex:0 0 32px; }
+}

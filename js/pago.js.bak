@@ -106,22 +106,6 @@ async function checkSupabaseSession() {
 
 let inventario = [];
 
-function robustFindProduct(itemId) {
-    // Busca en inventario local primero, luego en window.inventarioGlobal si existe
-    try {
-        let product = (Array.isArray(inventario) ? inventario : []).find(p => String(p.id) === String(itemId));
-        if (!product && typeof window !== 'undefined' && Array.isArray(window.inventarioGlobal)) {
-            product = window.inventarioGlobal.find(p => String(p.id) === String(itemId));
-        }
-        return product || null;
-    } catch (e) {
-        console.error('[Checkout] robustFindProduct error:', e);
-        return null;
-    }
-}
-
-
-
 let currentPayment = "wompi";
 
 let couponDiscount = 0;
@@ -245,23 +229,44 @@ function initLenis() {
 // =========================================================
 
 async function loadInventory() {
+
     try {
-        const response = await fetch('./json/inventario.json');
-        if (!response.ok) throw new Error('No se pudo cargar inventario: HTTP ' + response.status);
 
-        const data = await response.json();
+        const response =
+            await fetch(
+                "./json/inventario.json"
+            );
 
-        // Aceptar ambos formatos: { productos: [...] } o directamente [...]
-        inventario = (data && data.productos) ? data.productos : data;
+        if (!response.ok) {
 
-        // Exponer global para otros módulos
-        try { window.inventarioGlobal = inventario; } catch (e) {}
+            throw new Error(
+                "No se pudo cargar inventario"
+            );
 
-        console.log('[Checkout] Inventario cargado:', Array.isArray(inventario) ? inventario.length : inventario);
-    } catch (error) {
-        console.error('[Checkout] Error inventario:', error);
-        inventario = []; // asegurar que inventario sea array
+        }
+
+        inventario =
+            await response.json();
+
+        console.log(
+
+            "[Checkout] Inventario:",
+
+            inventario.length
+
+        );
+
     }
+
+    catch (error) {
+
+        console.error(
+            "[Checkout] Error inventario:",
+            error
+        );
+
+    }
+
 }
 
 // =========================================================
@@ -449,27 +454,9 @@ function initContactMethods() {
 // =========================================================
 
 function getCart() {
-    // Versión robusta: intenta State.getCart() y si no, fallback a localStorage 'geekwave_cart'
-    try {
-        if (typeof State !== 'undefined' && typeof State.getCart === 'function') {
-            const fromState = State.getCart();
-            if (Array.isArray(fromState) && fromState.length > 0) return fromState;
-        }
-    } catch (e) {
-        console.warn('[Checkout] State.getCart() falló:', e);
-    }
 
-    try {
-        const raw = localStorage.getItem('geekwave_cart');
-        if (raw) {
-            const parsed = JSON.parse(raw);
-            if (Array.isArray(parsed)) return parsed;
-        }
-    } catch (e) {
-        console.error('[Checkout] Error leyendo geekwave_cart de localStorage:', e);
-    }
+    return State.getCart();
 
-    return [];
 }
 
 function saveCart(cart) {
@@ -531,9 +518,14 @@ function renderCheckoutCart() {
 
     container.innerHTML = cart.map(item => {
 
-        let product = robustFindProduct(item.id);
+        const product =
+            inventario.find(
+                p =>
+                    parseInt(p.id) ===
+                    parseInt(item.id)
+            );
 
-if (!product) return "";
+        if (!product) return "";
 
         const quantity =
             item.qty || 1;
