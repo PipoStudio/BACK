@@ -41,6 +41,7 @@ function initializeNavbarLogic() {
  
     // ===== VARIABLES GLOBALES DEL NAVBAR =====
     let inventario = [];
+    let inventarioListo = false; // 🔴 NUEVA: rastrear si inventario está listo
     let currentFocus = -1;
 
     // Referencias a elementos del DOM
@@ -160,6 +161,12 @@ window.removeFromCart = function (id) {
 };
 
     function renderCart() {
+        // 🔴 PROTECCIÓN: Si inventario no está listo, no renderizar
+        if (!inventarioListo) {
+            console.warn('⚠️ Inventario no cargado aún, saltando renderCart...');
+            return;
+        }
+
         let cart = JSON.parse(localStorage.getItem('geekwave_cart')) || [];
         const checkoutBtn = document.querySelector('.cart-footer .btn-primary');
         const saveBtn = document.getElementById('saveCartBtn');
@@ -186,7 +193,14 @@ window.removeFromCart = function (id) {
                 cartItemsContainer.innerHTML = cart
                     .map(item => {
                         const fullItem = inventario.find(i => parseInt(i.id) === parseInt(item.id));
-                     const imgUrl = fullItem.imagen_principal;
+
+                     // 🔴 PROTECCIÓN: validar que producto existe
+                     if (!fullItem) {
+                         console.warn(`⚠️ Producto \${item.id} no encontrado`);
+                         return '';
+                     }
+
+                     const imgUrl = fullItem.imagen_principal || 'https://placehold.co/400x400/png?text=No+Image';
                         return `
                     <div class="cart-item">
                         <img src="${imgUrl}" alt="${item.nombre}" class="cart-item-img">
@@ -248,24 +262,37 @@ window.removeFromCart = function (id) {
 
     // ===== CARGA DE INVENTARIO =====
    // ===== CARGA DE INVENTARIO CORREGIDO =====
+// ===== CARGA DE INVENTARIO =====
+// ===== CARGA DE INVENTARIO CORREGIDO =====
 fetch('json/inventario.json')
     .then(response => response.json())
     .then(data => {
-        // Si el JSON viene con la nueva estructura, extraemos .productos. 
+        // Si el JSON viene con la nueva estructura, extraemos .productos.
         // Si por alguna razón fuera el formato viejo, dejamos 'data' directamente.
         inventario = (data && data.productos) ? data.productos : data;
-        
-      // Exponer inventario globalmente para que otros módulos lo encuentren
-window.inventarioGlobal = inventario;
 
-console.log('📦 Inventario cargado correctamente:', Array.isArray(inventario) ? inventario.length : 0, 'productos');
+        // 🔴 Marcar que inventario está listo
+        inventarioListo = true;
 
-// Re-render del carrito ahora que ya tenemos inventario (si existe la función)
-if (typeof renderCart === 'function') {
-            try { renderCart(); } catch (e) { console.warn('renderCart falló tras cargar inventario:', e); }
+        // Exponer inventario globalmente para que otros módulos lo encuentren
+        window.inventarioGlobal = inventario;
+
+        console.log('📦 Inventario cargado correctamente:', Array.isArray(inventario) ? inventario.length : 0, 'productos');
+
+        // Re-render del carrito ahora que ya tenemos inventario (si existe la función)
+        if (typeof renderCart === 'function') {
+            try {
+                renderCart();
+            } catch (e) {
+                console.warn('renderCart falló tras cargar inventario:', e);
+            }
         }
+    })
+    .catch(error => {
+        console.error('❌ Error cargando inventario:', error);
     });
-    // ===== LGICA DEL MEGA MEN =====
+
+// ===== LGICA DEL MEGA MEN =====
     let currentMenuCol = 0;
     let currentMenuIdx = [0, 0, 0];
 
