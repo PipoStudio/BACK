@@ -262,9 +262,9 @@ console.log('📦 Inventario cargado correctamente:', Array.isArray(inventario) 
 
 // Re-render del carrito ahora que ya tenemos inventario (si existe la función)
 if (typeof renderCart === 'function') {
-  try { renderCart(); } catch (e) { console.warn('renderCart falló tras cargar inventario:', e); }
-}
-
+            try { renderCart(); } catch (e) { console.warn('renderCart falló tras cargar inventario:', e); }
+        }
+    });
     // ===== LGICA DEL MEGA MEN =====
     let currentMenuCol = 0;
     let currentMenuIdx = [0, 0, 0];
@@ -909,9 +909,9 @@ const resultHtml = `
     }
 
     window.addEventListener('favoritesUpdated', () => {
-
-            // [FIX] Sólo actualizar contador/visual del navbar. No renderizar el panel aquí.
-            updateFavoritesBadge();
+        // [FIX] Sólo actualizar contador/visual del navbar. No renderizar el panel aquí.
+        updateFavoritesBadge();
+    });
 
     // [FIX] Renderizar panel de favoritos SOLO al hacer click en el corazón del navbar
     (function(){
@@ -927,9 +927,6 @@ const resultHtml = `
             } catch (err) { console.error('Error al renderizar favoritos al click:', err); }
         });
     })();
-
-
-        });
 
     updateFavoritesBadge();
 
