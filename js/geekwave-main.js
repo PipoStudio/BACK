@@ -14,7 +14,7 @@ function syncGeekwaveCart() {
     // Renderizado de lista (si el contenedor existe)
     if (itemsContainer) {
         if (cart.length === 0) {
-            itemsContainer.innerHTML = '<p style="text-align:center;">Tu carrito est vaco</p>';
+            itemsContainer.innerHTML = '<p style="text-align:center;">Tu carrito est vacío</p>';
         } else {
             itemsContainer.innerHTML = cart.map((item, index) => `
                 <div class="cart-item">

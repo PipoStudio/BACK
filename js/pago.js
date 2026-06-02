@@ -504,7 +504,7 @@ function renderCheckoutCart() {
             <div class="checkout-empty">
 
                 <h3>
-                    Tu carrito est vaco
+                    Tu carrito est vacío
                 </h3>
 
                 <p>

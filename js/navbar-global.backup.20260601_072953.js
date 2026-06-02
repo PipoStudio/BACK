@@ -169,7 +169,7 @@ window.removeFromCart = function (id) {
                 cartItemsContainer.innerHTML = `
                 <div style="text-align: center; color: var(--text-muted); padding: 40px 20px; font-size: 0.9rem;">
                     <i data-lucide="shopping-cart" style="width: 40px; height: 40px; margin-bottom: 15px; opacity: 0.2;"></i>
-                    <br>Tu carrito est vaco.
+                    <br>Tu carrito est vacío.
                 </div>`;
             }
             if (checkoutBtn) {
