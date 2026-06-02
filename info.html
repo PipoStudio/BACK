@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="components/icono.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekwave  | Detalles</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Space+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+    <div id="toastMsg" class="toast-msg">Eliminado</div>
+
+<!-- ================= CONTENIDO REDISEADO ================= -->
+<main class="product-template">
+
+  <!-- HERO PRODUCT -->
+  <section class="product-hero">
+
+    <!-- Columna Visual -->
+    <div class="product-visual">
+
+      <!-- Background Glow -->
+      <div class="product-glow"></div>
+
+      <!-- Imagen Principal -->
+      <div class="product-image-stage">
+        <img id="mainProductImage"
+          src=""
+          alt=""
+          class="hero-product-image">
+      </div>
+
+      <!-- Mini Gallery -->
+      <div class="floating-gallery" id="galleryThumbs"></div>
+
+    </div>
+
+    <!-- Columna Informacin -->
+    <div class="product-info-panel">
+
+      <!-- Top Meta -->
+      <div class="product-meta-top">
+
+        <div class="product-tag" id="productTag">
+          <!-- opcional: llenado por JS -->
+        </div>
+
+        <div class="product-status" id="productStatus">
+          <span class="status-dot"></span>
+          Disponible
+        </div>
+
+      </div>
+
+      <!-- Ttulo -->
+      <div class="product-heading">
+
+        <p class="product-kicker">
+          Premium Retro Hardware
+        </p>
+
+       <h1 id="productTitle">Cargando...</h1>
+
+      <p class="product-subtitle" id="productDescription">Cargando descripción...</p>
+      </div>
+
+      <!-- Quick Specs -->
+      <div class="quick-specs">
+
+        <div class="quick-spec">
+          <span class="spec-label">DISPLAY</span>
+          <span class="spec-value" id="displaySpec"></span>
+        </div>
+
+        <div class="quick-spec">
+          <span class="spec-label">DENSIDAD</span>
+          <span class="spec-value" id="densitySpec"></span>
+        </div>
+
+        <div class="quick-spec">
+          <span class="spec-label">AUTÓNOMA</span>
+          <span class="spec-value" id="autonomySpec"></span>
+        </div>
+
+      </div>
+
+      <!-- Descripcin -->
+      <div class="product-description-block">
+        <p class="description" id="productLongDescription"></p>
+      </div>
+
+      <!-- Variantes -->
+      <div class="variant-section" id="variantSection">
+        <div class="section-mini-title">Acabado del Chasis</div>
+        <div class="flavors" id="flavorContainer"></div>
+      </div>
+
+      <!-- Colores (selector visual dinámico) -->
+      <div class="color-section">
+        <div class="section-mini-title">Colores</div>
+        <div id="colorOptions" class="color-options"></div>
+      </div>
+
+      <!-- Configuracin -->
+      <div class="configuration-section">
+        <div class="section-mini-title">Configuración</div>
+
+        <div class="config-selector" id="configContainer">
+          <button class="config-option active" data-plan="standard">
+            <div class="config-radio"></div>
+            <div class="config-content">
+              <div class="config-top">
+               <h4>Producto</h4>
+                <span class="config-price" id="basePrice"></span>
+              </div>
+             <p>Artículo principal</p>
+            </div>
+          </button>
+
+          <button class="config-option" data-plan="bundle">
+            <div class="config-radio"></div>
+            <div class="config-content">
+             <h4>Completo</h4>
+             <span class="config-price" id="bundlePrice"></span>
+             <p>Incluye extras cuando estén disponibles</p>
+            </div>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Beneficios -->
+      <div class="benefits-minimal">
+        <div class="section-mini-title">Incluye</div>
+        <ul class="benefits" id="benefitsList"></ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="purchase-zone">
+
+        <!-- Qty -->
+        <div class="quantity-selector">
+          <button class="qty-btn" id="decreaseQty">-</button>
+          <span id="quantityValue">1</span>
+          <button class="qty-btn" id="increaseQty">+</button>
+        </div>
+
+        <!-- CTA -->
+        <button class="main-purchase-btn" id="cartButton">
+          <span>AÑADIR AL CARRITO</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- TECH DETAILS (DINÁMICO) -->
+  <!-- ========================= -->
+
+  <section class="tech-details-section">
+
+    <div class="details-heading">
+      <p class="section-kicker">Ingeniera</p>
+      <h2>Hardware diseñado para una mayor preservación.</h2>
+    </div>
+
+    <!-- Highlights: lista dinámica (rellenada por info.js desde product.highlights o product.technical) -->
+    <section id="highlightsSection" class="details-grid">
+      <ul id="highlightsList" class="highlights-list"></ul>
+    </section>
+
+    <!-- Optional: technical grid con campos estructurados (rellenable por JS) -->
+    <div id="technicalGrid" class="technical-grid" aria-hidden="true">
+      <!-- JS puede mostrar/ocultar y llenar elementos si quieres mostrar campos concretos -->
+      <div class="tech-row"><strong>FPGA:</strong> <span id="techFpga"></span></div>
+      <div class="tech-row"><strong>CPU / GPU:</strong> <span id="techCpuGpu"></span></div>
+      <div class="tech-row"><strong>Construcción:</strong> <span id="techBuild"></span></div>
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- PRODUCTOS RELACIONADOS -->
+  <!-- ========================= -->
+
+  <section class="related-products">
+    <div class="related-header">
+      <div>
+        <p class="section-kicker">Ecosistema</p>
+        <h2>Complementa tu setup.</h2>
+      </div>
+      <a href="productos.html" class="related-link">Ver catálogo completo</a>
+    </div>
+
+    <div class="related-grid">
+      <!-- Related cards (estáticos) -->
+      <article class="related-card">
+        <div class="related-image"><img src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401927/geekwave_catalog/bjsbzsjfrnypgai8najy.webp" alt=""></div>
+        <div class="related-content">
+          <span class="related-category">Accesorio</span>
+          <h3>Analogue Dock</h3>
+          <p class="related-price">$99.99</p>
+          <a href="#" class="related-btn">Ver producto</a>
+        </div>
+      </article>
+
+      <article class="related-card">
+        <div class="related-image"><img src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401876/geekwave_catalog/oko5qzyn1gb6zv5eqhqp.webp" alt=""></div>
+        <div class="related-content">
+          <span class="related-category">Consola</span>
+          <h3>GBA Micro Edition</h3>
+          <p class="related-price">$179.99</p>
+          <a href="#" class="related-btn">Ver producto</a>
+        </div>
+      </article>
+
+      <article class="related-card">
+        <div class="related-image"><img src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401905/geekwave_catalog/y2n5fcmmq3bcb5n4jotn.webp" alt=""></div>
+        <div class="related-content">
+          <span class="related-category">Hardware</span>
+          <h3>EverDrive GB X7</h3>
+          <p class="related-price">$129.00</p>
+          <a href="#" class="related-btn">Ver producto</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+<!-- ================= FOOTER ================= -->
+  <div id="footer-placeholder"></div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+<!-- ===== SCRIPTS EN ORDEN CORRECTO ===== -->
+<script src="js/component-loader.js"></script>
+<script src="js/navbar-global.js" defer></script>
+<script src="js/geekwave-main.js" defer></script>
+<script src="js/productos.js"></script> 
+<script src="js/info.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,740 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #050505;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* PAGE */
+
+.auth-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #050505;
+}
+
+/* =========================================
+   LEFT VISUAL
+========================================= */
+
+.visual-panel {
+  position: relative;
+  width: 58%;
+  overflow: hidden;
+  background: #000000;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition:
+    opacity 1.2s ease,
+    transform 6s ease;
+}
+
+.bg-video.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.visual-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top,
+      rgba(0, 0, 0, 0.86) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      rgba(0, 0, 0, 0.30) 100%);
+  z-index: 2;
+}
+
+/* TOP */
+
+.visual-top {
+  position: relative;
+  z-index: 3;
+  padding: 34px 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-pill {
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.status-right {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+  font-weight: 700;
+}
+
+/* HERO CONTENT */
+
+.visual-content {
+  position: absolute;
+  left: 58px;
+  bottom: 50px;
+  z-index: 3;
+  max-width: 640px;
+}
+
+.editorial-tag {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+  font-weight: 700;
+  margin-bottom: 26px;
+  
+}
+
+.visual-title {
+  margin: 18px 0 0;
+  font-size: 76px;
+  line-height: 1;
+  letter-spacing: -5px;
+  font-weight: 900;
+  max-width: 100%;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.visual-text {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.58);
+  max-width: 540px;
+}
+/* FOOTER */
+
+.visual-footer {
+  position: absolute;
+  left: 58px;
+  right: 58px;
+  bottom: 36px;
+  z-index: 3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-progress {
+  display: flex;
+  gap: 10px;
+}
+
+.progress-line {
+  position: relative;
+  width: 58px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+
+.progress-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  background: #ffffff;
+}
+
+.progress-line.active::after {
+  animation: progressFill 7s linear forwards;
+}
+
+@keyframes progressFill {
+
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.footer-meta {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.48);
+  font-weight: 700;
+}
+
+/* =========================================
+   RIGHT PANEL
+========================================= */
+/* =========================================
+   RIGHT PANEL
+========================================= */
+
+/* =========================================
+   RIGHT PANEL
+========================================= */
+
+.form-panel {
+  width: 42%;
+  min-width: 480px;
+  background: #090909;
+
+  /* --- AQU EST LA MAGIA --- */
+  display: flex;
+  flex-direction: column;  /* Apila todo verticalmente de arriba a abajo */
+  align-items: center;     /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente en la pantalla */
+
+  position: relative;
+  overflow-y: auto;
+  padding: 40px 0; /* Un poco de respiro en los bordes */
+}
+
+/* Aade esta pequea regla justo debajo para que el Logo y el Subttulo 
+   tengan el mismo ancho que los formularios y se vean perfectamente alineados */
+.top-brand, .form-subtitle {
+  width: 100%;
+  max-width: 386px; 
+}
+.form-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(255, 255, 255, 0.05),
+      transparent 40%);
+
+  pointer-events: none;
+}
+
+
+.form-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 470px;
+  
+  /* Reducin del padding superior a 10px para eliminar el gran vaco */
+  padding: 10px 42px 30px;
+}
+/* =========================================
+   LOGO
+========================================= */
+
+/* =========================================
+   TOP BRAND
+========================================= */
+
+.top-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 128px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.form-eyebrow {
+  margin: 0;
+
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #6e6e6e;
+  font-weight: 700;
+
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.form-subtitle {
+  margin: 0 0 20px;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  color: #8a8a8a;
+  max-width: 430px;
+}
+
+
+/* =========================================
+   FORM CONTENT
+========================================= */
+
+.form-subtitle {
+  margin: 0 0 24px;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  color: #8a8a8a;
+  max-width: 430px;
+}
+/* =========================================
+   FORM
+========================================= */
+
+.auth-form {
+  margin-top: 0;
+}
+
+.field-group {
+  margin-bottom: 18px;
+}
+
+.field-group label {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #6e6e6e;
+  font-weight: 700;
+}
+
+.field-group input {
+  width: 100%;
+  height: 60px;
+
+  padding: 0 22px;
+
+  border: 1px solid #232323;
+  background: #121212;
+
+  color: #ffffff;
+  font-size: 15px;
+  font-family: inherit;
+
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.field-group input::placeholder {
+  color: #5f5f5f;
+}
+
+.field-group input:focus {
+  border-color: #4a4a4a;
+  background: #151515;
+}
+/* OPTIONS */
+
+.form-options {
+  margin-top: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
+.remember-wrap input {
+  accent-color: #ffffff;
+}
+
+.forgot-link {
+  font-size: 13px;
+  color: #b8b8b8;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  color: #ffffff;
+}
+
+/* BUTTON */
+
+.submit-btn {
+  width: 100%;
+  height: 64px;
+
+  margin-top: 34px;
+
+  border: none;
+  background: #ffffff;
+
+  color: #111111;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  background: #dcdcdc;
+}
+
+/* DIVIDER */
+
+.divider {
+  margin: 42px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #1f1f1f;
+}
+
+.divider p {
+  margin: 0;
+
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5f5f5f;
+  font-weight: 700;
+}
+
+/* SOCIALS */
+
+.social-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-btn {
+  flex: 1;
+  height: 58px;
+
+  border: 1px solid #232323;
+  background: #121212;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.social-btn:hover {
+  border-color: #404040;
+  background: #161616;
+}
+
+.social-btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* FOOTER */
+
+.panel-footer {
+  margin-top: 42px;
+
+  text-align: center;
+  font-size: 14px;
+  color: #707070;
+}
+
+.panel-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 1180px) {
+
+  .visual-title {
+    font-size: 70px;
+    letter-spacing: -4px;
+  }
+
+  .form-title {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+
+  html,
+  body {
+    overflow: auto;
+  }
+
+  .auth-page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .visual-panel {
+    width: 100%;
+    min-height: 72vh;
+  }
+
+  .form-panel {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .visual-content {
+    left: 34px;
+    right: 34px;
+    bottom: 90px;
+  }
+
+  .visual-footer {
+    left: 34px;
+    right: 34px;
+  }
+
+  .visual-title {
+    font-size: 58px;
+    line-height: 0.94;
+  }
+
+  .form-wrapper {
+    max-width: 620px;
+    padding: 70px 34px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .visual-panel {
+    min-height: 66vh;
+  }
+
+  .visual-top {
+    padding: 26px 22px;
+  }
+
+  .visual-content {
+    left: 22px;
+    right: 22px;
+    bottom: 90px;
+  }
+
+  .visual-footer {
+    left: 22px;
+    right: 22px;
+    bottom: 26px;
+  }
+
+  .editorial-tag {
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+  }
+
+  .visual-title {
+    font-size: 42px;
+    line-height: 0.98;
+    letter-spacing: -2px;
+  }
+
+  .visual-text {
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .status-right,
+  .footer-meta {
+    display: none;
+  }
+
+  .progress-line {
+    width: 42px;
+  }
+
+  .form-wrapper {
+    padding: 54px 22px;
+  }
+
+  .logo {
+    width: 155px;
+  }
+
+  .form-eyebrow {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .form-title {
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .form-subtitle {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 22px;
+  }
+
+  .field-group input {
+    height: 58px;
+    font-size: 15px;
+  }
+
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .submit-btn {
+    height: 60px;
+  }
+}
+
+
+/* =========================================
+   SPA LOGIC (CONTROL DE VISTAS DE AUTENTICACIN)
+========================================= */
+
+/* 1. Ocultar todas las tarjetas (formularios) por defecto */
+.auth-card {
+  display: none;
+}
+
+/* 2. Mostrar SOLO la tarjeta que el JS marque como 'active' */
+.auth-card.active {
+  display: block;
+  /* Animacin suave para que la entrada se vea profesional */
+  animation: fadeSlideIn 0.4s ease forwards;
+}
+
+/* 3. Animacin de entrada (Aparece y sube ligeramente) */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   AJUSTES EXTRA PARA LAS NUEVAS VISTAS
+========================================= */
+
+/* Estilos especficos para la vista de OTP (Check Email) */
+.otp-header-visual {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.otp-input-wrapper input {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Estilos para el botn de logout en el Dashboard */
+.social-btn-logout {
+  justify-content: center;
+  width: auto;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+
+
+
+.social-btn-logout:hover {
+  background: rgba(255,68,68,0.2);
+  border-color: #ff4444;
+  color: #ff4444;
+}
+
+
+
+/* =========================================
+   SPA LOGIC (SLO AADE ESTO AL FINAL DE TU CSS ORIGINAL)
+========================================= */
+
+.auth-card {
+  display: none;
+}
+
+.auth-card.active {
+  display: block;
+  animation: fadeSlideIn 0.4s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.otp-header-visual { font-size: 3rem; margin-bottom: 1rem; }
+.otp-input-wrapper input { text-align: center; letter-spacing: 0.5rem; font-size: 1.2rem; font-weight: 700; }
+.social-btn-logout { justify-content: center; width: auto; margin: 0 auto; background: rgba(255,255,255,0.05); color: white; }
+.social-btn-logout:hover { background: rgba(255,68,68,0.2); border-color: #ff4444; color: #ff4444; }

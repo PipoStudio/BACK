@@ -1,0 +1,39 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Entrada principal del juego (SPA)
+[[redirects]]
+  from = "/juego"
+  to = "/Game/keepYourSheep/build/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/juego/"
+  to = "/Game/keepYourSheep/build/index.html"
+  status = 200
+
+# Assets del juego (NO poner force=true aquí para no romper Phaser)
+[[redirects]]
+  from = "/juego/assets/*"
+  to = "/Game/keepYourSheep/build/assets/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/juego/dist/*"
+  to = "/Game/keepYourSheep/build/dist/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/juego/css/*"
+  to = "/Game/keepYourSheep/build/css/:splat"
+  status = 200
+
+# Service worker para el juego (recomendado para PWA)
+[[redirects]]
+  from = "/juego/service-worker.js"
+  to = "/Game/keepYourSheep/build/service-worker.js"
+  status = 200

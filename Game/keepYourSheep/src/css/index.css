@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('press-start-2p-v6.woff2') format('woff2'),
+       url('press-start-2p-v6.woff') format('woff'),
+       url('press-start-2p-v6.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.game-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+    padding: 20px;
+    height: 100vh; /* Asegura que ocupe el alto de la ventana */
+    box-sizing: border-box;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sidebar-info {
+    background: #0a0a0a;
+    border: 1px solid #222;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P', monospace; /* Manteniendo cohesin con la fuente del juego */
+}
+
+/* Estilos del botn de regreso */
+.btn-return {
+    margin-top: auto; /* Empuja el botn hacia la parte inferior del aside */
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: #00ffcc;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #00ffcc;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.btn-return:hover {
+    background: #00ffcc;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+}

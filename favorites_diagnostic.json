@@ -1,0 +1,1406 @@
+{
+  "meta": {
+    "repo_root": "C:\\Users\\Douglas Osorio 666\\Pictures\\PUNTO MAL\\Geekwave",
+    "scanned_at": "2026-06-01T16:43:16.153320Z",
+    "js_files_count": 19
+  },
+  "summary": {
+    "files_scanned": 19,
+    "files_with_setitem": 0,
+    "files_with_dispatch_favorites": 0,
+    "files_with_listener_favoritesUpdated": 0,
+    "files_with_listener_storage_for_favs": 0,
+    "updateFavoritesBadge_defs": 3,
+    "renderFavorites_defs": 3,
+    "inconsistencies": [],
+    "class_usage": {
+      "active": [
+        "js\\info.js",
+        "js\\index.js",
+        "js\\navbar-global.backup.20260601_072953.js",
+        "js\\navbar-global.backup.js",
+        "js\\login.js",
+        "js\\pago.js",
+        "js\\checkout.js",
+        "js\\navbar-global.js",
+        "js\\soporte.js"
+      ],
+      "revealed": [
+        "js\\contacto.js"
+      ],
+      "loading": [
+        "js\\pago.js",
+        "js\\contacto.js"
+      ],
+      "success": [
+        "js\\contacto.js"
+      ],
+      "visible": [
+        "js\\contacto.js"
+      ],
+      "btn-disabled": [
+        "js\\navbar-global.backup.js",
+        "js\\navbar-global.js",
+        "js\\geekwave-main.js",
+        "js\\navbar-global.backup.20260601_072953.js"
+      ],
+      "dashboard-mode": [
+        "js\\login.js"
+      ],
+      "hidden": [
+        "js\\modal.js",
+        "js\\navbar-global.js",
+        "js\\navbar-global.backup.js",
+        "js\\navbar-global.backup.20260601_072953.js"
+      ],
+      "minimized": [
+        "js\\modal.js"
+      ],
+      "show": [
+        "js\\navbar-global.backup.js",
+        "js\\pago.js",
+        "js\\navbar-global.js",
+        "js\\navbar-global.backup.20260601_072953.js"
+      ],
+      "highlight": [
+        "js\\navbar-global.backup.js",
+        "js\\navbar-global.js",
+        "js\\navbar-global.backup.20260601_072953.js"
+      ],
+      "selected": [
+        "js\\navbar-global.backup.js",
+        "js\\navbar-global.js",
+        "js\\navbar-global.backup.20260601_072953.js"
+      ],
+      "valid": [
+        "js\\pago.js"
+      ],
+      "invalid": [
+        "js\\pago.js"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "js\\build.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": []
+      }
+    },
+    {
+      "path": "js\\checkout.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": [
+          {
+            "line": 15,
+            "class": "active",
+            "snippet": "overlay.classList.add('active');"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\component-loader.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [
+          {
+            "line": 75,
+            "snippet": "document.dispatchEvent(event);",
+            "context": "            bubbles: true,\n            cancelable: true \n        });\n        document.dispatchEvent(event);\n        console.log(` Evento disparado: ${eventName}`);\n    }\n"
+          }
+        ],
+        "dispatch_window": [],
+        "dispatch_document": [
+          {
+            "line": 75,
+            "snippet": "document.dispatchEvent(event);"
+          }
+        ],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": []
+      }
+    },
+    {
+      "path": "js\\contacto.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": [
+          {
+            "line": 93,
+            "class": "revealed",
+            "snippet": "entry.target.classList.add(\"revealed\");"
+          },
+          {
+            "line": 180,
+            "class": "loading",
+            "snippet": "submitBtn.classList.add(\"loading\");"
+          },
+          {
+            "line": 195,
+            "class": "success",
+            "snippet": "submitBtn.classList.add(\"success\");"
+          },
+          {
+            "line": 267,
+            "class": "visible",
+            "snippet": "notification.classList.add(\"visible\");"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\geekwave-main.js",
+      "exists": true,
+      "issues": [
+        {
+          "severity": "low",
+          "type": "storage_listener_without_key_check",
+          "message": "Listener 'storage' presente pero no parece verificar e.key === 'geekwave_favorites'.",
+          "file": "js\\geekwave-main.js",
+          "line": 73,
+          "context": "    });\n}\n\n// --- 4. Inicializacin (Escucha al cargador de componentes) ---\ndocument.addEventListener('navbarLoaded', () => {\n    console.log(\" Geekwave Main: Navbar listo, sincronizando...\");\n    syncGeekwaveCart();\n    bindCartEvents();\n});\n\nwindow.addEventListener('storage', syncGeekwaveCart);\n\n// --- 5. Lgica de Juegos ---\nasync function registrarPartidaDiaria() {\n    const { data: { user } } = await supabase.auth.getUser();\n    if (!user) return;\n    const { data, error } = await supabase.rpc('registrar_partida_y_actualizar_racha', { user_id_param: user.id });\n    if (!error && data && data[0].enviar_correo_tipo !== 'NINGUNO') {\n        notificarAEmail(user.email, data[0].enviar_correo_tipo);\n    }\n}"
+        }
+      ],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [
+          {
+            "line": 73,
+            "snippet": "window.addEventListener('storage', syncGeekwaveCart);",
+            "context": "    });\n}\n\n// --- 4. Inicializacin (Escucha al cargador de componentes) ---\ndocument.addEventListener('navbarLoaded', () => {\n    console.log(\" Geekwave Main: Navbar listo, sincronizando...\");\n    syncGeekwaveCart();\n    bindCartEvents();\n});\n\nwindow.addEventListener('storage', syncGeekwaveCart);\n\n// --- 5. Lgica de Juegos ---\nasync function registrarPartidaDiaria() {\n    const { data: { user } } = await supabase.auth.getUser();\n    if (!user) return;\n    const { data, error } = await supabase.rpc('registrar_partida_y_actualizar_racha', { user_id_param: user.id });\n    if (!error && data && data[0].enviar_correo_tipo !== 'NINGUNO') {\n        notificarAEmail(user.email, data[0].enviar_correo_tipo);\n    }\n}"
+          }
+        ],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": [
+          {
+            "line": 32,
+            "class": "btn-disabled",
+            "snippet": "cart.length === 0 ? saveBtn.classList.add('btn-disabled') : saveBtn.classList.remove('btn-disabled');"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\index.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": [
+          {
+            "line": 28,
+            "class": "active",
+            "snippet": "videoSlides[currentSlide].classList.add('active');"
+          },
+          {
+            "line": 29,
+            "class": "active",
+            "snippet": "bars[currentSlide].classList.add('active');"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\info.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [
+          {
+            "line": 356,
+            "snippet": "\"json/inventario.json\""
+          },
+          {
+            "line": 359,
+            "snippet": "const inventario ="
+          },
+          {
+            "line": 363,
+            "snippet": "inventario.find("
+          }
+        ],
+        "classnames_found": [
+          {
+            "line": 135,
+            "class": "active",
+            "snippet": "thumb.classList.add(\"active\");"
+          },
+          {
+            "line": 286,
+            "class": "active",
+            "snippet": "btn.classList.add(\"active\");"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\login.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": [
+          {
+            "line": 50,
+            "class": "active",
+            "snippet": "views[viewName].classList.add('active');"
+          },
+          {
+            "line": 52,
+            "class": "dashboard-mode",
+            "snippet": "mainContainer.classList.add('dashboard-mode');"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\modal.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": [
+          {
+            "line": 79,
+            "class": "hidden",
+            "snippet": "guestContent.classList.add(\"hidden\");"
+          },
+          {
+            "line": 85,
+            "class": "hidden",
+            "snippet": "loggedContent.classList.add(\"hidden\");"
+          },
+          {
+            "line": 122,
+            "class": "minimized",
+            "snippet": "modal.classList.add(\"minimized\");"
+          },
+          {
+            "line": 178,
+            "class": "hidden",
+            "snippet": "overlay.classList.add(\"hidden\");"
+          },
+          {
+            "line": 192,
+            "class": "hidden",
+            "snippet": "overlay.classList.add(\"hidden\");"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\navbar-global.backup.20260601_072953.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [
+          {
+            "line": 133,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "    }\n    // A linha mgica: salva E avisa ao pago.js que algo mudou\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated')); \n    \n    updateCartBadge();\n    if (cartDropdown && cartDropdown.classList.contains('show')) renderCart();"
+          },
+          {
+            "line": 147,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "        if (item.qty < 1) item.qty = 1;\n    }\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated'));\n    updateCartBadge();\n    renderCart();\n};"
+          },
+          {
+            "line": 156,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "    let cart = JSON.parse(localStorage.getItem('geekwave_cart')) || [];\n    cart = cart.filter(i => parseInt(i.id) !== parseInt(id));\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated'));\n    updateCartBadge();\n    renderCart();\n    showToast();"
+          },
+          {
+            "line": 482,
+            "snippet": "searchInput.dispatchEvent(new Event('input'));",
+            "context": "            if (filterPanel) filterPanel.classList.remove('show');\n            filterBtn.classList.remove('active');\n            if (searchInput && searchInput.value.trim() !== '') {\n                searchInput.dispatchEvent(new Event('input'));\n            } else {\n                showRecentSearches();\n            }"
+          },
+          {
+            "line": 544,
+            "snippet": "searchInput.dispatchEvent(new Event('input'));",
+            "context": "                } else {\n                    if (searchInput) {\n                        searchInput.value = term;\n                        searchInput.dispatchEvent(new Event('input'));\n                    }\n                }\n            });"
+          }
+        ],
+        "dispatch_window": [
+          {
+            "line": 133,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          },
+          {
+            "line": 147,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          },
+          {
+            "line": 156,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          }
+        ],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [
+          {
+            "line": 755,
+            "context": "            btnMenuProductos.classList.add('active');\n        }\n    }\n\n    \n\n    // ==========================================\n    // FAVORITOS\n    // ==========================================\n\n    function updateFavoritesBadge() {\n\n        const favorites =\n            JSON.parse(\n                localStorage.getItem(\n                    \"geekwave_favorites\"\n                )\n            ) || [];\n\n        const btn =\n            document.getElementById("
+          }
+        ],
+        "renderFavorites_defs": [
+          {
+            "line": 807,
+            "context": "\n            if (badge) {\n\n                badge.classList.remove(\n                    \"show\"\n                );\n            }\n        }\n    }\n\n    function renderFavorites() {\n\n        const favoritos =\n            JSON.parse(\n                localStorage.getItem(\n                    \"geekwave_favorites\"\n                )\n            ) || [];\n\n        const container =\n            document.getElementById("
+          }
+        ],
+        "renderFavorites_calls": [
+          {
+            "line": 807,
+            "snippet": "function renderFavorites() {",
+            "context": "                    \"show\"\n                );\n            }\n        }\n    }\n\n    function renderFavorites() {\n\n        const favoritos =\n            JSON.parse(\n                localStorage.getItem(\n                    \"geekwave_favorites\"\n                )"
+          },
+          {
+            "line": 874,
+            "snippet": "renderFavorites();",
+            "context": "\n    window.addEventListener(\n        \"favoritesUpdated\",\n        () => {\n\n            updateFavoritesBadge();\n            renderFavorites();\n\n        }\n    );\n\n    updateFavoritesBadge();\n"
+          }
+        ],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [
+          {
+            "line": 43,
+            "snippet": "let inventario = [];"
+          },
+          {
+            "line": 188,
+            "snippet": "const fullItem = inventario.find(i => parseInt(i.id) === parseInt(item.id));"
+          },
+          {
+            "line": 249,
+            "snippet": "// ===== CARGA DE INVENTARIO ====="
+          },
+          {
+            "line": 250,
+            "snippet": "fetch('json/inventario.json')"
+          },
+          {
+            "line": 253,
+            "snippet": "inventario = data;"
+          },
+          {
+            "line": 254,
+            "snippet": "console.log(' Inventario cargado:', inventario.length, 'productos');"
+          },
+          {
+            "line": 256,
+            "snippet": ".catch(error => console.error(' Error cargando inventario:', error));"
+          },
+          {
+            "line": 316,
+            "snippet": "const categories = [...new Set(inventario.map(item => item.categoria))];"
+          },
+          {
+            "line": 350,
+            "snippet": "const subCats = [...new Set(inventario.filter(i => i.categoria === cat).map(i => i.subcategoria))];"
+          },
+          {
+            "line": 381,
+            "snippet": "const prods = inventario.filter(i => i.categoria === cat && i.subcategoria === sub);"
+          },
+          {
+            "line": 537,
+            "snippet": "const productoEncontrado = inventario.find(item => item.nombre === term);"
+          },
+          {
+            "line": 605,
+            "snippet": "let matches = inventario.filter(item => {"
+          },
+          {
+            "line": 824,
+            "snippet": "inventario.filter("
+          }
+        ],
+        "classnames_found": [
+          {
+            "line": 89,
+            "class": "show",
+            "snippet": "badgeC.classList.add('show');"
+          },
+          {
+            "line": 102,
+            "class": "active",
+            "snippet": "if (tooltipU) tooltipU.classList.add('active');"
+          },
+          {
+            "line": 117,
+            "class": "show",
+            "snippet": "toastMsg.classList.add('show');"
+          },
+          {
+            "line": 182,
+            "class": "btn-disabled",
+            "snippet": "saveBtn.classList.add('btn-disabled');"
+          },
+          {
+            "line": 270,
+            "class": "active",
+            "snippet": "if (productosMenu) productosMenu.classList.add('active');"
+          },
+          {
+            "line": 306,
+            "class": "highlight",
+            "snippet": "activeItem.classList.add('highlight');"
+          },
+          {
+            "line": 344,
+            "class": "selected",
+            "snippet": "if (element) element.classList.add('selected');"
+          },
+          {
+            "line": 364,
+            "class": "hidden",
+            "snippet": "if (colProd) colProd.classList.add('hidden');"
+          },
+          {
+            "line": 375,
+            "class": "selected",
+            "snippet": "if (element) element.classList.add('selected');"
+          },
+          {
+            "line": 532,
+            "class": "active",
+            "snippet": "searchResults.classList.add('active');"
+          },
+          {
+            "line": 565,
+            "class": "active",
+            "snippet": "if (searchContainer) searchContainer.classList.add('active');"
+          },
+          {
+            "line": 566,
+            "class": "hidden",
+            "snippet": "if (navLinks) navLinks.classList.add('hidden');"
+          },
+          {
+            "line": 603,
+            "class": "active",
+            "snippet": "if (searchResults) searchResults.classList.add('active');"
+          },
+          {
+            "line": 698,
+            "class": "highlight",
+            "snippet": "items[currentFocus].classList.add('highlight');"
+          },
+          {
+            "line": 737,
+            "class": "active",
+            "snippet": "link.classList.add('active');"
+          },
+          {
+            "line": 745,
+            "class": "active",
+            "snippet": "btnMenuProductos.classList.add('active');"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\navbar-global.backup.js",
+      "exists": true,
+      "issues": [
+        {
+          "severity": "low",
+          "type": "storage_listener_without_key_check",
+          "message": "Listener 'storage' presente pero no parece verificar e.key === 'geekwave_favorites'.",
+          "file": "js\\navbar-global.backup.js",
+          "line": 779,
+          "context": "    \n    // Dispara esto para la misma pestaa\n    window.dispatchEvent(new CustomEvent('cartUpdated')); \n}\n\n// Y agrega esto en ambos archivos:\nwindow.addEventListener('cartUpdated', () => {\n    if (typeof renderCheckoutCart === 'function') renderCheckoutCart();\n    if (typeof updateCartBadge === 'function') updateCartBadge();\n});\nwindow.addEventListener('storage', (e) => {\n    if (e.key === 'geekwave_cart') {\n        if (typeof updateCartBadge === 'function') updateCartBadge();\n        if (typeof renderCart === 'function') renderCart();\n    }\n});\n\n\nfunction updateFavoritesBadge() {\n\n    const favorites ="
+        }
+      ],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [
+          {
+            "line": 133,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "    }\n    // A linha mgica: salva E avisa ao pago.js que algo mudou\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated')); \n    \n    updateCartBadge();\n    if (cartDropdown && cartDropdown.classList.contains('show')) renderCart();"
+          },
+          {
+            "line": 147,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "        if (item.qty < 1) item.qty = 1;\n    }\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated'));\n    updateCartBadge();\n    renderCart();\n};"
+          },
+          {
+            "line": 156,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "    let cart = JSON.parse(localStorage.getItem('geekwave_cart')) || [];\n    cart = cart.filter(i => parseInt(i.id) !== parseInt(id));\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated'));\n    updateCartBadge();\n    renderCart();\n    showToast();"
+          },
+          {
+            "line": 482,
+            "snippet": "searchInput.dispatchEvent(new Event('input'));",
+            "context": "            if (filterPanel) filterPanel.classList.remove('show');\n            filterBtn.classList.remove('active');\n            if (searchInput && searchInput.value.trim() !== '') {\n                searchInput.dispatchEvent(new Event('input'));\n            } else {\n                showRecentSearches();\n            }"
+          },
+          {
+            "line": 544,
+            "snippet": "searchInput.dispatchEvent(new Event('input'));",
+            "context": "                } else {\n                    if (searchInput) {\n                        searchInput.value = term;\n                        searchInput.dispatchEvent(new Event('input'));\n                    }\n                }\n            });"
+          },
+          {
+            "line": 756,
+            "snippet": "window.dispatchEvent(new CustomEvent('cartUpdated', {",
+            "context": "    localStorage.setItem(\"geekwave_cart\", JSON.stringify(cart));\n    \n    // Lanzar evento global para que cualquier componente sepa que el carrito cambi\n    window.dispatchEvent(new CustomEvent('cartUpdated', { \n        detail: { cart: cart } \n    }));\n}"
+          },
+          {
+            "line": 771,
+            "snippet": "window.dispatchEvent(new CustomEvent('cartUpdated'));",
+            "context": "    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    \n    // Dispara esto para la misma pestaa\n    window.dispatchEvent(new CustomEvent('cartUpdated')); \n}\n\n// Y agrega esto en ambos archivos:"
+          }
+        ],
+        "dispatch_window": [
+          {
+            "line": 133,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          },
+          {
+            "line": 147,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          },
+          {
+            "line": 156,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          },
+          {
+            "line": 756,
+            "snippet": "window.dispatchEvent(new CustomEvent('cartUpdated', {"
+          },
+          {
+            "line": 771,
+            "snippet": "window.dispatchEvent(new CustomEvent('cartUpdated'));"
+          }
+        ],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [
+          {
+            "line": 779,
+            "snippet": "window.addEventListener('storage', (e) => {",
+            "context": "    \n    // Dispara esto para la misma pestaa\n    window.dispatchEvent(new CustomEvent('cartUpdated')); \n}\n\n// Y agrega esto en ambos archivos:\nwindow.addEventListener('cartUpdated', () => {\n    if (typeof renderCheckoutCart === 'function') renderCheckoutCart();\n    if (typeof updateCartBadge === 'function') updateCartBadge();\n});\nwindow.addEventListener('storage', (e) => {\n    if (e.key === 'geekwave_cart') {\n        if (typeof updateCartBadge === 'function') updateCartBadge();\n        if (typeof renderCart === 'function') renderCart();\n    }\n});\n\n\nfunction updateFavoritesBadge() {\n\n    const favorites ="
+          }
+        ],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [
+          {
+            "line": 787,
+            "context": "    if (typeof updateCartBadge === 'function') updateCartBadge();\n});\nwindow.addEventListener('storage', (e) => {\n    if (e.key === 'geekwave_cart') {\n        if (typeof updateCartBadge === 'function') updateCartBadge();\n        if (typeof renderCart === 'function') renderCart();\n    }\n});\n\n\nfunction updateFavoritesBadge() {\n\n    const favorites =\n        JSON.parse(\n            localStorage.getItem(\n                \"geekwave_favorites\"\n            )\n        ) || [];\n\n    const btn =\n        document.getElementById("
+          }
+        ],
+        "renderFavorites_defs": [
+          {
+            "line": 850,
+            "context": "    \"favoritesUpdated\",\n    () => {\n\n        updateFavoritesBadge();\n\n        renderFavorites();\n\n    }\n);\n\nfunction renderFavorites() {\n\n    const favoritos =\n        JSON.parse(\n            localStorage.getItem(\n                \"geekwave_favorites\"\n            )\n        ) || [];\n\n    const container =\n        document.getElementById("
+          }
+        ],
+        "renderFavorites_calls": [
+          {
+            "line": 845,
+            "snippet": "renderFavorites();",
+            "context": "window.addEventListener(\n    \"favoritesUpdated\",\n    () => {\n\n        updateFavoritesBadge();\n\n        renderFavorites();\n\n    }\n);\n\nfunction renderFavorites() {\n"
+          },
+          {
+            "line": 850,
+            "snippet": "function renderFavorites() {",
+            "context": "\n        renderFavorites();\n\n    }\n);\n\nfunction renderFavorites() {\n\n    const favoritos =\n        JSON.parse(\n            localStorage.getItem(\n                \"geekwave_favorites\"\n            )"
+          }
+        ],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [
+          {
+            "line": 43,
+            "snippet": "let inventario = [];"
+          },
+          {
+            "line": 188,
+            "snippet": "const fullItem = inventario.find(i => parseInt(i.id) === parseInt(item.id));"
+          },
+          {
+            "line": 249,
+            "snippet": "// ===== CARGA DE INVENTARIO ====="
+          },
+          {
+            "line": 250,
+            "snippet": "fetch('json/inventario.json')"
+          },
+          {
+            "line": 253,
+            "snippet": "inventario = data;"
+          },
+          {
+            "line": 254,
+            "snippet": "console.log(' Inventario cargado:', inventario.length, 'productos');"
+          },
+          {
+            "line": 256,
+            "snippet": ".catch(error => console.error(' Error cargando inventario:', error));"
+          },
+          {
+            "line": 316,
+            "snippet": "const categories = [...new Set(inventario.map(item => item.categoria))];"
+          },
+          {
+            "line": 350,
+            "snippet": "const subCats = [...new Set(inventario.filter(i => i.categoria === cat).map(i => i.subcategoria))];"
+          },
+          {
+            "line": 381,
+            "snippet": "const prods = inventario.filter(i => i.categoria === cat && i.subcategoria === sub);"
+          },
+          {
+            "line": 537,
+            "snippet": "const productoEncontrado = inventario.find(item => item.nombre === term);"
+          },
+          {
+            "line": 605,
+            "snippet": "let matches = inventario.filter(item => {"
+          },
+          {
+            "line": 867,
+            "snippet": "inventario.filter("
+          }
+        ],
+        "classnames_found": [
+          {
+            "line": 89,
+            "class": "show",
+            "snippet": "badgeC.classList.add('show');"
+          },
+          {
+            "line": 102,
+            "class": "active",
+            "snippet": "if (tooltipU) tooltipU.classList.add('active');"
+          },
+          {
+            "line": 117,
+            "class": "show",
+            "snippet": "toastMsg.classList.add('show');"
+          },
+          {
+            "line": 182,
+            "class": "btn-disabled",
+            "snippet": "saveBtn.classList.add('btn-disabled');"
+          },
+          {
+            "line": 270,
+            "class": "active",
+            "snippet": "if (productosMenu) productosMenu.classList.add('active');"
+          },
+          {
+            "line": 306,
+            "class": "highlight",
+            "snippet": "activeItem.classList.add('highlight');"
+          },
+          {
+            "line": 344,
+            "class": "selected",
+            "snippet": "if (element) element.classList.add('selected');"
+          },
+          {
+            "line": 364,
+            "class": "hidden",
+            "snippet": "if (colProd) colProd.classList.add('hidden');"
+          },
+          {
+            "line": 375,
+            "class": "selected",
+            "snippet": "if (element) element.classList.add('selected');"
+          },
+          {
+            "line": 532,
+            "class": "active",
+            "snippet": "searchResults.classList.add('active');"
+          },
+          {
+            "line": 565,
+            "class": "active",
+            "snippet": "if (searchContainer) searchContainer.classList.add('active');"
+          },
+          {
+            "line": 566,
+            "class": "hidden",
+            "snippet": "if (navLinks) navLinks.classList.add('hidden');"
+          },
+          {
+            "line": 603,
+            "class": "active",
+            "snippet": "if (searchResults) searchResults.classList.add('active');"
+          },
+          {
+            "line": 698,
+            "class": "highlight",
+            "snippet": "items[currentFocus].classList.add('highlight');"
+          },
+          {
+            "line": 737,
+            "class": "active",
+            "snippet": "link.classList.add('active');"
+          },
+          {
+            "line": 745,
+            "class": "active",
+            "snippet": "btnMenuProductos.classList.add('active');"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\navbar-global.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [
+          {
+            "line": 133,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "    }\n    // A linha mgica: salva E avisa ao pago.js que algo mudou\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated')); \n    \n    updateCartBadge();\n    if (cartDropdown && cartDropdown.classList.contains('show')) renderCart();"
+          },
+          {
+            "line": 147,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "        if (item.qty < 1) item.qty = 1;\n    }\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated'));\n    updateCartBadge();\n    renderCart();\n};"
+          },
+          {
+            "line": 156,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));",
+            "context": "    let cart = JSON.parse(localStorage.getItem('geekwave_cart')) || [];\n    cart = cart.filter(i => parseInt(i.id) !== parseInt(id));\n    localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n    window.dispatchEvent(new Event('cartUpdated'));\n    updateCartBadge();\n    renderCart();\n    showToast();"
+          },
+          {
+            "line": 482,
+            "snippet": "searchInput.dispatchEvent(new Event('input'));",
+            "context": "            if (filterPanel) filterPanel.classList.remove('show');\n            filterBtn.classList.remove('active');\n            if (searchInput && searchInput.value.trim() !== '') {\n                searchInput.dispatchEvent(new Event('input'));\n            } else {\n                showRecentSearches();\n            }"
+          },
+          {
+            "line": 544,
+            "snippet": "searchInput.dispatchEvent(new Event('input'));",
+            "context": "                } else {\n                    if (searchInput) {\n                        searchInput.value = term;\n                        searchInput.dispatchEvent(new Event('input'));\n                    }\n                }\n            });"
+          }
+        ],
+        "dispatch_window": [
+          {
+            "line": 133,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          },
+          {
+            "line": 147,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          },
+          {
+            "line": 156,
+            "snippet": "window.dispatchEvent(new Event('cartUpdated'));"
+          }
+        ],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [
+          {
+            "line": 771,
+            "context": "            btnMenuProductos.classList.add('active');\n        }\n    }\n\n    \n\n    // ==========================================\n    // FAVORITOS\n    // ==========================================\n\n    function updateFavoritesBadge() {\n\n        const favorites =\n            JSON.parse(\n                localStorage.getItem(\n                    \"geekwave_favorites\"\n                )\n            ) || [];\n\n        const btn =\n            document.getElementById("
+          }
+        ],
+        "renderFavorites_defs": [
+          {
+            "line": 823,
+            "context": "\n            if (badge) {\n\n                badge.classList.remove(\n                    \"show\"\n                );\n            }\n        }\n    }\n\n    function renderFavorites() {\n\n        const favoritos =\n            JSON.parse(\n                localStorage.getItem(\n                    \"geekwave_favorites\"\n                )\n            ) || [];\n\n        const container =\n            document.getElementById("
+          }
+        ],
+        "renderFavorites_calls": [
+          {
+            "line": 823,
+            "snippet": "function renderFavorites() {",
+            "context": "                    \"show\"\n                );\n            }\n        }\n    }\n\n    function renderFavorites() {\n\n        const favoritos =\n            JSON.parse(\n                localStorage.getItem(\n                    \"geekwave_favorites\"\n                )"
+          },
+          {
+            "line": 890,
+            "snippet": "renderFavorites();",
+            "context": "\n    window.addEventListener(\n        \"favoritesUpdated\",\n        () => {\n\n            updateFavoritesBadge();\n            renderFavorites();\n\n        }\n    );\n\n    updateFavoritesBadge();\n"
+          }
+        ],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [
+          {
+            "line": 43,
+            "snippet": "let inventario = [];"
+          },
+          {
+            "line": 188,
+            "snippet": "const fullItem = inventario.find(i => parseInt(i.id) === parseInt(item.id));"
+          },
+          {
+            "line": 249,
+            "snippet": "// ===== CARGA DE INVENTARIO ====="
+          },
+          {
+            "line": 250,
+            "snippet": "fetch('json/inventario.json')"
+          },
+          {
+            "line": 253,
+            "snippet": "inventario = data;"
+          },
+          {
+            "line": 254,
+            "snippet": "console.log(' Inventario cargado:', inventario.length, 'productos');"
+          },
+          {
+            "line": 256,
+            "snippet": ".catch(error => console.error(' Error cargando inventario:', error));"
+          },
+          {
+            "line": 316,
+            "snippet": "const categories = [...new Set(inventario.map(item => item.categoria))];"
+          },
+          {
+            "line": 350,
+            "snippet": "const subCats = [...new Set(inventario.filter(i => i.categoria === cat).map(i => i.subcategoria))];"
+          },
+          {
+            "line": 381,
+            "snippet": "const prods = inventario.filter(i => i.categoria === cat && i.subcategoria === sub);"
+          },
+          {
+            "line": 537,
+            "snippet": "const productoEncontrado = inventario.find(item => item.nombre === term);"
+          },
+          {
+            "line": 605,
+            "snippet": "let matches = inventario.filter(item => {"
+          },
+          {
+            "line": 840,
+            "snippet": "inventario.filter("
+          }
+        ],
+        "classnames_found": [
+          {
+            "line": 89,
+            "class": "show",
+            "snippet": "badgeC.classList.add('show');"
+          },
+          {
+            "line": 102,
+            "class": "active",
+            "snippet": "if (tooltipU) tooltipU.classList.add('active');"
+          },
+          {
+            "line": 117,
+            "class": "show",
+            "snippet": "toastMsg.classList.add('show');"
+          },
+          {
+            "line": 182,
+            "class": "btn-disabled",
+            "snippet": "saveBtn.classList.add('btn-disabled');"
+          },
+          {
+            "line": 270,
+            "class": "active",
+            "snippet": "if (productosMenu) productosMenu.classList.add('active');"
+          },
+          {
+            "line": 306,
+            "class": "highlight",
+            "snippet": "activeItem.classList.add('highlight');"
+          },
+          {
+            "line": 344,
+            "class": "selected",
+            "snippet": "if (element) element.classList.add('selected');"
+          },
+          {
+            "line": 364,
+            "class": "hidden",
+            "snippet": "if (colProd) colProd.classList.add('hidden');"
+          },
+          {
+            "line": 375,
+            "class": "selected",
+            "snippet": "if (element) element.classList.add('selected');"
+          },
+          {
+            "line": 532,
+            "class": "active",
+            "snippet": "searchResults.classList.add('active');"
+          },
+          {
+            "line": 565,
+            "class": "active",
+            "snippet": "if (searchContainer) searchContainer.classList.add('active');"
+          },
+          {
+            "line": 566,
+            "class": "hidden",
+            "snippet": "if (navLinks) navLinks.classList.add('hidden');"
+          },
+          {
+            "line": 603,
+            "class": "active",
+            "snippet": "if (searchResults) searchResults.classList.add('active');"
+          },
+          {
+            "line": 714,
+            "class": "highlight",
+            "snippet": "items[currentFocus].classList.add('highlight');"
+          },
+          {
+            "line": 753,
+            "class": "active",
+            "snippet": "link.classList.add('active');"
+          },
+          {
+            "line": 761,
+            "class": "active",
+            "snippet": "btnMenuProductos.classList.add('active');"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\ofertas.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": []
+      }
+    },
+    {
+      "path": "js\\pago.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [
+          {
+            "line": 55,
+            "snippet": "window.dispatchEvent(",
+            "context": "            // EVENTO GLOBAL\n            // =============================================\n\n            window.dispatchEvent(\n                new Event(\"cartUpdated\")\n            );\n"
+          }
+        ],
+        "dispatch_window": [
+          {
+            "line": 55,
+            "snippet": "window.dispatchEvent("
+          }
+        ],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [
+          {
+            "line": 107,
+            "snippet": "let inventario = [];"
+          },
+          {
+            "line": 228,
+            "snippet": "// INVENTARIO"
+          },
+          {
+            "line": 237,
+            "snippet": "\"./json/inventario.json\""
+          },
+          {
+            "line": 243,
+            "snippet": "\"No se pudo cargar inventario\""
+          },
+          {
+            "line": 248,
+            "snippet": "inventario ="
+          },
+          {
+            "line": 253,
+            "snippet": "\"[Checkout] Inventario:\","
+          },
+          {
+            "line": 255,
+            "snippet": "inventario.length"
+          },
+          {
+            "line": 264,
+            "snippet": "\"[Checkout] Error inventario:\","
+          },
+          {
+            "line": 522,
+            "snippet": "inventario.find("
+          }
+        ],
+        "classnames_found": [
+          {
+            "line": 361,
+            "class": "active",
+            "snippet": "target.classList.add(\"active\");"
+          },
+          {
+            "line": 863,
+            "class": "valid",
+            "snippet": "field.classList.add(\"valid\");"
+          },
+          {
+            "line": 873,
+            "class": "invalid",
+            "snippet": "field.classList.add(\"invalid\");"
+          },
+          {
+            "line": 1207,
+            "class": "loading",
+            "snippet": "button.classList.add(\"loading\");"
+          },
+          {
+            "line": 1359,
+            "class": "show",
+            "snippet": "toast.classList.add(\"show\");"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\productos.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [
+          {
+            "line": 3,
+            "snippet": "* Genera automáticamente el catálogo desde json/inventario.json"
+          },
+          {
+            "line": 17,
+            "snippet": "console.log(\"Cargando inventario...\");"
+          },
+          {
+            "line": 19,
+            "snippet": "const response = await fetch(\"./json/inventario.json\");"
+          },
+          {
+            "line": 25,
+            "snippet": "const inventario = await response.json();"
+          },
+          {
+            "line": 26,
+            "snippet": "window.inventarioGlobal = inventario;"
+          },
+          {
+            "line": 29,
+            "snippet": "`Inventario cargado: ${inventario.length} productos`"
+          },
+          {
+            "line": 32,
+            "snippet": "generarCatalogo(inventario);"
+          },
+          {
+            "line": 37,
+            "snippet": "\"Error cargando inventario:\","
+          }
+        ],
+        "classnames_found": []
+      }
+    },
+    {
+      "path": "js\\script.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [
+          {
+            "line": 5,
+            "snippet": "window.INVENTARIO = [];"
+          },
+          {
+            "line": 7,
+            "snippet": "// Funcin nica para cargar inventario"
+          },
+          {
+            "line": 10,
+            "snippet": "const res = await fetch('json/inventario.json');"
+          },
+          {
+            "line": 11,
+            "snippet": "window.INVENTARIO = await res.json();"
+          },
+          {
+            "line": 12,
+            "snippet": "console.log(\"Inventario cargado\", window.INVENTARIO);"
+          },
+          {
+            "line": 14,
+            "snippet": "console.error(\"Error cargando inventario:\", error);"
+          },
+          {
+            "line": 27,
+            "snippet": "const resultados = window.INVENTARIO.filter(p =>"
+          },
+          {
+            "line": 40,
+            "snippet": "console.log(\" Catlogo:\", window.INVENTARIO);"
+          }
+        ],
+        "classnames_found": []
+      }
+    },
+    {
+      "path": "js\\security-utils.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": []
+      }
+    },
+    {
+      "path": "js\\soporte.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [],
+        "dispatch_window": [],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": [
+          {
+            "line": 133,
+            "class": "active",
+            "snippet": "currentItem.classList.add(\"active\");"
+          }
+        ]
+      }
+    },
+    {
+      "path": "js\\state.js",
+      "exists": true,
+      "issues": [],
+      "occurrences": {
+        "setitem": [],
+        "dispatch_favorites": [],
+        "dispatch_any": [
+          {
+            "line": 10,
+            "snippet": "window.dispatchEvent(new CustomEvent('geekwave:cartUpdated', { detail: cart }));",
+            "context": "    saveCart(cart) {\n        localStorage.setItem('geekwave_cart', JSON.stringify(cart));\n        // Disparamos un evento global para que la UI se entere del cambio\n        window.dispatchEvent(new CustomEvent('geekwave:cartUpdated', { detail: cart }));\n    },\n\n    addToCart(product) {"
+          }
+        ],
+        "dispatch_window": [
+          {
+            "line": 10,
+            "snippet": "window.dispatchEvent(new CustomEvent('geekwave:cartUpdated', { detail: cart }));"
+          }
+        ],
+        "dispatch_document": [],
+        "listener_favoritesUpdated": [],
+        "listener_storage": [],
+        "storage_key_checks": [],
+        "updateFavoritesBadge_defs": [],
+        "renderFavorites_defs": [],
+        "renderFavorites_calls": [],
+        "favoritesContainer_refs": [],
+        "favoritesBtn_refs": [],
+        "inventario_refs": [],
+        "classnames_found": []
+      }
+    }
+  ]
+}

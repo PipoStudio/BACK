@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>   
+    <link rel="icon" type="image/x-icon" href="components/icono.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekwave | Pago</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Lenis -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
+    <!-- Global -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Checkout -->
+    <link rel="stylesheet" href="css/pago.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="nav-placeholder"></div>
+
+    <!-- ================================================= -->
+    <!-- CHECKOUT -->
+    <!-- ================================================= -->
+
+    <main class="checkout-page">
+
+        <!-- HERO -->
+        <section class="checkout-hero">
+
+            <div class="checkout-hero-content">
+
+                <span class="checkout-mini-tag">
+                    CHECKOUT SEGURO
+                </span>
+
+                <h1>
+                    Finaliza tu pedido
+                </h1>
+
+                <p>
+                    Tus productos están casi en camino.<br> 
+                    Completa tu información y continua hacia el pago seguro.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ================================================= -->
+        <!-- GRID -->
+        <!-- ================================================= -->
+
+        <section class="checkout-container">
+
+            <div class="checkout-grid">
+
+                <!-- ========================================= -->
+                <!-- LEFT -->
+                <!-- ========================================= -->
+
+                <div class="checkout-left">
+
+                    <!-- STEP 1 -->
+                    <article class="checkout-step active" id="step-shipping">
+
+                        <button class="step-toggle" data-step="step-shipping">
+
+                            <div class="step-toggle-left">
+
+                                <span class="step-number">
+                                    01
+                                </span>
+
+                                <div>
+
+                                    <h2>
+                                        Información de envío
+                                    </h2>
+
+                                    <p>
+                                        Datos necesarios para realizar la entrega
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="step-content">
+
+                            <!-- GRID -->
+                            <div class="checkout-form-grid">
+
+                                <!-- NOMBRE -->
+                                <div class="checkout-field">
+
+                                    <label>
+                                        Nombre completo
+                                    </label>
+
+                                    <input 
+                                        type="text"
+                                        id="checkout-name"
+                                        class="checkout-input"
+                                        placeholder="Alex Morgan"
+                                        required
+                                    >
+
+                                </div>
+
+                                <!-- EMAIL -->
+                                <div class="checkout-field">
+
+                                    <label>
+                                        Correo electrónico
+                                    </label>
+
+                                    <input 
+                                        type="email"
+                                        id="checkout-email"
+                                        class="checkout-input"
+                                        placeholder="correo@geekwave.com"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- GRID -->
+                            <div class="checkout-form-grid compact">
+
+                                <!-- CITY -->
+                                <div class="checkout-field">
+
+                                    <label>
+                                        Ciudad
+                                    </label>
+
+                                    <input 
+                                        type="text"
+                                        id="checkout-city"
+                                        class="checkout-input"
+                                        placeholder="San Salvador"
+                                        required
+                                    >
+
+                                </div>
+
+                                <!-- PHONE -->
+                                <div class="checkout-field">
+
+                                    <label>
+                                        Teléfono
+                                    </label>
+
+                                    <input 
+                                        type="tel"
+                                        id="checkout-phone"
+                                        class="checkout-input"
+                                        placeholder="+503 0000-0000"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- ADDRESS -->
+                            <div class="checkout-field">
+
+                                <label>
+                                    Dirección exacta
+                                </label>
+
+                                <input 
+                                    type="text"
+                                    id="checkout-address"
+                                    class="checkout-input"
+                                    placeholder="Calle, avenida y referencia"
+                                    required
+                                >
+
+                            </div>
+
+                            <!-- OPTIONAL -->
+                            <div class="checkout-field">
+
+                                <label>
+                                    Referencia de entrega
+                                    <span>(Opcional)</span>
+                                </label>
+
+                                <input 
+                                    type="text"
+                                    id="checkout-reference"
+                                    class="checkout-input"
+                                    placeholder="Casa blanca, portn negro..."
+                                >
+
+                            </div>
+
+                            <!-- CONTACT -->
+                            <div class="checkout-contact-methods">
+
+                                <button 
+                                    class="contact-method active"
+                                    type="button"
+                                >
+                                    <i data-lucide="message-circle"></i>
+                                    WhatsApp
+                                </button>
+
+                                <button 
+                                    class="contact-method"
+                                    type="button"
+                                >
+                                    <i data-lucide="smartphone"></i>
+                                    SMS
+                                </button>
+
+                            </div>
+
+                            <!-- SAVE -->
+                            <div class="remember-box">
+
+                                <div class="remember-left">
+
+                                    <i data-lucide="shield-check"></i>
+
+                                    <div>
+
+                                        <h4>
+                                            Guardar mis datos
+                                        </h4>
+
+                                        <p>
+                                            Para futuras compras más rápidas
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <label class="switch">
+
+                                    <input 
+                                        type="checkbox"
+                                        id="remember-data"
+                                    >
+
+                                    <span class="slider"></span>
+
+                                </label>
+
+                            </div>
+
+                            <!-- CONTINUE -->
+                            <button 
+                                class="continue-btn"
+                                type="button"
+                                onclick="toggleAccordion('step-payment')"
+                            >
+                                Continuar al pago
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <!-- STEP 2 -->
+                    <article class="checkout-step" id="step-payment">
+
+                        <button class="step-toggle" data-step="step-payment">
+
+                            <div class="step-toggle-left">
+
+                                <span class="step-number">
+                                    02
+                                </span>
+
+                                <div>
+
+                                    <h2>
+                                        Método de pago
+                                    </h2>
+
+                                    <p>
+                                        Selecciona cómo deseas pagar
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </button>
+
+                        <div class="step-content">
+
+                            <!-- PAYMENT METHODS -->
+                            <div class="payment-methods">
+
+                                <!-- WOMPI -->
+                                <button 
+                                    class="payment-method active"
+                                    type="button"
+                                    data-payment="wompi"
+                                >
+
+                                    <div class="payment-icon">
+                                        <i data-lucide="credit-card"></i>
+                                    </div>
+
+                                    <div class="payment-info">
+
+                                        <h3>
+                                            Tarjeta / Wompi
+                                        </h3>
+
+                                        <p>
+                                            Visa, Mastercard y ms
+                                        </p>
+
+                                    </div>
+
+                                </button>
+
+                                <!-- PAYPAL -->
+                                <button 
+                                    class="payment-method"
+                                    type="button"
+                                    data-payment="paypal"
+                                >
+
+                                    <div class="payment-icon">
+                                        <i data-lucide="wallet"></i>
+                                    </div>
+
+                                    <div class="payment-info">
+
+                                        <h3>
+                                            PayPal
+                                        </h3>
+
+                                        <p>
+                                            Pago rápido y protegido
+                                        </p>
+
+                                    </div>
+
+                                </button>
+
+                            </div>
+
+                            <!-- SECURITY -->
+                            <div class="secure-box">
+
+                                <div class="secure-top">
+
+                                    <i data-lucide="lock"></i>
+
+                                    <h4>
+                                        Pago seguro
+                                    </h4>
+
+                                </div>
+
+                                <p>
+                                    Geekwave no almacena información bancaria. 
+                                    Todos los pagos son procesados de forma cifrada 
+                                    mediante la plataforma externa elegida para tu pago.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- ========================================= -->
+                <!-- RIGHT -->
+                <!-- ========================================= -->
+
+                <aside class="checkout-right">
+
+                    <div class="checkout-summary">
+
+                        <!-- HEADER -->
+                        <div class="summary-top">
+
+                            <div>
+
+                                <span class="summary-mini">
+                                    RESUMEN
+                                </span>
+
+                                <h2>
+                                    Tu pedido
+                                </h2>
+
+                            </div>
+
+                            <div class="summary-badge">
+                                DETALLES
+                            </div>
+
+                        </div>
+
+                        <!-- PRODUCTS -->
+                        <div 
+                            class="checkout-products"
+                            id="checkout-products"
+                        >
+                            <!-- JS -->
+                        </div>
+
+                        <!-- COUPON -->
+                        <div class="coupon-box">
+
+                            <input 
+                                type="text"
+                                id="coupon-input"
+                                placeholder="Cdigo de descuento"
+                            >
+
+                            <button 
+                                id="apply-coupon-btn"
+                                type="button"
+                            >
+                                Aplicar
+                            </button>
+
+                        </div>
+
+                        <!-- TOTALS -->
+                        <div class="checkout-totals">
+
+                            <div class="total-row">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <strong id="checkout-subtotal">
+                                    $0.00
+                                </strong>
+
+                            </div>
+
+                            <div 
+                                class="total-row discount-row"
+                                id="discount-row"
+                            >
+
+                                <span>
+                                    Descuento
+                                </span>
+
+                                <strong id="discount-amount">
+                                    -$0.00
+                                </strong>
+
+                            </div>
+
+                            <div class="total-row">
+
+                                <span>
+                                    Envío
+                                </span>
+
+                                <strong>
+                                    Gratis
+                                </strong>
+
+                            </div>
+
+                            <div class="total-divider"></div>
+
+                            <div class="total-row final">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <strong id="checkout-total">
+                                    $0.00
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                        <!-- TRUST -->
+                        <div class="trust-features">
+
+                            <div class="trust-item">
+
+                                <i data-lucide="shield-check"></i>
+
+                                <span>
+                                    Pago seguro
+                                </span>
+
+                            </div>
+
+                            <div class="trust-item">
+
+                                <i data-lucide="truck"></i>
+
+                                <span>
+                                    Envío asegurado
+                                </span>
+
+                            </div>
+
+                            <div class="trust-item">
+
+                                <i data-lucide="badge-check"></i>
+
+                                <span>
+                                    Garantía total
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- PAY BUTTON -->
+                        <button 
+                            class="main-pay-btn"
+                            id="main-pay-btn"
+                            onclick="processPayment()"
+                        >
+
+                            <div class="btn-left">
+
+                                <span class="btn-text">
+                                    Completa tus datos
+                                </span>
+
+                            </div>
+
+                            <div class="btn-price">
+                                $0.00
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================================================= -->
+    <!-- OVERLAY -->
+    <!-- ================================================= -->
+
+    <div class="payment-overlay" id="payment-overlay">
+
+        <div class="payment-loader">
+
+            <div class="loader-spinner"></div>
+
+            <h3>
+                Procesando pago
+            </h3>
+
+            <p>
+                Conectando con la pasarela segura...
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ================================================= -->
+    <!-- SCRIPTS -->
+    <!-- ================================================= -->
+
+   
+
+     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <!-- Shared -->
+    <script src="js/component-loader.js"></script>
+      <script src="js/geekwave-main.js" defer></script>
+   window.processPayment
+    <script src="js/navbar-global.js"></script>
+  
+
+
+<script type="module" src="./js/pago.js"></script>
+</body>
+</html>

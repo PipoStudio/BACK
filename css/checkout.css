@@ -1,0 +1,131 @@
+:root {
+    --bg: #050505; --card: #0e0e0e; --accent: #00ff7f; --border: #1a1a1a;
+}
+
+body { background: var(--bg); color: white; font-family: 'Manrope', sans-serif; padding-top: 80px; }
+.nav-logo-custom { height: 26px !important; }
+
+/* ACCORDION SYSTEM */
+.checkout-wrapper { max-width: 1200px; margin: 40px auto; padding: 0 5%; }
+.checkout-grid { display: grid; grid-template-columns: 1fr 380px; gap: 40px; }
+
+.accordion-step { background: var(--card); border: 1px solid var(--border); border-radius: 20px; margin-bottom: 20px; overflow: hidden; }
+.step-header { padding: 25px; display: flex; align-items: center; gap: 20px; border-bottom: 1px solid transparent; transition: 0.3s; }
+.step-number { background: #1a1a1a; color: var(--accent); width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-family: 'Space Grotesk'; font-weight: 800; }
+.step-content { padding: 0 25px; max-height: 0; opacity: 0; transition: all 0.5s ease; pointer-events: none; }
+
+.accordion-step.active .step-header { border-bottom: 1px solid var(--border); }
+.accordion-step.active .step-content { padding: 30px 25px; max-height: 800px; opacity: 1; pointer-events: auto; }
+
+/* PAYMENT SELECTOR (RESTAURADO) */
+.payment-selector { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 30px; }
+.pay-option { background: #151515; border: 1px solid var(--border); padding: 15px; border-radius: 12px; text-align: center; cursor: pointer; transition: 0.3s; }
+.pay-option i { display: block; font-size: 1.2rem; margin-bottom: 8px; }
+.pay-option.active { border-color: var(--accent); background: rgba(0, 255, 127, 0.05); color: var(--accent); }
+
+/* CHECKBOX GEEKWAVE */
+.save-data { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: #888; cursor: pointer; margin-top: 20px; }
+.save-data input { display: none; }
+.checkmark { width: 18px; height: 18px; border: 1px solid var(--border); border-radius: 4px; position: relative; }
+.save-data input:checked + .checkmark { background: var(--accent); border-color: var(--accent); }
+.save-data input:checked + .checkmark::after { content: ''; color: black; font-size: 12px; position: absolute; left: 3px; top: -1px; }
+
+/* RESPONSIVIDAD */
+@media (max-width: 1000px) {
+    .checkout-grid { grid-template-columns: 1fr; }
+    .checkout-summary { order: -1; } /* El pedido aparece arriba en mvil para guiar al usuario */
+    .payment-selector { grid-template-columns: 1fr; }
+}
+
+/* OTROS ESTILOS */
+.btn-next { background: var(--accent); color: black; border: none; padding: 15px 30px; border-radius: 50px; font-weight: 800; margin-top: 20px; cursor: pointer; }
+.field input { width: 100%; background: #111; border: 1px solid var(--border); padding: 14px; border-radius: 10px; color: white; margin-top: 8px; box-sizing: border-box; }
+.summary-card { background: var(--card); border: 1px solid var(--border); padding: 25px; border-radius: 20px; position: sticky; top: 100px; }
+.row.total { font-size: 1.3rem; font-weight: 800; color: var(--accent); border-top: 1px solid var(--border); margin-top: 20px; padding-top: 15px; }
+.btn-complete { width: 100%; background: white; color: black; padding: 18px; border-radius: 50px; border: none; font-weight: 800; cursor: pointer; margin-top: 20px; }
+/* Estilos para la animacin de transicin */
+.transition-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #050505; z-index: 9999; display: flex;
+    align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none; transition: opacity 0.8s ease;
+}
+.transition-overlay.active { opacity: 1; pointer-events: auto; }
+.transition-content { text-align: center; }
+.transition-text { 
+    font-family: 'Space Grotesk'; color: #00ff7f; 
+    font-size: 1.5rem; margin-bottom: 30px; 
+}
+.apple-spinner {
+    width: 40px; height: 40px; border: 3px solid rgba(0,255,127,0.1);
+    border-top: 3px solid #00ff7f; border-radius: 50%;
+    margin: 0 auto; animation: spin 1s linear infinite;
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Efecto de sacudida para errores */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+/* BOTN REGRESAR AL CATLOGO */
+.back-catalog {
+    color: var(--text-dim) !important;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.back-catalog:hover {
+    color: var(--accent) !important;
+    border-color: var(--accent);
+    background: rgba(0, 255, 127, 0.05);
+}
+
+/* SISTEMA DE COPIADO BITCOIN */
+.copy-wrapper {
+    display: flex;
+    gap: 10px;
+    background: #000;
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+.copy-wrapper input {
+    border: none !important;
+    background: transparent !important;
+    flex: 1;
+    font-family: monospace;
+    color: var(--accent) !important;
+}
+.copy-btn {
+    background: var(--accent);
+    color: #000;
+    border: none;
+    width: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.copy-btn:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+.blockchain-note {
+    font-size: 0.7rem;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ELIMINAR OVERLAY */
+.transition-overlay { display: none !important; }

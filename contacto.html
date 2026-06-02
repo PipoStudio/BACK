@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="components/icono.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekwave | Contacto</title>
+
+    <!-- Global -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Contacto -->
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <div id="nav-placeholder"></div>
+
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <main class="contact-page">
+
+        <!-- HERO -->
+        <section class="contact-hero">
+
+            <div class="contact-hero-bg"></div>
+
+            <div class="contact-hero-content">
+
+                <p class="contact-kicker">
+                    CONTACTO
+                </p>
+
+                <h1>
+                    Hablános sobre 
+                    cualquier duda.<br>Con gusto te ayudaremos.
+                </h1>
+
+                <p class="contact-subtitle">
+                    Puedes realizar tus consulta sobre productos, soporte técnico,
+                    colaboraciones o pedidos especiales, estámos listos
+                    para ayudarte.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- CONTACT GRID -->
+        <!-- ========================= -->
+
+        <section class="contact-layout">
+
+            <!-- LEFT -->
+            <div class="contact-info-column">
+
+                <!-- Card -->
+                <div class="contact-card large">
+
+                    <div class="card-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-label">
+                            EMAIL
+                        </span>
+
+                        <h3>
+                            Soporte General
+                        </h3>
+
+                        <a href="mailto:hello@geekwave.com">
+                            hello@geekwave.com
+                        </a>
+
+                        <p>
+                            Respuesta promedio en menos de 24 horas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Grid -->
+                <div class="mini-contact-grid">
+
+                    <!-- Card -->
+                    <div class="contact-card">
+
+                        <div class="card-icon">
+                            <i data-lucide="headphones"></i>
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="card-label">
+                                SOPORTE
+                            </span>
+
+                            <h3>
+                                Asistencia Técnica
+                            </h3>
+
+                            <p>
+                                Configuración, garantía y troubleshooting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="contact-card">
+
+                        <div class="card-icon">
+                            <i data-lucide="package-search"></i>
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="card-label">
+                                PEDIDOS
+                            </span>
+
+                            <h3>
+                                Tracking & Shipping
+                            </h3>
+
+                            <p>
+                                Estado de pedidos y seguimiento nacional.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Social -->
+                <div class="social-panel">
+
+                    <div class="social-header">
+
+                        <span>
+                            COMUNIDAD
+                        </span>
+
+                        <h3>
+                            Síguenos
+                        </h3>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="#" class="social-link">
+
+                            <i data-lucide="instagram"></i>
+
+                            <span>
+                                Instagram
+                            </span>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i data-lucide="youtube"></i>
+
+                            <span>
+                                YouTube
+                            </span>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i data-lucide="twitter"></i>
+
+                            <span>
+                                X / Twitter
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="contact-form-wrapper">
+
+                <div class="form-top">
+
+                    <span class="form-kicker">
+                        FORMULARIO
+                    </span>
+
+                    <h2>
+                        Envíanos un mensaje.
+                    </h2>
+
+                    <p>
+                        Completa el formulario y nuestro equipo
+                        se pondrá en contacto contigo.
+                    </p>
+
+                </div>
+
+                <!-- FORM -->
+                <form class="contact-form" id="contactForm">
+
+                    <!-- Row -->
+                    <div class="input-row">
+
+                        <div class="input-group">
+
+                            <label>
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                name="nombre"
+                                placeholder="Tu nombre"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="correo@ejemplo.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="input-group">
+
+                        <label>
+                            Motivo
+                        </label>
+
+                        <select name="motivo">
+
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+
+                            <option value="soporte">
+                                Soporte Técnico
+                            </option>
+
+                            <option value="pedido">
+                                Pedido / Envío
+                            </option>
+
+                            <option value="colaboracion">
+                                Colaboración
+                            </option>
+
+                            <option value="general">
+                                Consulta general
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Message -->
+                    <div class="input-group">
+
+                        <label>
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            name="mensaje"
+                            rows="7"
+                            placeholder="Cuéntanos cómo podemos ayudarte..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+
+                        <span>
+                            ENVIAR MENSAJE
+                        </span>
+
+                        <i data-lucide="arrow-up-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- FAQ STRIP -->
+        <!-- ========================= -->
+
+        <section class="contact-extra">
+
+            <div class="extra-card">
+
+                <span class="extra-kicker">
+                    HORARIO
+                </span>
+
+                <h3>
+                    Atención al cliente
+                </h3>
+
+                <p>
+                    Lunes a viernes  8:00 AM  6:00 PM
+                </p>
+
+            </div>
+
+            <div class="extra-card">
+
+                <span class="extra-kicker">
+                    RESPUESTA
+                </span>
+
+                <h3>
+                    Tiempo promedio
+                </h3>
+
+                <p>
+                    Menos de 24 horas hábiles.
+                </p>
+
+            </div>
+
+            <div class="extra-card">
+
+                <span class="extra-kicker">
+                    UBICACIÓN
+                </span>
+
+                <h3>
+                    Operación nacional
+                </h3>
+
+                <p>
+                    Envíos y soporte para múltiples departamentos.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <div id="footer-placeholder"></div>
+
+    <!-- ========================= -->
+    <!-- SCRIPTS -->
+    <!-- ========================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <!-- Shared Components -->
+    <script src="js/component-loader.js"></script>
+
+    <script src="js/navbar-global.js"></script>
+
+    <!-- Contact -->
+    <script src="js/contacto.js"></script>
+
+</body>
+</html>

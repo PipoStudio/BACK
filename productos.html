@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" type="image/x-icon" href="components/icono.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Geekwave | Productos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Space+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/productos.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="nav-placeholder"></div>
+
+    <!-- TOAST -->
+    <div id="toastMsg" class="toast-msg"></div>
+
+    <!-- CONTENIDO -->
+    <main class="products-page">
+
+        <header class="page-header">
+
+            <h1>
+                Una selección única de productos verificados.
+            </h1>
+
+            <p>
+                Explora nuestra colección completa de sistemas clásicos,
+                juegos y accesorios esenciales para tu colección.
+            </p>
+
+        </header>
+
+        <!-- AQUÍ SE INYECTA TODO EL CATÁLOGO -->
+        <div id="catalogo-container"></div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- LIBRERÍAS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <!-- COMPONENTES -->
+    <script src="js/component-loader.js"></script>
+
+    <!-- NAVBAR -->
+    <script src="js/navbar-global.js"></script>
+
+    <!-- CATÁLOGO -->
+    <script src="js/productos.js"></script>
+
+</body>
+</html>

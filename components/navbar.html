@@ -1,0 +1,138 @@
+<nav class="navbar navbar-glass">
+    <a href="index.html" class="logo">
+    <img src="components/logo%20geekwave.webp" alt="Logo" style="max-height: 30px; width: auto; object-fit: contain;">
+</a>
+        <div class="nav-links" id="navLinks">
+           <a href="index.html">Home</a>
+            <div class="nav-item-dropdown">
+                <a href="#" id="productosBtn">Productos <i data-lucide="chevron-down" class="icon-sm"></i></a>
+                
+                <div class="mega-menu" id="productosMenu" data-lenis-prevent>
+                    <div class="menu-container">
+                        <div class="menu-col" id="col-categories">
+                            <span class="menu-label">Categoría</span>
+                            <ul class="menu-list" id="list-categories"></ul>
+                        </div>
+                        <div class="menu-col hidden" id="col-subcategories">
+                            <span class="menu-label">Plataforma / Tipo</span>
+                            <ul class="menu-list" id="list-subcategories"></ul>
+                        </div>
+                        <div class="menu-col hidden" id="col-products">
+                            <span class="menu-label">Productos disponibles</span>
+                            <ul class="menu-list" id="list-products"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="soporte.html">Soporte</a>
+          <a href="/juego/" class="nav-link">Geekzone</a>
+        
+          
+          
+          
+
+          
+        </div>
+        
+        <div class="nav-icons">
+            <div class="search-container" id="searchContainer">
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar retro-tech, consolas...">
+                <button class="icon-btn filter-btn" id="filterBtn" title="Filtros">
+                    <i data-lucide="sliders-horizontal"></i>
+                </button>
+                <button class="icon-btn search-btn" id="searchBtn"><i data-lucide="search"></i></button>
+                
+                <div class="filter-panel" id="filterPanel" onclick="event.stopPropagation();">
+                    <div class="filter-header">Filtros de Bsqueda</div>
+                    <div class="filter-group">
+                        <label>Categora</label>
+                        <select id="filterCategory">
+                            <option value="Todo" selected>Todo</option>
+                            <option value="Consolas">Consolas</option>
+                            <option value="Juegos">Juegos</option>
+                            <option value="Accesorios">Accesorios</option>
+                            <option value="Preventas">Preventas</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Precio</label>
+                        <select id="filterPrice">
+                            <option value="all" selected>Cualquier precio</option>
+                            <option value="under50">Menos de $50</option>
+                            <option value="50to150">De $50 a $150</option>
+                            <option value="over150">Ms de $150</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Ordenar por</label>
+                        <select id="filterSort">
+                            <option value="relevance" selected>Relevancia</option>
+                            <option value="az">Nombre (A - Z)</option>
+                            <option value="priceAsc">Precio: Menor a Mayor</option>
+                            <option value="priceDesc">Precio: Mayor a Menor</option>
+                            <option value="newest">Ms recientes (Ao)</option>
+                        </select>
+                    </div>
+                    <button id="applyFiltersBtn" class="btn-primary btn-apply-filters">Aplicar Filtros</button>
+                </div>
+                <div class="search-results" id="searchResults" data-lenis-prevent></div>
+            </div>
+
+            <div class="user-nav-container nav-action-container">
+                <button class="icon-btn" id="userBtn" onclick="window.location.href='login.html'">
+                    <i data-lucide="user"></i>
+                </button>
+                <span class="user-badge" id="userBadge"></span>
+                <div class="user-tooltip" id="userTooltip">Inicia sesin para finalizar tu orden</div>
+            </div>
+
+            <div class="cart-nav-container nav-action-container">
+                <button class="icon-btn" id="cartBtn"><i data-lucide="shopping-bag"></i></button>
+                <span class="cart-badge" id="cartBadge">0</span>
+<!--
+<button id="favoritesBtn" class="icon-btn">
+
+    <i data-lucide="heart"></i>
+
+    <span id="favoritesBadge"></span>
+
+</button>
+-->
+
+
+<div id="favoritesDropdown" class="favorites-dropdown">
+
+    <div class="favorites-header">
+
+        <h3></h3>
+
+    </div>
+
+    <div id="favoritesContainer">
+
+    </div>
+
+</div>
+
+
+                
+                <div class="cart-dropdown" id="cartDropdown" onclick="event.stopPropagation();">
+                    <div class="cart-header">
+                        <h3>Tu Carrito</h3>
+                        <button class="close-cart" id="closeCartBtn"><i data-lucide="x"></i></button>
+                    </div>
+                    
+                    <div class="cart-items" id="cartItemsContainer" data-lenis-prevent>
+                        </div>
+                    
+                   <div class="cart-footer">
+                        <button onclick="window.location.href='pago.html'" class="btn-primary btn-checkout">Ir a pagar</button>
+                        <button id="saveCartBtn" class="btn-outline btn-save-cart">Guardar</button>
+                    </div>
+                    <div id="toastMsg" class="toast-msg">Eliminado</div>
+                </div>
+            </div>
+        </div>
+    </nav>

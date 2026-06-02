@@ -1,0 +1,1314 @@
+/* =========================================================
+   GEEKWAVE OFFERS PAGE
+   ========================================================= */
+
+:root {
+
+    --offers-bg: #050505;
+
+    --offers-card:
+        rgba(255,255,255,0.04);
+
+    --offers-border:
+        rgba(255,255,255,0.08);
+
+    --offers-text:
+        rgba(255,255,255,0.72);
+
+    --offers-muted:
+        rgba(255,255,255,0.38);
+
+    --offers-white:
+        #ffffff;
+
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+.offers-page {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,255,255,0.05),
+            transparent 35%
+        ),
+        var(--offers-bg);
+
+    color: var(--offers-white);
+
+    min-height: 100vh;
+
+    padding-top: 60px;
+
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.offers-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        0rem
+        5%
+        7rem;
+
+    min-height: 88vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 4rem;
+
+}
+
+.offers-glow {
+
+    position: absolute;
+
+    top: -280px;
+    right: -180px;
+
+    width: 850px;
+    height: 850px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.09),
+            transparent 70%
+        );
+
+    filter: blur(90px);
+
+    pointer-events: none;
+
+}
+
+.offers-hero-content {
+
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+}
+
+.offers-kicker {
+
+    display: inline-block;
+    
+
+
+    font-size: 0.78rem;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+
+    color: var(--offers-muted);
+
+    /*margin-bottom: 1.6rem;*/
+
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.offers-hero h1 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:
+        clamp(4rem, 8vw, 7.2rem);
+
+    line-height: 0.92;
+
+    letter-spacing: -0.08em;
+
+    margin-bottom: 2rem;
+
+    font-weight: 800;
+
+}
+
+.offers-subtitle {
+
+    max-width: 700px;
+
+    color: var(--offers-text);
+
+    font-size: 1.08rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 3rem;
+
+}
+
+/* =========================================================
+   HERO ACTIONS
+========================================================= */
+
+.offers-hero-actions {
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+.hero-btn {
+
+    height: 64px;
+
+    padding:
+        0
+        2rem;
+
+    border-radius: 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease;
+
+}
+
+.hero-btn svg {
+
+    width: 18px;
+    height: 18px;
+
+}
+
+.hero-btn.primary {
+
+    background: #fff;
+
+    color: #000;
+
+}
+
+.hero-btn.primary:hover {
+
+    transform:
+        translateY(-4px);
+
+    background: #ebebeb;
+
+}
+
+.hero-btn.secondary {
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    color: #fff;
+
+}
+
+.hero-btn.secondary:hover {
+
+    transform:
+        translateY(-4px);
+
+    background:
+        rgba(255,255,255,0.07);
+
+    border-color:
+        rgba(255,255,255,0.14);
+
+}
+
+/* =========================================================
+   FLOATING CARD
+========================================================= */
+
+.floating-offer-card {
+
+    position: relative;
+
+    width: 360px;
+
+    min-height: 430px;
+
+    border-radius: 38px;
+
+    padding: 2rem;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.07),
+            rgba(255,255,255,0.03)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(18px);
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    flex-shrink: 0;
+
+}
+
+.floating-offer-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,255,255,0.12),
+            transparent 60%
+        );
+
+    pointer-events: none;
+
+}
+
+.floating-badge {
+
+    position: absolute;
+
+    top: 1.6rem;
+    right: 1.6rem;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 1.3rem;
+
+    font-weight: 800;
+
+}
+
+.floating-content {
+
+    position: relative;
+    z-index: 2;
+
+}
+
+.floating-content span {
+
+    display: inline-block;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color:
+        rgba(255,255,255,0.55);
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+}
+
+.floating-content h3 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 2.5rem;
+
+    line-height: 1;
+
+    margin-bottom: 1rem;
+
+}
+
+.floating-content p {
+
+    color: var(--offers-text);
+
+    line-height: 1.8;
+
+}
+
+/* =========================================================
+   STRIP
+========================================================= */
+
+.offer-strip {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    padding:
+        0
+        5%
+        8rem;
+
+}
+
+.strip-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        var(--offers-card);
+
+    border:
+        1px solid var(--offers-border);
+
+    border-radius: 32px;
+
+    padding: 2rem;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        border-color 0.4s ease;
+
+}
+
+.strip-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border-color:
+        rgba(255,255,255,0.14);
+
+}
+
+.strip-icon {
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+
+}
+
+.strip-icon svg {
+
+    width: 28px;
+    height: 28px;
+
+    stroke-width: 1.8;
+
+}
+
+.strip-content span {
+
+    display: inline-block;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--offers-muted);
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+}
+
+.strip-content h3 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 1.7rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 1rem;
+
+}
+
+.strip-content p {
+
+    color: var(--offers-text);
+
+    line-height: 1.8;
+
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.featured-offers {
+
+    padding:
+        0
+        5%
+        8rem;
+
+}
+
+.section-heading {
+
+    margin-bottom: 3rem;
+
+}
+
+.section-heading span {
+
+    display: inline-block;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--offers-muted);
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+}
+
+.section-heading h2 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:
+        clamp(2.6rem, 5vw, 4.5rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.06em;
+
+}
+
+/* =========================================================
+   OFFERS GRID
+========================================================= */
+
+.offers-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+}
+
+.offer-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 34px;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        background 0.4s ease;
+
+}
+
+.offer-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border-color:
+        rgba(255,255,255,0.14);
+
+}
+
+.offer-card.featured {
+
+    grid-column: span 2;
+
+}
+
+.offer-badge {
+
+    position: absolute;
+
+    top: 1.2rem;
+    left: 1.2rem;
+
+    z-index: 5;
+
+    height: 42px;
+
+    padding:
+        0
+        1rem;
+
+    border-radius: 999px;
+
+    background: #fff;
+
+    color: #000;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 0.82rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+
+}
+
+.offer-image {
+
+    position: relative;
+
+    height: 320px;
+
+    overflow: hidden;
+
+}
+
+.offer-card.featured
+.offer-image {
+
+    height: 420px;
+
+}
+
+.offer-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.8s ease;
+
+}
+
+.offer-card:hover
+.offer-image img {
+
+    transform: scale(1.05);
+
+}
+
+.offer-info {
+
+    padding: 2rem;
+
+}
+
+.offer-category {
+
+    display: inline-block;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--offers-muted);
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+}
+
+.offer-info h3 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 2rem;
+
+    line-height: 1;
+
+    margin-bottom: 1rem;
+
+}
+
+.offer-info p {
+
+    color: var(--offers-text);
+
+    line-height: 1.8;
+
+    margin-bottom: 2rem;
+
+}
+
+/* =========================================================
+   PRICING
+========================================================= */
+
+.offer-pricing {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+}
+
+.price-group {
+
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+}
+
+.price-group strong {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 2rem;
+
+}
+
+.price-group span {
+
+    color:
+        rgba(255,255,255,0.35);
+
+    text-decoration: line-through;
+
+}
+
+.offer-btn {
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 18px;
+
+    border: none;
+
+    background: #fff;
+
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+
+}
+
+.offer-btn:hover {
+
+    transform: scale(1.05);
+
+    background: #ececec;
+
+}
+
+.offer-btn span {
+
+    display: none;
+
+}
+
+.offer-btn svg {
+
+    width: 18px;
+    height: 18px;
+
+    stroke-width: 2.5;
+
+}
+
+/* =========================================================
+   MARQUEE
+========================================================= */
+
+.offers-marquee {
+
+    overflow: hidden;
+
+    border-top:
+        1px solid rgba(255,255,255,0.08);
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.08);
+
+    padding:
+        1.4rem
+        0;
+
+    margin-bottom: 8rem;
+
+}
+
+.marquee-track {
+
+    display: flex;
+    align-items: center;
+
+    gap: 4rem;
+
+    width: max-content;
+
+    animation:
+        marqueeMove 20s linear infinite;
+
+}
+
+.marquee-track span {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+
+    color:
+        rgba(255,255,255,0.75);
+
+}
+
+@keyframes marqueeMove {
+
+    from {
+
+        transform: translateX(0);
+
+    }
+
+    to {
+
+        transform: translateX(-50%);
+
+    }
+
+}
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.offers-newsletter {
+
+    padding:
+        0
+        5%
+        0rem;
+
+}
+
+.newsletter-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 40px;
+
+    padding: 4rem;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.06),
+            rgba(255,255,255,0.03)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+}
+
+.newsletter-content {
+
+    max-width: 760px;
+
+    margin-bottom: 3rem;
+
+}
+
+.newsletter-content span {
+
+    display: inline-block;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--offers-muted);
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+}
+
+.newsletter-content h2 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:
+        clamp(2.8rem, 6vw, 5rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -0.06em;
+
+    margin-bottom: 1.4rem;
+
+}
+
+.newsletter-content p {
+
+    color: var(--offers-text);
+
+    line-height: 1.9;
+
+    max-width: 650px;
+
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.newsletter-form {
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+.newsletter-form input {
+
+    flex: 1;
+
+    min-width: 280px;
+
+    height: 70px;
+
+    padding:
+        0
+        1.5rem;
+
+    border-radius: 22px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    background:
+        rgba(255,255,255,0.04);
+
+    color: #fff;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+.newsletter-form input:focus {
+
+    background:
+        rgba(255,255,255,0.06);
+
+    border-color:
+        rgba(255,255,255,0.16);
+
+}
+
+.newsletter-form input::placeholder {
+
+    color:
+        rgba(255,255,255,0.35);
+
+}
+
+.newsletter-form button {
+
+    height: 70px;
+
+    padding:
+        0
+        2rem;
+
+    border: none;
+
+    border-radius: 22px;
+
+    background: #fff;
+
+    color: #000;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+
+}
+
+.newsletter-form button:hover {
+
+    transform:
+        translateY(-4px);
+
+    background: #ececec;
+
+}
+
+.newsletter-form button svg {
+
+    width: 18px;
+    height: 18px;
+
+}
+
+/* =========================================================
+   HOVER GLOW
+========================================================= */
+
+.strip-card::before,
+.offer-card::before,
+.newsletter-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    background:
+        radial-gradient(
+            500px circle
+            at var(--mouse-x)
+            var(--mouse-y),
+
+            rgba(255,255,255,0.08),
+            transparent 40%
+        );
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    pointer-events: none;
+
+}
+
+.strip-card:hover::before,
+.offer-card:hover::before,
+.newsletter-card:hover::before {
+
+    opacity: 1;
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1300px) {
+
+    .offers-hero {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .floating-offer-card {
+
+        width: 100%;
+
+        max-width: 500px;
+
+    }
+
+    .offers-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .offer-card.featured {
+
+        grid-column: span 2;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .offer-strip {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .offers-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .offer-card.featured {
+
+        grid-column: span 1;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .offers-page {
+
+        padding-top: 70px;
+
+    }
+
+    .offers-hero {
+
+        padding:
+            5rem
+            1.2rem
+            4rem;
+
+    }
+
+    .offer-strip {
+
+        padding:
+            0
+            1.2rem
+            4rem;
+
+    }
+
+    .featured-offers {
+
+        padding:
+            0
+            1.2rem
+            5rem;
+
+    }
+
+    .offers-newsletter {
+
+        padding:
+            0
+            1.2rem
+            6rem;
+
+    }
+
+    .offers-hero h1 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .floating-offer-card {
+
+        min-height: 360px;
+
+        border-radius: 30px;
+
+    }
+
+    .newsletter-card {
+
+        padding: 2rem 1.5rem;
+
+        border-radius: 30px;
+
+    }
+
+    .newsletter-form {
+
+        flex-direction: column;
+
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+
+        width: 100%;
+
+    }
+
+    .offer-info {
+
+        padding: 1.5rem;
+
+    }
+
+    .offer-card.featured
+    .offer-image {
+
+        height: 320px;
+
+    }
+
+}

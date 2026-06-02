@@ -1,0 +1,4 @@
+allowBuilds:
+  core-js: true
+  cpu-features: true
+  ssh2: true

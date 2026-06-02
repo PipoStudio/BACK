@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <link rel="icon" type="image/x-icon" href="components/icono.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekwave | Login</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+  <div id="main-container" class="auth-page">
+
+    <section class="visual-panel">
+
+      <video class="bg-video active" autoplay muted loop playsinline data-title="Hardware clsico."
+        data-sub="Restaurado con precisin para una nueva generacin." data-tag="RESTORATION  RETRO TECH  CULTURE">
+        <source
+          src="https://res.cloudinary.com/djeljniac/video/upload/q_auto/f_auto/v1777458171/videoplayback_2_online-video-cutter.com_1_oosxun.webm"
+          type="video/mp4">
+      </video>
+
+      <video class="bg-video" autoplay muted loop playsinline data-title="La cultura sigue viva."
+        data-sub="Consolas, accesorios y piezas seleccionadas para ti." data-tag="COMMUNITY  DROP ZONE  COLLECTORS">
+        <source
+          src="https://res.cloudinary.com/djeljniac/video/upload/q_auto/f_auto/v1777458053/twtrus_oqzixn.webm"
+          type="video/mp4">
+      </video>
+
+      <video class="bg-video" autoplay muted loop playsinline data-title="Geekwave Access."
+        data-sub="nete para desbloquear experiencias, drops y beneficios exclusivos." data-tag="ACCESS  EXPERIENCE  GEEKWAVE">
+        <source
+          src="https://res.cloudinary.com/djeljniac/video/upload/q_auto/f_auto/v1777457896/videoplayback_online-video-cutter.com_1_1_xezzct.webm"
+          type="video/mp4">
+      </video>
+
+      <div class="visual-overlay"></div>
+
+      <div class="visual-top">
+        <div class="status-pill">LIVE EXPERIENCE</div>
+        <div class="status-right">NEW WAVE. OLD SCHOOL.</div>
+      </div>
+
+      <div class="visual-content">
+        <div class="editorial-tag" id="videoTag">RESTORATION  RETRO TECH  CULTURE</div>
+        <h1 class="visual-title" id="videoTitle">Hardware clsico.</h1>
+        <p class="visual-text" id="videoText">Restaurado con precisión para una nueva generación.</p>
+      </div>
+
+      <div class="visual-footer">
+        <div class="video-progress">
+          <span class="progress-line active"></span>
+          <span class="progress-line"></span>
+          <span class="progress-line"></span>
+        </div>
+        <div class="footer-meta">COMMUNITY ACCESS PROGRAM</div>
+      </div>
+
+    </section>
+
+    <section class="form-panel">
+      
+      <div class="form-wrapper">
+        
+        <div id="auth-error" class="error-message-global" style="display: none; color: #ff4444; background: rgba(255,68,68,0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.9rem;"></div>
+
+        <div class="top-brand">
+          <img src="https://res.cloudinary.com/djeljniac/image/upload/q_auto/f_auto/v1778504270/LOGO_BLANCO_vmgqny.webp" class="logo" alt="Geekwave">
+          <div class="form-eyebrow">MEMBER ACCESS</div>
+        </div>
+
+        <div class="form-subtitle" id="global-subtitle">
+  Inicia sesión o crea tu cuenta para acceder a drops, beneficios y una comunidad exclusiva.
+</div>
+
+        <div id="signin-card" class="auth-card active">
+          <form id="signinForm" class="auth-form">
+            <div class="field-group">
+              <label>Correo electrónico</label>
+              <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="field-group">
+              <label>Contraseña</label>
+              <input type="password" name="password" placeholder="" required>
+            </div>
+            <div class="form-options">
+              <label class="remember-wrap">
+                <input type="checkbox">
+                <span>Mantener sesión</span>
+              </label>
+              <a href="#" class="forgot-link">Recuperar acceso</a>
+            </div>
+            <button type="submit" class="submit-btn">Entrar a Geekwave</button>
+          </form>
+
+          <div class="divider">
+            <span></span>
+            <p> continuar con</p>
+            <span></span>
+          </div>
+
+          <div class="social-buttons">
+            <button class="social-btn">
+              <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google"> Google
+            </button>
+            <button class="social-btn">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook"> Facebook
+            </button>
+          </div>
+
+          <div class="panel-footer">
+            ¿Primera vez aquí?
+            <a href="#" id="to-signup">Crear cuenta</a>
+          </div>
+        </div>
+
+        <div id="signup-card" class="auth-card">
+          <form id="signupForm" class="auth-form">
+            <div class="field-group">
+              <label>Nombre de usuario</label>
+              <input type="text" name="username" placeholder="tu_usuario" required minlength="3">
+            </div>
+            <div class="field-group">
+              <label>Correo electrónico</label>
+              <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="field-group">
+              <label>Contraseña</label>
+              <input type="password" name="password" placeholder="Mínimo 6 caracteres" required minlength="6">
+            </div>
+            <button type="submit" class="submit-btn">Crear Cuenta</button>
+          </form>
+
+          <div class="panel-footer">
+            Ya tienes cuenta?
+            <a href="#" id="to-signin">Inicia sesión</a>
+          </div>
+        </div>
+
+      <div id="verify-card" class="auth-card otp-view" style="text-align: center;">
+          <div class="otp-header-visual" style="font-size: 3rem; margin-bottom: 1rem;"></div>
+          <h3 class="otp-title" style="color: white; margin-bottom: 0.5rem; font-weight: 700;">Verifica tu correo</h3>
+          <p class="otp-text" style="color: #8c8c8c; margin-bottom: 2rem; font-size: 0.95rem;">
+            Te hemos enviado un código a <br>
+            <strong id="sent-email-span" style="color: white;">tu email</strong>.
+          </p>
+
+          <form id="verifyForm" class="auth-form">
+            <div class="field-group otp-input-wrapper">
+              <input type="text" name="otp" placeholder="000000" maxlength="6" pattern="[0-9]{6}" required
+                style="text-align: center; letter-spacing: 0.5rem; font-size: 1.2rem;">
+            </div>
+            <button type="submit" class="submit-btn">Verificar Código</button>
+          </form>
+        </div>
+        <div id="view-dashboard" class="auth-card" style="text-align: center;">
+  <div class="otp-header-visual" style="margin-bottom: 1rem;">
+    <i data-lucide="badge-check" style="width: 48px; height: 48px; color: rgb(9, 255, 0);"></i>
+  </div>
+  
+  <h3 class="otp-title" style="color: white; margin-bottom: 0.5rem; font-weight: 700;">Acceso verificado!</h3>
+  <p class="otp-text" style="color: #8c8c8c; margin-bottom: 2rem; font-size: 0.95rem;">
+    Ests navegando como: <br>
+    <strong id="user-display" style="color: white;">usuario@email.com</strong>
+  </p>
+
+  <div class="field-group" style="margin-bottom: 1rem;">
+    <a href="index.html" class="submit-btn" style="text-decoration: none; display: flex; justify-content: center; align-items: center; background: #222; border: 1px solid #333; color: white; height: 45px;">
+      Volver a la tienda
+    </a>
+  </div>
+  <button id="btn-logout" class="submit-btn" style="width: 100%; height: 45px; display: flex; justify-content: center; align-items: center; background: #e50914; color: white;">
+    Cerrar Sesión
+  </button>
+</div>
+
+       
+      </div> 
+    </section>
+
+  </div> 
+  
+  <script>
+    const videos = document.querySelectorAll('.bg-video');
+    const progress = document.querySelectorAll('.progress-line');
+    const title = document.getElementById('videoTitle');
+    const text = document.getElementById('videoText');
+    const tag = document.getElementById('videoTag');
+    
+    let current = 0;
+
+    function updateVideo(index) {
+      videos.forEach((video, i) => {
+        video.classList.remove('active');
+        progress[i].classList.remove('active');
+      });
+
+      videos[index].classList.add('active');
+      progress[index].classList.add('active');
+
+      title.textContent = videos[index].dataset.title;
+      text.textContent = videos[index].dataset.sub;
+      tag.textContent = videos[index].dataset.tag;
+    }
+
+    setInterval(() => {
+      current++;
+      if (current >= videos.length) {
+        current = 0;
+      }
+      updateVideo(current);
+    }, 7000);
+  </script>
+   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/login.js"></script>
+
+    <script src="js/component-loader.js"></script>
+</body>
+</html>

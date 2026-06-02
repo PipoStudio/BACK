@@ -1,0 +1,928 @@
+/* =========================================================
+   GEEKWAVE SUPPORT PAGE
+   ========================================================= */
+
+:root {
+
+    --support-bg: #060606;
+
+    --support-card:
+        rgba(255,255,255,0.04);
+
+    --support-border:
+        rgba(255,255,255,0.08);
+
+    --support-text:
+        rgba(255,255,255,0.72);
+
+    --support-muted:
+        rgba(255,255,255,0.38);
+
+    --support-white:
+        #ffffff;
+
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+.support-page {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,255,255,0.05),
+            transparent 32%
+        ),
+        var(--support-bg);
+
+    min-height: 100vh;
+
+    color: var(--support-white);
+
+    padding-top: 90px;
+
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.support-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        0rem
+        5%
+        6rem;
+
+}
+
+.support-hero-glow {
+
+    position: absolute;
+
+    top: -250px;
+    right: -250px;
+
+    width: 750px;
+    height: 750px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.08),
+            transparent 70%
+        );
+
+    filter: blur(90px);
+
+    pointer-events: none;
+
+}
+
+.support-hero-content {
+
+    position: relative;
+    z-index: 2;
+
+    max-width: 950px;
+
+}
+
+.support-kicker {
+
+    display: inline-block;
+
+    font-size: 0.78rem;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+
+    color: var(--support-muted);
+
+    margin-bottom: 1.5rem;
+
+    font-weight: 700;
+
+}
+
+.support-hero h1 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:
+        clamp(3.8rem, 8vw, 7rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -0.07em;
+
+    margin-bottom: 2rem;
+
+    font-weight: 800;
+
+}
+
+.support-subtitle {
+
+    max-width: 720px;
+
+    color: var(--support-text);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 3rem;
+
+}
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.support-search-wrapper {
+
+    max-width: 700px;
+
+}
+
+.support-search {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    height: 72px;
+
+    padding:
+        0
+        1.5rem;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+.support-search:hover {
+
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(255,255,255,0.14);
+
+}
+
+.support-search:focus-within {
+
+    background:
+        rgba(255,255,255,0.06);
+
+    border-color:
+        rgba(255,255,255,0.18);
+
+}
+
+.support-search svg {
+
+    width: 20px;
+    height: 20px;
+
+    color:
+        rgba(255,255,255,0.4);
+
+    flex-shrink: 0;
+
+}
+
+.support-search input {
+
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 1rem;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+}
+
+.support-search input::placeholder {
+
+    color:
+        rgba(255,255,255,0.35);
+
+}
+
+/* =========================================================
+   QUICK HELP
+========================================================= */
+
+.quick-help {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    padding:
+        0
+        5%
+        7rem;
+
+}
+
+.quick-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        var(--support-card);
+
+    border:
+        1px solid var(--support-border);
+
+    border-radius: 32px;
+
+    padding: 2rem;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        background 0.4s ease;
+
+}
+
+.quick-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border-color:
+        rgba(255,255,255,0.14);
+
+}
+
+.quick-icon {
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+
+}
+
+.quick-icon svg {
+
+    width: 28px;
+    height: 28px;
+
+    color: #fff;
+
+    stroke-width: 1.8;
+
+}
+
+.quick-content span {
+
+    display: inline-block;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--support-muted);
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+}
+
+.quick-content h3 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 1.7rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 1rem;
+
+}
+
+.quick-content p {
+
+    color: var(--support-text);
+
+    line-height: 1.8;
+
+}
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.support-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr
+        0.9fr;
+
+    gap: 2rem;
+
+    padding:
+        0
+        5%
+        0rem;
+
+}
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.support-panel {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 36px;
+
+    padding: 2.5rem;
+
+}
+
+/* =========================================================
+   PANEL HEADER
+========================================================= */
+
+.panel-header {
+
+    margin-bottom: 2rem;
+
+}
+
+.panel-header span {
+
+    display: inline-block;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--support-muted);
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+}
+
+.panel-header h2 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:
+        clamp(2rem, 4vw, 3rem);
+
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq-panel {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+.faq-item {
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+.faq-item.active {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border-color:
+        rgba(255,255,255,0.12);
+
+}
+
+.faq-question {
+
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    padding: 1.6rem;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+}
+
+.faq-question svg {
+
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.35s ease;
+
+}
+
+.faq-item.active
+.faq-question svg {
+
+    transform: rotate(45deg);
+
+}
+
+.faq-answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.4s ease;
+
+}
+
+.faq-item.active
+.faq-answer {
+
+    max-height: 220px;
+
+}
+
+.faq-answer p {
+
+    color: var(--support-text);
+
+    line-height: 1.9;
+
+    padding:
+        0
+        1.6rem
+        1.6rem;
+
+}
+
+/* =========================================================
+   CONTACT PANEL
+========================================================= */
+
+.contact-panel {
+
+    margin-bottom: 2rem;
+
+}
+
+.support-contact-list {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+.support-contact-item {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1.2rem;
+
+    padding: 1.2rem;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    text-decoration: none;
+
+    color: #fff;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+.support-contact-item:hover {
+
+    transform:
+        translateX(6px);
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border-color:
+        rgba(255,255,255,0.12);
+
+}
+
+.contact-item-icon {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+}
+
+.contact-item-icon svg {
+
+    width: 22px;
+    height: 22px;
+
+}
+
+.contact-item-content {
+
+    flex: 1;
+
+}
+
+.contact-item-content h4 {
+
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+
+    font-size: 1rem;
+
+    margin-bottom: 0.4rem;
+
+}
+
+.contact-item-content p {
+
+    color: var(--support-text);
+
+    font-size: 0.92rem;
+
+}
+
+.arrow-icon {
+
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+}
+
+/* =========================================================
+   STATUS PANEL
+========================================================= */
+
+.status-list {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+.status-item {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding:
+        1.1rem
+        1.2rem;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+}
+
+.status-left {
+
+    display: flex;
+    align-items: center;
+
+    gap: 0.9rem;
+
+}
+
+.status-left span {
+
+    color: rgba(255,255,255,0.82);
+
+}
+
+.status-dot {
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+}
+
+.status-dot.online {
+
+    background: #48ff7b;
+
+    box-shadow:
+        0 0 16px rgba(72,255,123,0.6);
+
+}
+
+.status-dot.warning {
+
+    background: #ffcf4b;
+
+    box-shadow:
+        0 0 16px rgba(255,207,75,0.6);
+
+}
+
+.status-item strong {
+
+    font-size: 0.9rem;
+
+    color: rgba(255,255,255,0.88);
+
+}
+
+/* =========================================================
+   HOVER GLOW
+========================================================= */
+
+.quick-card::before,
+.support-panel::before,
+.support-contact-item::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    background:
+        radial-gradient(
+            500px circle
+            at var(--mouse-x)
+            var(--mouse-y),
+
+            rgba(255,255,255,0.07),
+            transparent 40%
+        );
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    pointer-events: none;
+
+}
+
+.quick-card:hover::before,
+.support-panel:hover::before,
+.support-contact-item:hover::before {
+
+    opacity: 1;
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .quick-help {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .support-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .support-page {
+
+        padding-top: 70px;
+
+    }
+
+    .support-hero {
+
+        padding:
+            5rem
+            1.2rem
+            4rem;
+
+    }
+
+    .quick-help {
+
+        padding:
+            0
+            1.2rem
+            4rem;
+
+    }
+
+    .support-layout {
+
+        padding:
+            0
+            1.2rem
+            6rem;
+
+    }
+
+    .support-hero h1 {
+
+        font-size: 3.3rem;
+
+    }
+
+    .support-panel,
+    .quick-card {
+
+        border-radius: 28px;
+
+    }
+
+    .support-panel {
+
+        padding: 1.6rem;
+
+    }
+
+    .faq-question {
+
+        padding: 1.3rem;
+
+    }
+
+    .support-search {
+
+        height: 64px;
+
+        border-radius: 20px;
+
+    }
+
+}

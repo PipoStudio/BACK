@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="components/icono.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekwave</title>
+    
+    <!-- Preload de recursos crticos -->
+      <link rel="stylesheet" href="css/modal.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Space+Grotesk:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <link rel="stylesheet" href="css/styles.css">
+   
+    
+    
+    <!-- Scripts externos con async (no bloquean renderizado) -->
+    <script src="https://unpkg.com/lucide@latest" async></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" async></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+    
+    <section id="home" class="hero-video-slider">
+        <div class="slider-container" id="main-slider">
+            
+            <div class="video-slide active">
+                <div class="video-bg">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://res.cloudinary.com/djeljniac/video/upload/v1777458053/twtrus_oqzixn.webm" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-overlay"></div>
+                <div class="hero-content">
+                    <h1>RETRO.</h1>
+                    <p>El pasado, rediseado para el futuro con ingeniera moderna.</p>
+                    <a href="productos.html" class="btn-primary">COMPRAR</a>
+                </div>
+            </div>
+
+            <div class="video-slide">
+                <div class="video-bg">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://res.cloudinary.com/djeljniac/video/upload/v1777457896/videoplayback_online-video-cutter.com_1_1_xezzct.webm" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-overlay"></div>
+                <div class="hero-content">
+                    <h1>TECH.</h1>
+                    <p>Encuentra las portátiles ms icónicas totalmente restauradas.</p>
+                    <a href="productos.html" class="btn-primary">COMPRAR</a>
+                </div>
+            </div>
+
+            <div class="video-slide">
+                <div class="video-bg">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://res.cloudinary.com/djeljniac/video/upload/v1777457896/videoplayback_online-video-cutter.com_1_1_xezzct.webm" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-overlay"></div>
+                <div class="hero-content">
+                    <h1>GAMING.</h1>
+                    <p>Lo último en tecnología vintage con fidelidad visual extrema.</p>
+                    <a href="productos.html" class="btn-primary">COMPRAR</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider-indicators">
+            <div class="slider-bar active" data-slide="0"><div class="progress-fill"></div></div>
+            <div class="slider-bar" data-slide="1"><div class="progress-fill"></div></div>
+            <div class="slider-bar" data-slide="2"><div class="progress-fill"></div></div>
+        </div>
+    </section>
+
+    <div class="scrolling-ticker floating-ticker">
+
+        <div class="ticker-row text-promo">
+            <div class="ticker-track">
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+                <span> ENVO GRATIS EN COMPRAS SUPERIORES A $100  </span>
+            </div>
+        </div>
+
+        <div class="ticker-row logo-carriers">
+            
+            <div class="ticker-mask-left">
+                <div class="mask-text-left">
+                    ENTREGAS<br>A TRAVÉS DE
+                </div>
+            </div>
+
+            <div class="ticker-track">
+                <img src="https://www.forzadelivery.com/app/uploads/2024/08/forza-delivery-express-logo-white-md.png" alt="DHL">
+                <img src="https://c807xpress.com/wp-content/uploads/2022/04/logo_c807_express_sv.png" alt="FedEx">
+                <img src="https://c807xpress.com/wp-content/uploads/2022/04/logo_c807_express_sv.png" alt="UPS">
+                <img src="https://goboxful.com/el-salvador/wp-content/uploads/sites/3/2025/06/2800.webp" alt="Correos">
+                
+                <img src="https://www.forzadelivery.com/app/uploads/2024/08/forza-delivery-express-logo-white-md.png" alt="DHL">
+                <img src="https://c807xpress.com/wp-content/uploads/2022/04/logo_c807_express_sv.png" alt="UPS">
+                <img src="https://goboxful.com/el-salvador/wp-content/uploads/sites/3/2025/06/2800.webp" alt="Correos">
+                <img src="https://www.correos.gob.sv/wp-content/uploads/2021/09/logo_dgces-e1638219667706.png" alt="Correos">
+
+                <img src="https://www.forzadelivery.com/app/uploads/2024/08/forza-delivery-express-logo-white-md.png" alt="DHL">
+                <img src="https://www.correos.gob.sv/wp-content/uploads/2021/09/logo_dgces-e1638219667706.png" alt="FedEx">
+                <img src="https://c807xpress.com/wp-content/uploads/2022/04/logo_c807_express_sv.png" alt="UPS">
+                <img src="https://goboxful.com/el-salvador/wp-content/uploads/sites/3/2025/06/2800.webp" alt="Correos">
+            </div>
+            <div class="ticker-mask-right"></div>
+        </div>
+
+    </div>
+
+
+    <section id="ofertas" class="view-section">
+        <div class="ofertas-grid">
+            <div class="card-main">
+                <span class="badge">OFERTAS</span>
+                <img src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/bxumvrnbtsoch0rvygkk.webp" alt="Promocin">
+            </div>
+            
+            <article class="card card1">
+                <span class="promo-tag">-20%</span>
+                <button class="wishlist-btn"><i data-lucide="heart"></i></button>
+                <div class="card-img">
+                    <img src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/bxumvrnbtsoch0rvygkk.webp" alt="GameBoy">
+                </div>
+                <h3>GameBoy Color</h3>
+                <p>Portátil icónica restaurada a nivel de museo.</p>
+                <div class="card-footer">
+                    <a href="#">Ver más</a>
+                    <button class="btn-circle"><i data-lucide="shopping-cart"></i></button>
+                </div>
+            </article>
+
+            <article class="card card2">
+                <span class="promo-tag">-20%</span>
+                <button class="wishlist-btn"><i data-lucide="heart"></i></button>
+                <div class="card-img">
+                    <img src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401926/geekwave_catalog/gn6pmut3am2ycqput9l5.webp" alt="Sega">
+                </div>
+                <h3>Sega Genesis</h3>
+                <p>16 bits de poder original con hardware impecable.</p>
+                <div class="card-footer">
+                    <a href="#">Ver más</a>
+                    <button class="btn-circle"><i data-lucide="shopping-cart"></i></button>
+                </div>
+            </article>
+
+            <article class="card card3">
+                <span class="promo-tag">-20%</span>
+                <button class="wishlist-btn"><i data-lucide="heart"></i></button>
+                <div class="card-img">
+                    <img src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401928/geekwave_catalog/g8uw7xptynpndg9ugp0c.webp" alt="SNES">
+                </div>
+                <h3>SNES Classic</h3>
+                <p>La experiencia de 16-bit definitiva para tu setup.</p>
+                <div class="card-footer">
+                    <a href="#">Ver ms</a>
+                    <button class="btn-circle"><i data-lucide="shopping-cart"></i></button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="preventa" class="view-section">
+        <div class="preventa-container">
+            <aside class="vertical-label">PROXIMAMENTE</aside>
+            <div class="preventa-main-grid">
+                <div class="trending-banner">
+                    <span class="badge">PREVENTA</span>
+                    <h2>TRENDING</h2>
+                    <span class="date">12-06-2026</span>
+                </div>
+<div class="upcoming-list">
+    <div class="mini-card">
+        <div class="mini-header">
+            <span class="promo-mini">-10%</span>
+            <div class="mini-meta">
+                <time>25-05-2026</time>
+                <button class="wishlist-btn-mini"><i data-lucide="heart"></i></button>
+            </div>
+        </div>
+        <h4>Everdrive 64</h4>
+    </div>
+
+    <div class="mini-card">
+        <div class="mini-header">
+            <span class="promo-mini">-15%</span>
+            <div class="mini-meta">
+                <time>25-05-2026</time>
+                <button class="wishlist-btn-mini"><i data-lucide="heart"></i></button>
+            </div>
+        </div>
+        <h4>Retroid Pocket 5</h4>
+    </div>
+</div>
+
+<article class="featured-card">
+    <button class="wishlist-btn"><i data-lucide="heart"></i></button>
+    <h3>Analogue Pocket</h3>
+    <p>La pieza de ingeniera definitiva para tus cartuchos originales.</p>
+    <div class="featured-footer">
+        <span class="promo-tag">-5%</span>
+        <a href="#" class="btn-outline">Ver detalles</a>
+    </div>
+</article>
+            </div>
+        </div>
+    </section>
+
+<section id="best-seller" class="view-section">
+        <div class="bs-slider-wrapper">
+            
+            <button class="bs-nav-btn bs-prev" id="bsPrevBtn"><i data-lucide="chevron-left"></i></button>
+            <button class="bs-nav-btn bs-next" id="bsNextBtn"><i data-lucide="chevron-right"></i></button>
+
+            <div class="bs-slider-track" id="bsTrack">
+                
+                <div class="bs-slide">
+                    <div class="best-seller-card">
+                        <div class="best-seller-bg">
+                            <img src="https://images.hive.blog/0x0/https://i.imgur.com/IdbeFip.png" alt="Xbox Series X">
+                        </div>
+                        <div class="bs-layout">
+                            <div class="bs-top">
+                                <span class="badge">BEST SELLER 1</span>
+                                <span class="bs-trending">Lo ms buscado <i data-lucide="flame"></i></span>
+                            </div>
+                            <div class="bs-main">
+                                <div class="bs-info">
+                                    <h2>XBOX<br>SERIES X - 1TB.</h2>
+                                    <p>La consola de Microsoft más rápida de la historia. Disfruta de miles de títulos de cuatro generaciones de consolas con el rendimiento y la fidelidad visual.
+                                </div>
+                                <div class="bs-action">
+                                    <a href="#" class="btn-primary btn-white">Ver detalles</a>
+                                </div>
+                            </div>
+                            <div class="bs-bottom">
+                                <span class="new-label">NEW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-slide">
+                    <div class="best-seller-card">
+                        <div class="best-seller-bg">
+                            <img src="https://media.gq.com.mx/photos/60b27dacfe7c1331bb8120a9/16:9/w_2560%2Cc_limit/super-mario-bros%2520(2).jpg" alt="Sega">
+                        </div>
+                        <div class="bs-layout">
+                            <div class="bs-top">
+                                <span class="badge">BEST SELLER 2</span>
+                                <span class="bs-trending">Tendencia global <i data-lucide="flame"></i></span>
+                            </div>
+                            <div class="bs-main">
+                                <div class="bs-info">
+                                    <h2>SEGA<br>GENESIS - CORE.</h2>
+                                    <p>Experimenta el procesamiento 'Blast Processing' original. Una pieza central de 16 bits completamente restaurada para los coleccionistas más exigentes.</p>
+                                </div>
+                                <div class="bs-action">
+                                    <a href="#" class="btn-primary btn-white">Ver detalles</a>
+                                </div>
+                            </div>
+                            <div class="bs-bottom">
+                                <span class="new-label">EXCLUSIVE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-slide">
+                    <div class="best-seller-card">
+                        <div class="best-seller-bg">
+                            <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/en_US/articles/2024/two-classic-tetris-games-are-dropping-onto-the-nes-and-game-boy-[...]
+                        </div>
+                        <div class="bs-layout">
+                            <div class="bs-top">
+                                <span class="badge">BEST SELLER 3</span>
+                                <span class="bs-trending">Clásico atemporal <i data-lucide="flame"></i></span>
+                            </div>
+                            <div class="bs-main">
+                                <div class="bs-info">
+                                    <h2>SUPER<br>NINTENDO.</h2>
+                                    <p>La consola que defini una era dorada. Gráficos Mode 7 y sonido estéreo inigualable, ahora con salida de video para pantallas modernas.</p>
+                                </div>
+                                <div class="bs-action">
+                                    <a href="#" class="btn-primary btn-white">Ver detalles</a>
+                                </div>
+                            </div>
+                            <div class="bs-bottom">
+                                <span class="new-label">RESTOCKED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<div id="footer-placeholder"></div>
+
+
+
+
+
+
+
+<div id="welcome-modal-overlay" class="modal-overlay hidden">
+
+    <div id="welcome-modal" class="modal-content-large">
+
+        <!-- Botón cerrar -->
+        <button id="close-modal" class="close-btn-circle" aria-label="Cerrar">
+
+            <svg width="20" height="20" viewBox="0 0 20 20">
+                <line x1="2" y1="2" x2="18" y2="18" stroke="white" stroke-width="2"/>
+                <line x1="18" y1="2" x2="2" y2="18" stroke="white" stroke-width="2"/>
+            </svg>
+
+        </button>
+
+        <!-- ========================================= -->
+        <!-- COLUMNA IZQUIERDA / SLIDER -->
+        <!-- ========================================= -->
+
+        <div class="modal-image-container">
+
+            <div class="slider-wrapper">
+
+                <img
+                    src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401901/geekwave_catalog/pgcad8wh4ba0g9se5dz2.webp"
+                    alt="Geekwave Hardware"
+                    class="slide active"
+                >
+
+                <img
+                    src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401872/geekwave_catalog/vybuwhqgbpi4hi4nxom4.webp"
+                    alt="Geekwave Retro Collection"
+                    class="slide"
+                >
+
+                <img
+                    src="https://res.cloudinary.com/dn8pns203/image/upload/v1777401873/geekwave_catalog/hkh80zcxx5hci35cxxhm.webp"
+                    alt="Geekwave Gaming Collection" class="slide">
+
+            </div>
+
+            <!-- Indicadores del slider -->
+            <div class="modal-slider-indicators">
+
+                <span class="modal-dot active"></span>
+                <span class="modal-dot"></span>
+                <span class="modal-dot"></span>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- COLUMNA DERECHA -->
+        <!-- ========================================= -->
+
+        <div class="modal-grid">
+
+            <!-- ===================================== -->
+            <!-- VISTA INVITADO -->
+            <!-- ===================================== -->
+
+            <div
+                id="guest-content"
+                class="modal-body-large"
+            >
+
+                <span class="modal-badge">
+                    ACCESO PRIORITARIO
+                </span>
+
+                <h2>
+                    ¡Empieza a descubrir! <br>
+                  
+                </h2>
+
+                <p class="modal-description">
+
+                    Descubre consolas, portátiles y hardware
+                    cuidadosamente restaurados.
+
+                    Suscríbete para recibir acceso anticipado a
+                    nuevas colecciones, preventas y descuentos
+                    exclusivos.
+
+                </p>
+
+                <form id="newsletter-form">
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Tu correo electrónico"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        id="subscribe-btn"
+                        class="btn-primary-large"
+                    >
+                        Suscribirme
+                    </button>
+
+                </form>
+
+                <a
+                    href="productos.html"
+                    class="link-secondary"
+                >
+                    Explorar catálogo →
+                </a>
+
+                <div class="modal-footer">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="no-show-again"
+                        >
+
+                        No volver a mostrar
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- ===================================== -->
+            <!-- VISTA USUARIO LOGUEADO -->
+            <!-- ===================================== -->
+
+            <div
+                id="logged-content"
+                class="modal-body-large hidden"
+            >
+
+                <span class="modal-badge">
+                    BIENVENIDO DE NUEVO
+                </span>
+
+                <h2>
+                    Tus ofertas<br>
+                    te están esperando.
+                </h2>
+
+                <p class="modal-description">
+
+                    Accede a descuentos exclusivos,
+                    lanzamientos anticipados y promociones
+                    reservadas para miembros Geekwave.
+
+                </p>
+
+                <div class="logged-actions">
+
+                    <a
+                        href="ofertas.html"
+                        class="btn-primary-large btn-full"
+                    >
+                        Ir a mis ofertas
+                    </a>
+
+                    <a
+                        href="productos.html"
+                        class="link-secondary"
+                    >
+                        Seguir explorando →
+                    </a>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="no-show-again-logged"
+                        >
+
+                        No volver a mostrar
+
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- VISTA MINIMIZADA -->
+        <!-- ========================================= -->
+
+        <div
+            id="modal-minimized-view"
+            class="minimized-text hidden"
+        >
+
+            <div class="minimized-content">
+
+                <span class="minimized-label">
+                    OFERTAS EXCLUSIVAS
+                </span>
+
+                <strong>
+                    Ver novedades Geekwave
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<!-- ===== SCRIPTS EN ORDEN CORRECTO ===== -->
+<!-- 1 PRIMERO: Cargar componentes (navbar + footer) -->
+<script src="js/component-loader.js"></script>
+
+<!-- 2 SEGUNDO: Scripts que dependen del navbar -->
+<script src="js/navbar-global.js" defer></script>
+
+<!-- 3 TERCERO: Scripts especficos de la pgina -->
+<script src="js/geekwave-main.js" defer></script>
+<script src="js/index.js" defer></script>
+<script src="js/modal.js" defer></script>
+
+</body>
+</html>

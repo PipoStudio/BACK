@@ -1,0 +1,23 @@
+/*! C:\Users\Douglas Osorio 666\Pictures\PUNTO MAL\Geekwave\Game\keepYourSheep\src\main.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/.pnpm/phaser@3.90.0/node_modules/phaser/dist/phaser.js (<- Module is not an ECMAScript module) */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/.pnpm/webfontloader@1.6.28/node_modules/webfontloader/webfontloader.js (<- Module is not an ECMAScript module) */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! all exports used */
+
+/*! babel-polyfill */
+
+/*! no exports provided */
+
+/*! no static exports found */
+
+/*!**********************************!*\
+  !*** ./src/main.js + 17 modules ***!
+  \**********************************/
+
+/*!******************************************!*\
+  !*** multi babel-polyfill ./src/main.js ***!
+  \******************************************/

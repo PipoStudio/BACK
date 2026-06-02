@@ -1,0 +1,464 @@
+/* =========================================
+   1. VARIABLES, RESETEO Y ESTILOS GLOBALES
+   ========================================= */
+:root {
+    --bg-color: #050505;
+    --text-main: #ffffff;
+    --text-muted: #888888;
+    --border-color: #222222;
+    --card-bg: #111111;
+    --card-hover: #1a1a1a;
+    
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Efectos de scroll */
+.platform-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.platform-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+button { cursor: pointer; background: none; border: none; color: inherit; }
+
+/* Botones Base */
+.btn-primary {
+    background-color: var(--text-main);
+    color: var(--bg-color);
+    font-family: var(--font-heading);
+    font-weight: 800;
+    padding: 1.2rem 3.5rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* =========================================
+   2. NAVEGACIN Y COMPONENTES (COPIA EXACTA)
+   ========================================= */
+.navbar {
+    position: fixed; top: 0; left: 0; width: 100%; height: 50px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 5%; z-index: 1000; transition: all 0.3s ease;
+}
+
+.navbar-glass {
+    background: rgba(5, 5, 5, 0.5); backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo { display: flex; align-items: center; gap: 12px; font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; letter-spacing: 1px; color: #fff; }
+
+.nav-links { display: flex; gap: 3rem; transition: opacity 0.3s ease, transform 0.3s ease; }
+.nav-links.hidden { opacity: 0; pointer-events: none; transform: translateY(-10px); }
+.nav-links a { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+.nav-links a:hover, .nav-links a.active { color: var(--text-main); }
+
+.nav-icons { display: flex; gap: 1.8rem; }
+
+/* Mega Menu & Cart Dropdown (Fix Z-index) */
+.mega-menu {
+    position: fixed; top: 50px; left: 0; width: 100%; height: 0;
+    background: rgba(5, 5, 5, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-color);
+    overflow: hidden; transition: height 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); z-index: 9999 !important;
+}
+.mega-menu.active { height: 450px; }
+
+.cart-dropdown {
+    position: absolute; top: 50px; right: 0; width: 350px; background: var(--card-bg);
+    border: 1px solid var(--border-color); border-radius: 0 0 16px 16px; box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+    padding: 20px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; z-index: 9999 !important;
+}
+.cart-dropdown.show { opacity: 1; visibility: visible; transform: translateY(0); }
+
+/* =========================================
+   3. ESTRUCTURA EDITORIAL (ENCABEZADOS Y TTULOS)
+   ========================================= */
+.products-page {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+/* Cabecera Principal - Restaurada */
+.page-header {
+    margin-bottom: 60px;
+}
+.page-header h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: 800;
+    max-width: 900px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+.page-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Plataformas (PlayStation, Nintendo...) - Restaurado */
+.platform-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 39px;
+}
+
+/* Subcategoras y Descripciones de Grupos - Restaurado */
+.subcategory-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* =========================================
+   4. TARJETAS DE PRODUCTO (AJUSTE DE IMAGEN)
+   ========================================= */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    height: 480px; 
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* Imagen: Sin bordes negros laterales */
+.card-img-wrapper {
+    width: 100%;
+    height: 350px;
+    padding: 0px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+
+
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Llena el espacio sin deformar */
+    transition: transform 0.5s ease;
+
+    object-position: center center;
+        transition: transform .6s ease;
+
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #00ff7f;
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.card-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.add-cart-btn {
+    width: 45px; height: 45px; border-radius: 50%;
+    background: var(--text-main); color: var(--bg-color);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+}
+
+/* =========================================
+   5. SLIDER Y FOOTER (RESTAURADO)
+   ========================================= */
+.slider-wrapper { width: 100%; overflow-x: auto; padding: 20px 0; scrollbar-width: none; }
+.slider-wrapper::-webkit-scrollbar { display: none; }
+.slider-track { display: flex; gap: 25px; width: max-content; }
+
+.editorial-footer {
+    position: relative; z-index: 20; width: 100%; display: flex; align-items: center; justify-content: center;
+    background-color: var(--bg-color); border-radius: 40px 40px 0 0; padding: 2rem 0; margin-top: 50px;
+}
+
+.footer-block {
+    width: 90%; max-width: 120rem; background: var(--card-bg); border-radius: 2.5rem; padding: 6rem 5rem;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 4rem; border: 1px solid var(--border-color);
+}
+
+.footer-logo { font-family: var(--font-heading); font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 800; color: var(--text-main); line-height: 1; }
+.footer-tagline { font-size: 1rem; color: var(--text-muted); max-width: 85%; font-weight: 500; line-height: 1.6; }
+/* --- REPARACIN DE BOTN Y ALINEACIN --- */
+
+.btn-outline {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid var(--text-main);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+    text-align: center;
+    display: block;
+    
+    /* Esta es la clave: hace que el botn crezca para ocupar 
+       el espacio sobrante al lado del crculo del carrito */
+    flex: 1; 
+}
+
+.btn-outline:hover {
+    background-color: var(--text-main);
+    color: var(--bg-color);
+}
+
+.card-actions-row {
+    margin-top: auto; /* Empuja los botones al fondo de la card */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px; /* Espacio de separacin entre el botn y el carrito */
+    width: 100%;
+}
+
+.add-cart-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--text-main);
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Evita que el crculo se aplaste si el botn es largo */
+}
+
+/* --- ICONO DE CORAZN (WISHLIST) --- */
+.card-img-wrapper {
+    position: relative; /* Obligatorio para que el corazn se alinee dentro de este cuadro */
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro traslcido para que resalte */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 10; /* Por encima de la imagen */
+    transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+    background: #ffffff;
+    color: #ff4d4d; /* Se vuelve rojo al pasar el mouse */
+    transform: scale(1.1);
+}
+
+/* Estado cuando el corazn est "activado" (si usas JS despus) */
+.wishlist-btn.active {
+    color: #ff4d4d;
+    background: #ffffff;
+}
+
+.card-img-wrapper {
+    position: relative !important;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+    background: white;
+    color: #ff4d4d;
+    transform: scale(1.1);
+}
+
+/* Carrito en navbar (solo productos.html): mismo bloque compacto que .add-cart-btn en resultados */
+#cartBtn.navbar-cart-add-style {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--text-main);
+    color: var(--bg-color);
+    border: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#cartBtn.navbar-cart-add-style:hover {
+    transform: scale(1.08);
+    background: #e0e0e0;
+    color: var(--bg-color);
+}
+
+#cartBtn.navbar-cart-add-style svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.product-card{
+    position:relative;
+}
+
+.favorite-btn{
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:5;
+
+    transition:.25s;
+}
+
+.favorite-btn svg{
+
+    width:20px;
+    height:20px;
+
+    stroke:#fff;
+    fill:transparent;
+
+    transition:.25s;
+}
+
+.favorite-btn:hover{
+
+    transform:scale(1.08);
+}
+
+.favorite-btn.active svg{
+
+    stroke:#ff3b3b;
+    fill:#ff3b3b;
+}

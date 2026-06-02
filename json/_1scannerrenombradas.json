@@ -1,0 +1,1001 @@
+[
+    {
+        "id": 1,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_CosmicGray_Frontal.webp",
+        "nuevo_nombre": "AlienwareArea51_F_CosmGray_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/Alienware Area-51_CosmicGray_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/AlienwareArea51_F_CosmGray_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 2,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_CosmicGray_Lateral.webp",
+        "nuevo_nombre": "AlienwareArea51_L_CosmGray_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/Alienware Area-51_CosmicGray_Lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/AlienwareArea51_L_CosmGray_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 3,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_CosmicGray_Paquete.webp",
+        "nuevo_nombre": "AlienwareArea51_P_CosmGray_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/Alienware Area-51_CosmicGray_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/AlienwareArea51_P_CosmGray_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 4,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_CosmicGray_Paquete2.webp",
+        "nuevo_nombre": "AlienwareArea51_P_CosmGray_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/Alienware Area-51_CosmicGray_Paquete2.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/AlienwareArea51_P_CosmGray_1.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 5,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_CosmicGray_Trasero.webp",
+        "nuevo_nombre": "AlienwareArea51_T_CosmGray_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/Alienware Area-51_CosmicGray_Trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoCosmicGray/AlienwareArea51_T_CosmGray_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 6,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_SpaceBlack_Frontal.webp",
+        "nuevo_nombre": "AlienwareArea51_F_Spaclack_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/Alienware Area-51_SpaceBlack_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/AlienwareArea51_F_Spaclack_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 7,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_SpaceBlack_Lateral.webp",
+        "nuevo_nombre": "AlienwareArea51_L_Spaclack_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/Alienware Area-51_SpaceBlack_Lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/AlienwareArea51_L_Spaclack_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 8,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_SpaceBlack_Paquete.webp",
+        "nuevo_nombre": "AlienwareArea51_P_Spaclack_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/Alienware Area-51_SpaceBlack_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/AlienwareArea51_P_Spaclack_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 9,
+        "producto": "Alienware Area-51",
+        "archivo_original": "Alienware Area-51_SpaceBlack_Trasero.webp",
+        "nuevo_nombre": "AlienwareArea51_T_Spaclack_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/Alienware Area-51_SpaceBlack_Trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Alienware Area-51/Alienware Area-51_GrupoSpaceBlack/AlienwareArea51_T_Spaclack_0.webp\" alt=\"Alienware Area-51\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 10,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_Empaque_negro.png.webp",
+        "nuevo_nombre": "AnaloguePocket_P_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_Empaque_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_P_Black_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 11,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_frontal_negro.png.webp",
+        "nuevo_nombre": "AnaloguePocket_F_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_frontal_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_F_Black_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 12,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_Lateral_negro.png.webp",
+        "nuevo_nombre": "AnaloguePocket_L_Satilver_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_Lateral_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_L_Satilver_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 13,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_Reverso_negro.png.webp",
+        "nuevo_nombre": "AnaloguePocket_T_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_Reverso_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analague Pocket negro/AnaloguePocket_T_Black_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 14,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_empaque_ceramicwhite.png.webp",
+        "nuevo_nombre": "AnaloguePocket_P_Cerahite_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_empaque_ceramicwhite.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_P_Cerahite_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 15,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_frontal_ceramicwhite.png.webp",
+        "nuevo_nombre": "AnaloguePocket_F_Cerahite_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_frontal_ceramicwhite.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_F_Cerahite_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 16,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_lateral_ceramicwhite.png.webp",
+        "nuevo_nombre": "AnaloguePocket_L_Cerahite_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_lateral_ceramicwhite.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_L_Cerahite_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 17,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_reverso_ceramicwhite.png.webp",
+        "nuevo_nombre": "AnaloguePocket_T_Cerahite_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_reverso_ceramicwhite.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro ceramicwhite/AnaloguePocket_T_Cerahite_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 18,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_Empaque_satinsilver.png.webp",
+        "nuevo_nombre": "AnaloguePocket_P_Satilver_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_Empaque_satinsilver.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_P_Satilver_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 19,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_Frontal_satinsilver.png.webp",
+        "nuevo_nombre": "AnaloguePocket_F_Satilver_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_Frontal_satinsilver.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_F_Satilver_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 20,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_lateral_satinsilver.png.webp",
+        "nuevo_nombre": "AnaloguePocket_L_Satilver_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_lateral_satinsilver.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_L_Satilver_1.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 21,
+        "producto": "Analogue Pocket",
+        "archivo_original": "AnaloguePocket_reverso_satinsilver.png.webp",
+        "nuevo_nombre": "AnaloguePocket_T_Satilver_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_reverso_satinsilver.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Analogue Pocket/Analogue Pocket negro satinsilver/AnaloguePocket_T_Satilver_0.webp\" alt=\"Analogue Pocket\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 22,
+        "producto": "Art of Fallout 3",
+        "archivo_original": "ArtofFallout_cenital_originalcover.png.webp",
+        "nuevo_nombre": "ArtofFallout3_F_Origover_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout_cenital_originalcover.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout3_F_Origover_0.webp\" alt=\"Art of Fallout 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 23,
+        "producto": "Art of Fallout 3",
+        "archivo_original": "ArtofFallout_Empaque_originalcover.png.webp",
+        "nuevo_nombre": "ArtofFallout3_P_Origover_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout_Empaque_originalcover.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout3_P_Origover_0.webp\" alt=\"Art of Fallout 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 24,
+        "producto": "Art of Fallout 3",
+        "archivo_original": "ArtofFallout_frontal_originalcover.png.webp",
+        "nuevo_nombre": "ArtofFallout3_F_Origover_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout_frontal_originalcover.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout3_F_Origover_1.webp\" alt=\"Art of Fallout 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 25,
+        "producto": "Art of Fallout 3",
+        "archivo_original": "ArtofFallout_Reverso_originalcover.png.webp",
+        "nuevo_nombre": "ArtofFallout3_T_Origover_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout_Reverso_originalcover.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/ArtoFallout/ArtofFallout3_T_Origover_0.webp\" alt=\"Art of Fallout 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 26,
+        "producto": "Bitfunx PS2 HDMI",
+        "archivo_original": "BinfunxPS2HDMI_empaque_negro.png.webp",
+        "nuevo_nombre": "BitfunxPS2HDMI_P_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Bindfux/BinfunxPS2HDMI_empaque_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Bindfux/BitfunxPS2HDMI_P_Black_0.webp\" alt=\"Bitfunx PS2 HDMI\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 27,
+        "producto": "Bitfunx PS2 HDMI",
+        "archivo_original": "BinfunxPS2HDMI_frontal_negro.png.webp",
+        "nuevo_nombre": "BitfunxPS2HDMI_F_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Bindfux/BinfunxPS2HDMI_frontal_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Bindfux/BitfunxPS2HDMI_F_Black_0.webp\" alt=\"Bitfunx PS2 HDMI\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 28,
+        "producto": "Bitfunx PS2 HDMI",
+        "archivo_original": "BinfunxPS2HDMI_lateral_negro.png.webp",
+        "nuevo_nombre": "BitfunxPS2HDMI_L_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Bindfux/BinfunxPS2HDMI_lateral_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Bindfux/BitfunxPS2HDMI_L_Black_0.webp\" alt=\"Bitfunx PS2 HDMI\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 29,
+        "producto": "Bitfunx PS2 HDMI",
+        "archivo_original": "BinfunxPS2HDMI_reverso_negro.png.webp",
+        "nuevo_nombre": "BitfunxPS2HDMI_T_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Bindfux/BinfunxPS2HDMI_reverso_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Bindfux/BitfunxPS2HDMI_T_Black_0.webp\" alt=\"Bitfunx PS2 HDMI\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 30,
+        "producto": "Commodore 64",
+        "archivo_original": "Commodore 64_Beige Clasico_Frontal.webp",
+        "nuevo_nombre": "Commodore64_F_Beigsico_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Commodore 64/Commodore 64_Beige Clasico_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Commodore 64/Commodore64_F_Beigsico_0.webp\" alt=\"Commodore 64\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 31,
+        "producto": "Commodore 64",
+        "archivo_original": "Commodore 64_Beige Clasico_lateral.webp",
+        "nuevo_nombre": "Commodore64_L_Beigsico_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Commodore 64/Commodore 64_Beige Clasico_lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Commodore 64/Commodore64_L_Beigsico_0.webp\" alt=\"Commodore 64\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 32,
+        "producto": "Commodore 64",
+        "archivo_original": "Commodore 64_Beige Clasico_Paquete.webp",
+        "nuevo_nombre": "Commodore64_P_Beigsico_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Commodore 64/Commodore 64_Beige Clasico_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Commodore 64/Commodore64_P_Beigsico_0.webp\" alt=\"Commodore 64\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 33,
+        "producto": "Commodore 64",
+        "archivo_original": "Commodore 64_Beige Clasico_trasero.webp",
+        "nuevo_nombre": "Commodore64_T_Beigsico_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Commodore 64/Commodore 64_Beige Clasico_trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Commodore 64/Commodore64_T_Beigsico_0.webp\" alt=\"Commodore 64\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 34,
+        "producto": "Estatua M. Chief",
+        "archivo_original": "_EstatuaM.Chief_Cenital_SpartanGreen.png.webp",
+        "nuevo_nombre": "EstatuaMChief_F_Sparreen_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/EstatuaM.Chief/_EstatuaM.Chief_Cenital_SpartanGreen.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/EstatuaM.Chief/EstatuaMChief_F_Sparreen_0.webp\" alt=\"Estatua M. Chief\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 35,
+        "producto": "Estatua M. Chief",
+        "archivo_original": "_EstatuaM.Chief_empaque_SpartanGreen.png.webp",
+        "nuevo_nombre": "EstatuaMChief_P_Sparreen_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/EstatuaM.Chief/_EstatuaM.Chief_empaque_SpartanGreen.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/EstatuaM.Chief/EstatuaMChief_P_Sparreen_0.webp\" alt=\"Estatua M. Chief\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 36,
+        "producto": "Estatua M. Chief",
+        "archivo_original": "_EstatuaM.Chief_frontal_SpartanGreen.png.webp",
+        "nuevo_nombre": "EstatuaMChief_F_Sparreen_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/EstatuaM.Chief/_EstatuaM.Chief_frontal_SpartanGreen.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/EstatuaM.Chief/EstatuaMChief_F_Sparreen_1.webp\" alt=\"Estatua M. Chief\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 37,
+        "producto": "Estatua M. Chief",
+        "archivo_original": "_EstatuaM.Chief_Reverso_SpartanGreen.png.webp",
+        "nuevo_nombre": "EstatuaMChief_T_Sparreen_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/EstatuaM.Chief/_EstatuaM.Chief_Reverso_SpartanGreen.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/EstatuaM.Chief/EstatuaMChief_T_Sparreen_0.webp\" alt=\"Estatua M. Chief\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 38,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_empaque_grey.png.webp",
+        "nuevo_nombre": "Everdrive64X7_P_OrigGrey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64x7_empaque_grey.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64X7_P_OrigGrey_0.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 39,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_frontal_grey.png.webp",
+        "nuevo_nombre": "Everdrive64X7_F_OrigGrey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64x7_frontal_grey.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64X7_F_OrigGrey_0.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 40,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_lateral_grey.png.webp",
+        "nuevo_nombre": "Everdrive64X7_L_OrigGrey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64x7_lateral_grey.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64X7_L_OrigGrey_0.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 41,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_reverso_grey.png.webp",
+        "nuevo_nombre": "Everdrive64X7_T_OrigGrey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64x7_reverso_grey.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7  grey/Everdrive64X7_T_OrigGrey_0.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 42,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_empaque_originalcase.png.webp",
+        "nuevo_nombre": "Everdrive64X7_P_OrigGrey_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64x7_empaque_originalcase.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64X7_P_OrigGrey_1.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 43,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_frontal_originalcase.png.webp",
+        "nuevo_nombre": "Everdrive64X7_F_OrigGrey_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64x7_frontal_originalcase.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64X7_F_OrigGrey_1.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 44,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_lateral_originalcase.png.webp",
+        "nuevo_nombre": "Everdrive64X7_L_OrigGrey_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64x7_lateral_originalcase.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64X7_L_OrigGrey_1.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 45,
+        "producto": "Everdrive 64 X7",
+        "archivo_original": "Everdrive64x7_reverso_originalcase.png.webp",
+        "nuevo_nombre": "Everdrive64X7_T_OrigGrey_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64x7_reverso_originalcase.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Everdrive64x7_originalcase/Everdrive64X7_T_OrigGrey_1.webp\" alt=\"Everdrive 64 X7\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 46,
+        "producto": "GameBoy Micro",
+        "archivo_original": "GameBoyMicro_Black_Frontal.webp",
+        "nuevo_nombre": "GameBoyMicro_F_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Black/GameBoyMicro_Black_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Black/GameBoyMicro_F_Black_0.webp\" alt=\"GameBoy Micro\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 47,
+        "producto": "GameBoy Micro",
+        "archivo_original": "GameBoyMicro_Black_Paquete.webp",
+        "nuevo_nombre": "GameBoyMicro_P_Black_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Black/GameBoyMicro_Black_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Black/GameBoyMicro_P_Black_0.webp\" alt=\"GameBoy Micro\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 48,
+        "producto": "GameBoy Micro",
+        "archivo_original": "GameBoyMicro_Blue_Frontal (2).webp",
+        "nuevo_nombre": "GameBoyMicro_F_Blue_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Blue/GameBoyMicro_Blue_Frontal (2).webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Blue/GameBoyMicro_F_Blue_0.webp\" alt=\"GameBoy Micro\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 49,
+        "producto": "GameBoy Micro",
+        "archivo_original": "GameBoyMicro_Blue_Frontal.webp",
+        "nuevo_nombre": "GameBoyMicro_F_Blue_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Blue/GameBoyMicro_Blue_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/GameBoyMicro2/GameBoyMicro_Blue/GameBoyMicro_F_Blue_1.webp\" alt=\"GameBoy Micro\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 50,
+        "producto": "GameCube Indigo",
+        "archivo_original": "GameCube Indigo_Purpura_Frontal.webp",
+        "nuevo_nombre": "GameCubeIndigo_F_Indiura)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/GameCube/GameCube Indigo_Purpura_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/GameCube/GameCubeIndigo_F_Indiura)_0.webp\" alt=\"GameCube Indigo\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 51,
+        "producto": "GameCube Indigo",
+        "archivo_original": "GameCube Indigo_Purpura_Paquete.webp",
+        "nuevo_nombre": "GameCubeIndigo_P_Indiura)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/GameCube/GameCube Indigo_Purpura_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/GameCube/GameCubeIndigo_P_Indiura)_0.webp\" alt=\"GameCube Indigo\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 52,
+        "producto": "GameCube Indigo",
+        "archivo_original": "GameCube Indigo_Purpura_Trasero.webp",
+        "nuevo_nombre": "GameCubeIndigo_T_Indiura)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/GameCube/GameCube Indigo_Purpura_Trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/GameCube/GameCubeIndigo_T_Indiura)_0.webp\" alt=\"GameCube Indigo\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 53,
+        "producto": "God of War III",
+        "archivo_original": "God of War III_ClearTransparente_frontal.webp",
+        "nuevo_nombre": "GodofWarIII_F_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/God of War III/God of War III_ClearTransparente_frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/God of War III/GodofWarIII_F_Cleante)_0.webp\" alt=\"God of War III\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 54,
+        "producto": "God of War III",
+        "archivo_original": "God of War III_ClearTransparente_frontal2.webp",
+        "nuevo_nombre": "GodofWarIII_F_Cleante)_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/God of War III/God of War III_ClearTransparente_frontal2.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/God of War III/GodofWarIII_F_Cleante)_1.webp\" alt=\"God of War III\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 55,
+        "producto": "God of War III",
+        "archivo_original": "God of War III_ClearTransparente_trasero.webp",
+        "nuevo_nombre": "GodofWarIII_T_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/God of War III/God of War III_ClearTransparente_trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/God of War III/GodofWarIII_T_Cleante)_0.webp\" alt=\"God of War III\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 56,
+        "producto": "Mario Galaxy 2",
+        "archivo_original": "Mario Galaxy 2_White_frontal.webp",
+        "nuevo_nombre": "MarioGalaxy2_F_Whitnco)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Mario Galaxy 2/Mario Galaxy 2_White_frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Mario Galaxy 2/MarioGalaxy2_F_Whitnco)_0.webp\" alt=\"Mario Galaxy 2\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 57,
+        "producto": "Mario Galaxy 2",
+        "archivo_original": "Mario Galaxy 2_White_lateral_paquete.webp",
+        "nuevo_nombre": "MarioGalaxy2_P_Whitnco)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Mario Galaxy 2/Mario Galaxy 2_White_lateral_paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Mario Galaxy 2/MarioGalaxy2_P_Whitnco)_0.webp\" alt=\"Mario Galaxy 2\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 58,
+        "producto": "Mario Galaxy 2",
+        "archivo_original": "Mario Galaxy 2_White_trasero.webp",
+        "nuevo_nombre": "MarioGalaxy2_T_Whitnco)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Mario Galaxy 2/Mario Galaxy 2_White_trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Mario Galaxy 2/MarioGalaxy2_T_Whitnco)_0.webp\" alt=\"Mario Galaxy 2\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 59,
+        "producto": "MGS 4",
+        "archivo_original": "MGS_MetalGearSolid_ClearTransparente_Frontal.webp",
+        "nuevo_nombre": "MGS4_F_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS_MetalGearSolid_ClearTransparente_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS4_F_Cleante)_0.webp\" alt=\"MGS 4\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 60,
+        "producto": "MGS 4",
+        "archivo_original": "MGS_MetalGearSolid_ClearTransparente_Lateral.webp",
+        "nuevo_nombre": "MGS4_L_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS_MetalGearSolid_ClearTransparente_Lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS4_L_Cleante)_0.webp\" alt=\"MGS 4\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 61,
+        "producto": "MGS 4",
+        "archivo_original": "MGS_MetalGearSolid_ClearTransparente_Trasero.webp",
+        "nuevo_nombre": "MGS4_T_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS_MetalGearSolid_ClearTransparente_Trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS4_T_Cleante)_0.webp\" alt=\"MGS 4\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 62,
+        "producto": "MGS 4",
+        "archivo_original": "MGS_MetalGearSolid_ClearTransparente_Trasero2.webp",
+        "nuevo_nombre": "MGS4_T_Cleante)_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS_MetalGearSolid_ClearTransparente_Trasero2.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MGS_ Metal Gear Solid/MGS4_T_Cleante)_1.webp\" alt=\"MGS 4\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 63,
+        "producto": "Miyoo Mini Plus",
+        "archivo_original": "MiyooMiniPlus_frontal_retro.png.webp",
+        "nuevo_nombre": "MiyooMiniPlus_F_RetrGrey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MiyooMiniPlus_blanco/MiyooMiniPlus_frontal_retro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MiyooMiniPlus_blanco/MiyooMiniPlus_F_RetrGrey_0.webp\" alt=\"Miyoo Mini Plus\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 64,
+        "producto": "Miyoo Mini Plus",
+        "archivo_original": "MiyooMiniPlus_lateral_blanco.png.webp",
+        "nuevo_nombre": "MiyooMiniPlus_L_White_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MiyooMiniPlus_blanco/MiyooMiniPlus_lateral_blanco.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MiyooMiniPlus_blanco/MiyooMiniPlus_L_White_0.webp\" alt=\"Miyoo Mini Plus\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 65,
+        "producto": "Miyoo Mini Plus",
+        "archivo_original": "MiyooMiniPlus_reverso_blanco.png.webp",
+        "nuevo_nombre": "MiyooMiniPlus_T_Blacnsp._0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MiyooMiniPlus_blanco/MiyooMiniPlus_reverso_blanco.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MiyooMiniPlus_blanco/MiyooMiniPlus_T_Blacnsp._0.webp\" alt=\"Miyoo Mini Plus\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 66,
+        "producto": "Miyoo Mini Plus",
+        "archivo_original": "MiyooMiniPlus_frontal_negro.png.webp",
+        "nuevo_nombre": "MiyooMiniPlus_F_RetrGrey_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MiyooMiniPlus_negro/MiyooMiniPlus_frontal_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MiyooMiniPlus_negro/MiyooMiniPlus_F_RetrGrey_1.webp\" alt=\"Miyoo Mini Plus\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 67,
+        "producto": "Miyoo Mini Plus",
+        "archivo_original": "MiyooMiniPlus_lateral_negro.png.webp",
+        "nuevo_nombre": "MiyooMiniPlus_L_White_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MiyooMiniPlus_negro/MiyooMiniPlus_lateral_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MiyooMiniPlus_negro/MiyooMiniPlus_L_White_1.webp\" alt=\"Miyoo Mini Plus\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 68,
+        "producto": "Miyoo Mini Plus",
+        "archivo_original": "MiyooMiniPlus_reverso_negro.png.webp",
+        "nuevo_nombre": "MiyooMiniPlus_T_RetrGrey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/MiyooMiniPlus_negro/MiyooMiniPlus_reverso_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/MiyooMiniPlus_negro/MiyooMiniPlus_T_RetrGrey_0.webp\" alt=\"Miyoo Mini Plus\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 69,
+        "producto": "DSi XL",
+        "archivo_original": "Nintendo DSi XL_Bronze_Frontal.webp",
+        "nuevo_nombre": "DSiXL_F_Bronze_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Bronze/Nintendo DSi XL_Bronze_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Bronze/DSiXL_F_Bronze_0.webp\" alt=\"DSi XL\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 70,
+        "producto": "DSi XL",
+        "archivo_original": "Nintendo DSi XL_Midnight Blue_Frontal.webp",
+        "nuevo_nombre": "DSiXL_F_MidnBlue_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Midnight Blue/Nintendo DSi XL_Midnight Blue_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Midnight Blue/DSiXL_F_MidnBlue_0.webp\" alt=\"DSi XL\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 71,
+        "producto": "DSi XL",
+        "archivo_original": "Nintendo DSi XL_Midnight Blue_Paquete.webp",
+        "nuevo_nombre": "DSiXL_P_MidnBlue_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Midnight Blue/Nintendo DSi XL_Midnight Blue_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Midnight Blue/DSiXL_P_MidnBlue_0.webp\" alt=\"DSi XL\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 72,
+        "producto": "DSi XL",
+        "archivo_original": "Nintendo DSi XL_Midnight Blue_Trasero.webp",
+        "nuevo_nombre": "DSiXL_T_MidnBlue_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Midnight Blue/Nintendo DSi XL_Midnight Blue_Trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Nintendo DSi XL/Nintendo DSi XL_Grupo_Midnight Blue/DSiXL_T_MidnBlue_0.webp\" alt=\"DSi XL\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 73,
+        "producto": "Pokémon Black/W",
+        "archivo_original": "Pokémon BlackW_Black (Cartridge IR)_Frontal.webp",
+        "nuevo_nombre": "PokémonBlackW_F_BlaceIR)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/Pokémon BlackW_Black (Cartridge IR)_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/PokémonBlackW_F_BlaceIR)_0.webp\" alt=\"Pokémon Black/W\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 74,
+        "producto": "Pokémon Black/W",
+        "archivo_original": "Pokémon BlackW_Black (Cartridge IR)_Lateral.webp",
+        "nuevo_nombre": "PokémonBlackW_L_BlaceIR)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/Pokémon BlackW_Black (Cartridge IR)_Lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/PokémonBlackW_L_BlaceIR)_0.webp\" alt=\"Pokémon Black/W\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 75,
+        "producto": "Pokémon Black/W",
+        "archivo_original": "Pokémon BlackW_Black (Cartridge IR)_Paquete.webp",
+        "nuevo_nombre": "PokémonBlackW_P_BlaceIR)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/Pokémon BlackW_Black (Cartridge IR)_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/PokémonBlackW_P_BlaceIR)_0.webp\" alt=\"Pokémon Black/W\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 76,
+        "producto": "Pokémon Black/W",
+        "archivo_original": "Pokémon BlackW_Black (Cartridge IR)_Paquete2.webp",
+        "nuevo_nombre": "PokémonBlackW_P_BlaceIR)_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/Pokémon BlackW_Black (Cartridge IR)_Paquete2.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Pokémon BlackW_Black (Cartridge IR)/PokémonBlackW_P_BlaceIR)_1.webp\" alt=\"Pokémon Black/W\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 77,
+        "producto": "PowerMac G5",
+        "archivo_original": "PowerMac G5_Aluminio Anodizado_frontal.webp",
+        "nuevo_nombre": "PowerMacG5_F_Alumzado_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/PowerMac G5/PowerMac G5_Aluminio Anodizado_frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/PowerMac G5/PowerMacG5_F_Alumzado_0.webp\" alt=\"PowerMac G5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 78,
+        "producto": "PowerMac G5",
+        "archivo_original": "PowerMac G5_Aluminio Anodizado_lateral.webp",
+        "nuevo_nombre": "PowerMacG5_L_Alumzado_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/PowerMac G5/PowerMac G5_Aluminio Anodizado_lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/PowerMac G5/PowerMacG5_L_Alumzado_0.webp\" alt=\"PowerMac G5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 79,
+        "producto": "PowerMac G5",
+        "archivo_original": "PowerMac G5_Aluminio Anodizado_Paquete.webp",
+        "nuevo_nombre": "PowerMacG5_P_Alumzado_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/PowerMac G5/PowerMac G5_Aluminio Anodizado_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/PowerMac G5/PowerMacG5_P_Alumzado_0.webp\" alt=\"PowerMac G5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 80,
+        "producto": "PowerMac G5",
+        "archivo_original": "PowerMac G5_Aluminio Anodizado_trasero.webp",
+        "nuevo_nombre": "PowerMacG5_T_Alumzado_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/PowerMac G5/PowerMac G5_Aluminio Anodizado_trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/PowerMac G5/PowerMacG5_T_Alumzado_0.webp\" alt=\"PowerMac G5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 81,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_empaque_16bit.png.webp",
+        "nuevo_nombre": "RetroidPocket5_P_Retro_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_empaque_16bit.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_P_Retro_0.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 82,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_frontal_16bit.png.webp",
+        "nuevo_nombre": "RetroidPocket5_F_Retro_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_frontal_16bit.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_F_Retro_0.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 83,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_lateral_16bit.png.webp",
+        "nuevo_nombre": "RetroidPocket5_L_Retro_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_lateral_16bit.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_L_Retro_0.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 84,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_reverso_16bit.png.webp",
+        "nuevo_nombre": "RetroidPocket5_T_Retro_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_reverso_16bit.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_16bit/RetroidPocket5_T_Retro_0.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 85,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_empaque_negro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_P_Retro_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_empaque_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_P_Retro_1.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 86,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_frontal_negro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_F_Retro_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_frontal_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_F_Retro_1.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 87,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_lateral_negro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_L_Retro_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_lateral_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_L_Retro_1.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 88,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_reverso_negro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_T_Retro_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_reverso_negro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Black/RetroidPocket5_T_Retro_1.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 89,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_empaque_retro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_P_Retro_2.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_empaque_retro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_P_Retro_2.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 90,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_frontal_retro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_F_Retro_2.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_frontal_retro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_F_Retro_2.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 91,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_lateral_retro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_L_Retro_2.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_lateral_retro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_L_Retro_2.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 92,
+        "producto": "Retroid Pocket 5",
+        "archivo_original": "RetroidPocket5_reverso_retro.png.webp",
+        "nuevo_nombre": "RetroidPocket5_T_Retro_2.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_reverso_retro.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/RetroidPocket5/RetroidPocket5_Retro/RetroidPocket5_T_Retro_2.webp\" alt=\"Retroid Pocket 5\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 93,
+        "producto": "Sega Genesis M2",
+        "archivo_original": "Sega Genesis M2_NegroMate_Frontal.webp",
+        "nuevo_nombre": "SegaGenesisM2_F_NegrMate_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Sega Genesis M2/Sega Genesis M2_NegroMate_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Sega Genesis M2/SegaGenesisM2_F_NegrMate_0.webp\" alt=\"Sega Genesis M2\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 94,
+        "producto": "Sega Genesis M2",
+        "archivo_original": "Sega Genesis M2_NegroMate_lateral.webp",
+        "nuevo_nombre": "SegaGenesisM2_L_NegrMate_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Sega Genesis M2/Sega Genesis M2_NegroMate_lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Sega Genesis M2/SegaGenesisM2_L_NegrMate_0.webp\" alt=\"Sega Genesis M2\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 95,
+        "producto": "Sega Genesis M2",
+        "archivo_original": "Sega Genesis M2_NegroMate_Paquete.webp",
+        "nuevo_nombre": "SegaGenesisM2_P_NegrMate_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Sega Genesis M2/Sega Genesis M2_NegroMate_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Sega Genesis M2/SegaGenesisM2_P_NegrMate_0.webp\" alt=\"Sega Genesis M2\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 96,
+        "producto": "Sega Genesis M2",
+        "archivo_original": "Sega Genesis M2_NegroMate_trasero.webp",
+        "nuevo_nombre": "SegaGenesisM2_T_NegrMate_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Sega Genesis M2/Sega Genesis M2_NegroMate_trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Sega Genesis M2/SegaGenesisM2_T_NegrMate_0.webp\" alt=\"Sega Genesis M2\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 97,
+        "producto": "Super Nintendo",
+        "archivo_original": "SuperNintendo_Grey_Frontal.webp",
+        "nuevo_nombre": "SuperNintendo_F_Grey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Super Nintendo/SuperNintendo_Grey_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Super Nintendo/SuperNintendo_F_Grey_0.webp\" alt=\"Super Nintendo\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 98,
+        "producto": "Super Nintendo",
+        "archivo_original": "SuperNintendo_Grey_Paquetw.webp",
+        "nuevo_nombre": "SuperNintendo_F_Grey_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Super Nintendo/SuperNintendo_Grey_Paquetw.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Super Nintendo/SuperNintendo_F_Grey_1.webp\" alt=\"Super Nintendo\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 99,
+        "producto": "Super Nintendo",
+        "archivo_original": "SuperNintendo_Grey_Trasero.webp",
+        "nuevo_nombre": "SuperNintendo_T_Grey_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Super Nintendo/SuperNintendo_Grey_Trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Super Nintendo/SuperNintendo_T_Grey_0.webp\" alt=\"Super Nintendo\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 100,
+        "producto": "Lámpara Tetris",
+        "archivo_original": "LamparaTetris_empaque_multicolor.png.webp",
+        "nuevo_nombre": "LámparaTetris_P_Multolor_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Tetris/LamparaTetris_empaque_multicolor.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Tetris/LámparaTetris_P_Multolor_0.webp\" alt=\"Lámpara Tetris\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 101,
+        "producto": "Lámpara Tetris",
+        "archivo_original": "LamparaTetris_lateral_multicolor.png.webp",
+        "nuevo_nombre": "LámparaTetris_L_Multolor_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Tetris/LamparaTetris_lateral_multicolor.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Tetris/LámparaTetris_L_Multolor_0.webp\" alt=\"Lámpara Tetris\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 102,
+        "producto": "Lámpara Tetris",
+        "archivo_original": "LamparaTetris_reverso_multicolor.png.webp",
+        "nuevo_nombre": "LámparaTetris_T_Multolor_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Tetris/LamparaTetris_reverso_multicolor.png.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Tetris/LámparaTetris_T_Multolor_0.webp\" alt=\"Lámpara Tetris\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 103,
+        "producto": "Uncharted 3",
+        "archivo_original": "Uncharted 3_Clear Transparente_Frontal.webp",
+        "nuevo_nombre": "Uncharted3_F_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Uncharted 3/Uncharted 3_Clear Transparente_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Uncharted 3/Uncharted3_F_Cleante)_0.webp\" alt=\"Uncharted 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 104,
+        "producto": "Uncharted 3",
+        "archivo_original": "Uncharted 3_Clear Transparente_Lateral.webp",
+        "nuevo_nombre": "Uncharted3_L_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Uncharted 3/Uncharted 3_Clear Transparente_Lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Uncharted 3/Uncharted3_L_Cleante)_0.webp\" alt=\"Uncharted 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 105,
+        "producto": "Uncharted 3",
+        "archivo_original": "Uncharted 3_Clear Transparente_Paquete.webp",
+        "nuevo_nombre": "Uncharted3_P_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Uncharted 3/Uncharted 3_Clear Transparente_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Uncharted 3/Uncharted3_P_Cleante)_0.webp\" alt=\"Uncharted 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 106,
+        "producto": "Uncharted 3",
+        "archivo_original": "Uncharted 3_Clear Transparente_Trasero1.webp",
+        "nuevo_nombre": "Uncharted3_T_Cleante)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Uncharted 3/Uncharted 3_Clear Transparente_Trasero1.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Uncharted 3/Uncharted3_T_Cleante)_0.webp\" alt=\"Uncharted 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 107,
+        "producto": "Uncharted 3",
+        "archivo_original": "Uncharted 3_Clear Transparente_Trasero2.webp",
+        "nuevo_nombre": "Uncharted3_T_Cleante)_1.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Uncharted 3/Uncharted 3_Clear Transparente_Trasero2.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Uncharted 3/Uncharted3_T_Cleante)_1.webp\" alt=\"Uncharted 3\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 108,
+        "producto": "Zelda: Skyward S.",
+        "archivo_original": "Zelda Skyward S_White_Frontal.webp",
+        "nuevo_nombre": "ZeldaSkywardS_F_Whitnco)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Zelda Skyward S/Zelda Skyward S_White_Frontal.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Zelda Skyward S/ZeldaSkywardS_F_Whitnco)_0.webp\" alt=\"Zelda: Skyward S.\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 109,
+        "producto": "Zelda: Skyward S.",
+        "archivo_original": "Zelda Skyward S_White_Lateral.webp",
+        "nuevo_nombre": "ZeldaSkywardS_L_Whitnco)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Zelda Skyward S/Zelda Skyward S_White_Lateral.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Zelda Skyward S/ZeldaSkywardS_L_Whitnco)_0.webp\" alt=\"Zelda: Skyward S.\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 110,
+        "producto": "Zelda: Skyward S.",
+        "archivo_original": "Zelda Skyward S_White_Paquete.webp",
+        "nuevo_nombre": "ZeldaSkywardS_P_Whitnco)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Zelda Skyward S/Zelda Skyward S_White_Paquete.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Zelda Skyward S/ZeldaSkywardS_P_Whitnco)_0.webp\" alt=\"Zelda: Skyward S.\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    },
+    {
+        "id": 111,
+        "producto": "Zelda: Skyward S.",
+        "archivo_original": "Zelda Skyward S_White_Trasero.webp",
+        "nuevo_nombre": "ZeldaSkywardS_T_Whitnco)_0.webp",
+        "ruta_absoluta_origen": "E:/MOHO ANIMATION/Catalogo/CONVERTIDOR 2/MI_CATALOGO_Optimizado/Zelda Skyward S/Zelda Skyward S_White_Trasero.webp",
+        "src_html_sugerido": "<img src=\"MI_CATALOGO_Optimizado/Zelda Skyward S/ZeldaSkywardS_T_Whitnco)_0.webp\" alt=\"Zelda: Skyward S.\">",
+        "carpeta_origen": "MI_CATALOGO_Optimizado"
+    }
+]

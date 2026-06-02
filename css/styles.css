@@ -1,0 +1,1818 @@
+/* =========================================
+   1. VARIABLES Y RESETEO
+   ========================================= */
+:root {
+    --bg-color: #050505;
+    --text-main: #ffffff;
+    --text-muted: #888888;
+    --border-color: #222222;
+    --card-bg: #111111;
+    --card-hover: #1a1a1a;
+    
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+/* =========================================
+   2. UTILIDADES DE SECCIN
+   ========================================= */
+.view-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10; /* Z-INDEX: Asegura que cubra al hero */
+    background-color: var(--bg-color); /* Fondo slido para tapar el hero al hacer scroll */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 5% 40px; 
+    border-bottom: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+
+
+/* =========================================
+   3. NAVEGACIN (Bug de textos solucionado)
+   ========================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar-glass {
+    background: rgba(5, 5, 5, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Tamao de fuente aumentado para evitar el bug de empequeecimiento */
+.logo {
+    display: flex; align-items: center; gap: 12px;
+    font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; letter-spacing: 1px; color: #fff;
+}
+
+.nav-links { display: flex; gap: 3rem; }
+.nav-links a { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+.nav-links a:hover, .nav-links a.active { color: var(--text-main); }
+.nav-icons { display: flex; gap: 1.8rem; }
+.icon-btn { display: flex; align-items: center; justify-content: center; transition: transform 0.2s; color: #fff; }
+.icon-btn:hover { transform: scale(1.1); }
+
+
+
+
+/* =========================================
+   SISTEMA DE BSQUEDA (Spotlight Style)
+   ========================================= */
+.nav-links {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Clase para ocultar los links cuando la bsqueda se expande */
+.nav-links.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* El input inicia oculto (width: 0) */
+.search-input {
+    width: 0;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 8px 16px;
+    padding-right: 40px; /* Deja espacio para que la lupa no tape el texto */
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    outline: none;
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+}
+
+.search-input::placeholder { color: rgba(255,255,255,0.5); }
+
+/* Expansin inteligente de la barra */
+.search-container.active .search-input {
+    width: 350px; /* Ancho que cubrir el espacio de los links */
+    opacity: 1;
+    pointer-events: all;
+}
+
+.search-btn {
+    position: relative;
+    z-index: 2; /* Siempre por encima del input */
+}
+
+/* =========================================
+   RESULTADOS DE BSQUEDA (Dropdown)
+   ========================================= */
+/* =========================================
+   RESULTADOS DE BSQUEDA (Dropdown)
+   ========================================= */
+.search-results {
+    position: absolute;
+    top: 150%;
+    right: 0;
+    width: 400px;
+    max-height: 350px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+    
+    /* NUEVO: Evita que al llegar al final de la lista, la pgina entera haga scroll */
+    overscroll-behavior: contain; 
+}
+
+.search-results.active {
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+}
+
+/* Custom Scrollbar elegante (Ahora ms visible) */
+.search-results::-webkit-scrollbar { 
+    width: 8px; /* Un peln ms ancha para que sea fcil de ver */
+}
+.search-results::-webkit-scrollbar-track { 
+    background: rgba(255, 255, 255, 0.02); /* Fondo sper sutil para marcar el carril */
+    border-radius: 10px; 
+}
+.search-results::-webkit-scrollbar-thumb { 
+    background: rgba(255, 255, 255, 0.25); /* Gris ms claro para que resalte sobre el fondo negro */
+    border-radius: 10px; 
+}
+.search-results::-webkit-scrollbar-thumb:hover { 
+    background: rgba(255, 255, 255, 0.4); /* Se ilumina ms si pasas el mouse por encima de la barrita */
+}
+/* Tarjetas individuales de resultado */
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: background 0.2s ease;
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+/* Estado Hover normal (Mouse) */
+.result-item:hover { background: rgba(255,255,255,0.05); }
+
+/* NUEVO: Estado Focus/Resaltado (Teclado) */
+.result-item.highlight {
+    background: rgba(255,255,255,0.1);
+    border-left: 3px solid var(--text-main);
+}
+
+.result-item:last-child { border-bottom: none; }
+
+
+
+/* =========================================
+   BSQUEDAS RECIENTES (UI)
+   ========================================= */
+.recent-header {
+    padding: 15px 16px 8px;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recent-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    transition: background 0.2s ease;
+}
+
+.recent-item:hover { background: rgba(255,255,255,0.05); }
+
+.recent-link {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.remove-recent {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.remove-recent:hover { color: #ff4d4d; }
+
+.result-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #222;
+    flex-shrink: 0;
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Vital para que el texto no rompa el diseo */
+}
+
+.result-title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Puntos suspensivos si es muy largo */
+}
+
+.result-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Puntos suspensivos para la descripcin */
+}
+
+.no-results {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+
+
+/* =========================================
+   4. HERO Y SLIDER (Z-index y textos fijos)
+   ========================================= */
+.hero-video-slider {
+    position: fixed; 
+    top: 0; left: 0; width: 100%; height: 100vh;
+    z-index: 0; 
+    padding: 0; border: none; overflow: hidden;
+}
+
+.slider-container { width: 100%; height: 100%; position: relative; }
+
+.video-slide {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    opacity: 0; transition: opacity 1s ease-in-out; z-index: 1;
+}
+
+.video-slide.active { opacity: 1; z-index: 2; }
+
+.video-bg { width: 100%; height: 100%; position: absolute; overflow: hidden; }
+.video-bg video { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6); }
+
+.video-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 100%);
+}
+/* CONTENEDOR DE TEXTOS: Anclado abajo a la izquierda */
+.hero-content {
+    position: absolute;
+    bottom: 8%; /* Ms pegado abajo */
+    left: 5%;    
+    z-index: 10;
+    max-width: 80%; /* Ms espacio lateral para la lnea nica */
+    text-align: left; 
+}
+
+/* TEXTOS ESCALADOS: Una sola lnea masiva */
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(5rem, 9vw, 9.5rem); /* Tamao gigante y fluido */
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.2rem; /* Pegado al prrafo */
+    color: var(--text-main);
+    white-space: nowrap; /* FUERZA A QUE NO SALTE DE LNEA */
+    letter-spacing: -2px;
+}
+
+.hero-content p {
+    font-size: 1.5rem; 
+    margin-bottom: 2.5rem;
+    color: #ccc;
+    font-weight: 400;
+    white-space: nowrap; /* FUERZA A QUE NO SALTE DE LNEA */
+    margin-top: -10px;   /* "Muerde" el espacio del h1 para unirlos fsicamente */
+    letter-spacing: 0.5px;
+}
+/* =========================================
+   ESTILOS BASE DEL BOTN (Intactos para no romper otras secciones)
+   ========================================= */
+.btn-primary {
+    background-color: var(--text-main);
+    color: var(--bg-color);
+    font-family: var(--font-heading);
+    font-weight: 800;
+    padding: 1.2rem 3.5rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+/* =========================================
+   POSICIONAMIENTO EXCLUSIVO: Botn del Hero
+   ========================================= */
+.hero-content .btn-primary {
+    position: fixed; 
+    right: 5%;       
+    top: 50%;        
+    transform: translateY(-50%); 
+    z-index: 20;     
+}
+
+/* NUEVO HOVER: Usa tus variables para invertir colores a oscuro */
+.hero-content .btn-primary:hover {
+    transform: translateY(-50%) scale(1.05);
+    background-color: var(--bg-color); /* Tu variable de negro #050505 */
+    color: var(--text-main);           /* Tu variable de blanco #ffffff */
+    border: 1px solid var(--border-color); /* Aade un borde sutil para que no se pierda en el video oscuro */
+}
+.slider-indicators {
+    position: absolute;
+    bottom: 5%; /* Debajo de los textos */
+    left: 5%;   /* Alineado a la izquierda */
+    z-index: 10;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.slider-bar { width: 6rem; height: 0.4rem; background: rgba(255,255,255,0.3); cursor: pointer; overflow: hidden; }
+.progress-fill { width: 0%; height: 100%; background: #fff; }
+.slider-bar.active .progress-fill { animation: progress 6s linear forwards; }
+@keyframes progress { from { width: 0%; } to { width: 100%; } }
+/* =========================================
+   MARQUESINAS (Efecto Tnel Doble y Sin Espacios)
+   ========================================= */
+.floating-ticker {
+    margin-top: 100vh; 
+    position: relative;
+    z-index: 50; 
+    background-color: var(--text-main); 
+    color: var(--bg-color); 
+    overflow: hidden;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.5); 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0; /* Asegura que no haya espacio con la siguiente seccin */
+}
+
+.ticker-row {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Ajuste de velocidad para un bucle ms fluido */
+.ticker-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: max-content;
+    animation: scrollText 40s linear infinite; /* Un poco ms lento para mejor legibilidad */
+}
+
+@keyframes scrollText { 
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-50%); } 
+}
+
+.ticker-row.text-promo {
+    padding: 1.2rem 0;
+}
+
+.ticker-row.text-promo .ticker-track span {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-right: 4rem;
+    letter-spacing: 0.1em;
+}
+
+/* --- FILA 2: Logos Envo con TNEL DOBLE --- */
+.ticker-row.logo-carriers {
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.ticker-row.logo-carriers .ticker-track img {
+    height: 35px;
+    width: auto;
+    margin-right: 8rem; /* Ms espacio para evitar saturacin */
+    filter: grayscale(100%) brightness(0.2);
+    opacity: 0.8;
+}
+
+/* MSCARAS DE TNEL (Izquierda y Derecha) */
+.ticker-mask-left, .ticker-mask-right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 250px; /* Ancho del tnel */
+    z-index: 10;
+    pointer-events: none; /* No interfiere con clics */
+}
+
+/* Tnel Izquierdo con Texto */
+.ticker-mask-left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1) 50%, rgba(255,255,255,0));
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.mask-text-left {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--bg-color);
+}
+
+/* Tnel Derecho (Solo desvanecimiento) */
+.ticker-mask-right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1) 30%, rgba(255,255,255,0));
+}
+/* =========================================
+   5. SECCIN OFERTAS (Cards como Background)
+   ========================================= */
+.ofertas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-areas: 
+        "main main main"
+        "card1 card2 card3";
+    gap: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+.card-main {
+    grid-area: main;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+}
+
+.card-main img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6); }
+
+.badge { position: absolute; top: 24px; left: 24px; background: var(--text-main); color: var(--bg-color); font-family: var(--font-heading); font-weight: 800; padding: 6px 16px; border-radius: 30px; font-size: 0.75rem; z-index: 2; }
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; /* Mantiene la imagen absoluta dentro de la tarjeta */
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card:nth-of-type(2) { grid-area: card1; }
+.card:nth-of-type(3) { grid-area: card2; }
+.card:nth-of-type(4) { grid-area: card3; }
+
+.card:hover { transform: translateY(-5px); }
+
+.promo-tag { position: absolute; top: 24px; left: 24px; background: var(--text-main); color: var(--bg-color); font-family: var(--font-heading); font-weight: 800; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; z-index: 3; }
+.wishlist-btn { position: absolute; top: 24px; right: 24px; z-index: 3; color: #fff; }
+.wishlist-btn:hover { color: var(--text-muted); }
+
+/* IMAGEN COMO FONDO ABSOLUTO */
+.card-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    z-index: 0; /* Al fondo de la tarjeta */
+}
+
+.card-img img {
+    width: 100%; height: 100%;
+    object-fit: cover; /* Evita que se deforme */
+    filter: brightness(0.25); /* Oscurecida para que los textos sean legibles */
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img img { transform: scale(1.1); }
+
+/* Textos sobre la imagen de fondo */
+.card h3, .card p, .card-footer {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.card h3 { font-family: var(--font-heading); font-weight: 800; font-size: 1.8rem; margin-top: auto; margin-bottom: 8px; }
+.card p { font-size: 1rem; color: #ccc; margin-bottom: 20px; } /* Se quit overflow:hidden, ya no se cortan */
+
+.card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px; }
+.card-footer a { font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; border-bottom: 1px solid transparent; }
+.card-footer a:hover { border-bottom-color: var(--text-main); }
+.btn-circle { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+.btn-circle:hover { background-color: var(--text-main); color: var(--bg-color); }
+
+/* =========================================
+   6. SECCIN PREVENTA
+   ========================================= */
+.preventa-container { display: flex; height: 100%; width: 100%; gap: 40px; }
+.vertical-label { writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-heading); font-weight: 800; font-size: 2.5rem; /* color: var(--border-color); */ display: flex; align-items: center; justify-content: center; }
+
+.preventa-main-grid { flex-grow: 1; display: grid; grid-template-columns: 1fr 1.5fr; grid-template-rows: auto 1fr; gap: 24px; }
+.trending-banner { 
+    grid-column: 1 / -1; 
+    /* Integracin de la imagen con un filtro oscuro sutil para no perder legibilidad */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=2000') center/cover no-repeat; 
+    border: 1px solid var(--border-color); 
+    border-radius: 12px; 
+    padding: 0 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: relative; 
+    height: 120px; 
+    overflow: hidden; /* Garantiza que la imagen no se salga de los bordes redondeados */
+}
+
+/* Ubicacin exacta que solicitaste para la etiqueta PREVENTA */
+.trending-banner .badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.trending-banner h2 { 
+    font-family: var(--font-heading); 
+    font-size: 2.5rem; 
+    font-weight: 800; 
+    margin-left: 100px; /* Deja espacio para que el badge no choque con el texto */
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    top: 20px;
+    left:-110px;
+
+
+}
+
+.trending-banner .date { 
+    font-family: var(--font-heading); 
+    font-weight: 700; 
+    border: 1px solid #fff; 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+.upcoming-list { display: flex; flex-direction: column; gap: 24px; }
+
+/* Tarjeta estructurada en columna */
+.mini-card { 
+    background-color: var(--card-bg); 
+    border: 1px solid var(--border-color); 
+    border-radius: 12px; 
+    padding: 24px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    gap: 20px; 
+    flex-grow: 1; 
+    transition: background-color 0.3s; 
+}
+.mini-card:hover { background-color: var(--card-hover); }
+
+/* Contenedor superior (Descuento + Fecha/Icono) */
+.mini-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mini-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.promo-mini { background: var(--text-main); color: var(--bg-color); font-family: var(--font-heading); font-weight: 800; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
+
+.mini-meta time { font-size: 0.9rem; color: var(--text-muted); font-weight: 700; }
+
+.wishlist-btn-mini { color: var(--text-muted); display: flex; align-items: center; transition: color 0.3s; }
+.wishlist-btn-mini:hover { color: var(--text-main); }
+
+/* Ttulo en la parte inferior */
+.mini-card h4 { font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: #fff; }
+
+.featured-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 40px; position: relative; display: flex; flex-direction: column; justify-content: flex-end; }
+.featured-card h3 { font-family: var(--font-heading); font-size: 3rem; font-weight: 800; line-height: 1; margin-bottom: 16px; }
+.featured-card p { color: var(--text-muted); max-width: 80%; margin-bottom: 32px; }
+.featured-footer { display: flex; justify-content: space-between; align-items: center; }
+.btn-outline { font-family: var(--font-heading); font-weight: 700; text-transform: uppercase; border: 1px solid var(--text-main); padding: 12px 24px; border-radius: 30px; font-size: 0.85rem; transition: all 0.3s; }
+.btn-outline:hover { background-color: var(--text-main); color: var(--bg-color); }
+/* =========================================
+   7. SECCIN BEST SELLER (Ajustes Finales)
+   ========================================= */
+/* =========================================
+   7. SECCIN BEST SELLER (Slider Dinmico)
+   ========================================= */
+#best-seller {
+    position: sticky; 
+    top: 0;
+    z-index: 5; 
+    background-color: var(--bg-color); 
+    height: 100vh; /* Corregido! Ya no es -100vh */
+    padding: 40px 5%; /* Le damos un poco de respiro al contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bs-slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-color); /* El borde ahora abraza al slider entero */
+}
+.bs-slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* La transicin ahora la controla JavaScript para hacer el bucle perfecto invisible */
+}
+
+.bs-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.best-seller-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+/* FLECHAS DE NAVEGACIN */
+.bs-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.bs-nav-btn:hover {
+    background: var(--text-main);
+    color: var(--bg-color);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.bs-prev { left: 20px; }
+.bs-next { right: 20px; }
+.best-seller-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.best-seller-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.bs-layout {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.bs-top { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
+.bs-top .badge { position: static; }
+.bs-trending { display: flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-weight: 700; color: #fff; font-size: 1rem; }
+
+.bs-main { display: flex; justify-content: space-between; align-items: center; width: 100%; flex-grow: 1; }
+.bs-info { transform: translateY(40px); }
+.bs-info h2 { font-family: var(--font-heading); font-size: clamp(4.5rem, 6.5vw, 7rem); font-weight: 800; letter-spacing: -2px; line-height: 0.85; margin-bottom: 20px; color: #fff; }
+.bs-info p { font-size: 1.1rem; color: #ccc; max-width: 850px; line-height: 1.5; }
+
+.bs-action { display: flex; justify-content: flex-end; }
+.bs-action .btn-white { background-color: #fff; color: #000; padding: 0.8rem 2.5rem; font-size: 0.9rem; transition: background-color 0.3s; }
+.bs-action .btn-white:hover { background-color: #e0e0e0; }
+
+.bs-bottom { display: flex; justify-content: flex-end; width: 100%; }
+.new-label { background-color: #fff; color: #000; font-family: var(--font-heading); font-weight: 800; padding: 6px 20px; border-radius: 30px; font-size: 0.8rem; }
+/* =========================================
+   8. FOOTER
+   ========================================= */
+/* =========================================
+ /* =========================================
+   8. FOOTER EDITORIAL
+   ========================================= */
+/* =========================================
+   8. FOOTER EDITORIAL (Centrado Vertical)
+   ========================================= */
+.editorial-footer {
+    position: relative;
+    z-index: 20; 
+    width: 100%;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;     /* Activamos Flexbox */
+    align-items: center; /* CENTRADO VERTICAL: Ya no topa con la parte superior */
+    justify-content: center; /* Centrado horizontal */
+    background-color: var(--bg-color); 
+    border-radius: 40px 40px 0 0; 
+    box-shadow: 0 -20px 50px rgba(0,0,0,0.8);
+    padding: 2rem 0; /* Espacio de seguridad interno */
+}
+
+.footer-block {
+    width: 90%;
+    max-width: 120rem;
+    background: var(--card-bg); 
+    border-radius: 2.5rem; 
+    padding: 6rem 5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr; 
+    gap: 4rem;
+    border: 1px solid var(--border-color);
+    /* Ya no necesita min-height fijo, se adapta al contenido centrado */
+}
+.footer-col { display: flex; flex-direction: column; gap: 1.5rem; }
+.brand-col { justify-content: space-between; }
+.footer-logo { display: flex; align-items: center; gap: 12px; font-family: var(--font-heading); font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 800; color: var(--text-main); margin: 0; line-height: 1; letter-spacing: -0.04em; }
+.footer-tagline { font-size: 1rem; color: var(--text-muted); max-width: 85%; font-weight: 500; line-height: 1.6; }
+
+.social-links { display: flex; gap: 1.5rem; margin-top: 1rem; }
+.social-links a { color: var(--text-muted); transition: all 0.3s ease; display: flex; }
+.social-links a:hover { color: var(--text-main); transform: translateY(-3px); }
+
+.footer-label { font-family: var(--font-heading); font-size: 0.85rem; font-weight: 800; color: #555555; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
+
+.links-col a, .contact-col a { color: #cccccc; text-decoration: none; font-size: 1rem; font-weight: 500; transition: all 0.3s ease; width: fit-content; }
+.links-col a:hover { color: var(--text-main); transform: translateX(0.5rem); }
+
+.footer-email { color: var(--text-main); font-size: 1.1rem; }
+.footer-email:hover { color: var(--text-muted); }
+
+.footer-info { font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); }
+.footer-info strong { color: var(--text-main); font-weight: 700; }
+.copyright-text { color: #555555; font-weight: 500; }
+
+/* =========================================
+   INDICADOR (Dentro de la tarjeta del Footer, giratorio)
+   ========================================= */
+#scrollTopBtn {
+    position: absolute;
+    right: 40px; /* Separado del borde derecho de la tarjeta gris */
+    bottom: 80px; /* Esto lo alinear a la base. Si lo quieres ms abajo, puedes usar nmeros negativos como bottom: -20px; */
+    z-index: 50;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--text-main);
+    color: var(--bg-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* La animacin de giro va directamente al SVG del icono */
+#scrollTopBtn svg {
+    transition: transform 0.5s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #e0e0e0;
+}
+
+#scrollTopBtn:hover svg {
+    transform: rotate(360deg); /* El icono gira 360 grados exactos */
+}
+
+/* =========================================
+   Media Queries
+   ========================================= */
+@media (max-width: 1024px) {
+    .footer-block { grid-template-columns: 1fr 1fr; padding: 4rem 3rem; }
+}
+
+@media (max-width: 768px) {
+    .footer-block { grid-template-columns: 1fr; padding: 3rem 2rem; }
+    #scrollTopBtn {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
+    #scrollTopBtn:hover { transform: scale(1.1); }
+}
+
+/* =========================================
+   CONTROLES DE CARRITO EN BSQUEDA (Hover)
+   ========================================= */
+.result-info {
+    flex: 1;          /* Ocupa el espacio disponible */
+    min-width: 0;     /* Crtico para que los puntos suspensivos funcionen */
+    padding-right: 10px;
+}
+
+.result-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto; /* Empuja los controles a la derecha */
+    opacity: 0;        /* Ocultos por defecto */
+    transform: translateX(10px); 
+    transition: all 0.3s ease;
+    pointer-events: none; /* Ignora clics si estn ocultos */
+}
+
+/* LA MAGIA: Muestra controles al pasar el mouse o enfocar con teclado */
+.result-item:hover .result-actions,
+.result-item.highlight .result-actions {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+}
+
+/* UI del Selector de Cantidad */
+.qty-control {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.qty-btn {
+    background: transparent;
+    color: var(--text-main);
+    border: none;
+    width: 26px;
+    height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.qty-btn:hover { background: rgba(255, 255, 255, 0.15); }
+
+.qty-num {
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 20px;
+    text-align: center;
+    color: var(--text-main);
+}
+
+/* UI del Botn de Agregar al Carrito */
+
+/* UI del Botn de Agregar al Carrito */
+
+/* UI del Botn de Agregar al Carrito */
+.add-cart-btn {
+    background: var(--text-main);
+    color: var(--bg-color);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.add-cart-btn:hover {
+    transform: scale(1.08);
+    background: #e0e0e0;
+}
+
+.add-cart-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* =========================================
+   SISTEMA DE CARRITO (Notificacin Navbar)
+   ========================================= */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: #00ff7f; /* Verde brillante, puedes cambiarlo si prefieres tu var(--text-main) */
+    color: #000;
+    font-size: 0.65rem;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+}
+
+.cart-badge.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Permitir que el teclado resalte tambin las bsquedas recientes */
+.recent-item.highlight {
+    background: rgba(255,255,255,0.1);
+    border-left: 3px solid var(--text-main);
+    padding-left: 15px;
+}
+
+/* =========================================
+   SISTEMA DE FILTROS (Panel Dropdown)
+   ========================================= */
+.search-input {
+    padding-right: 80px !important; /* Hacemos espacio para la lupa y el filtro */
+}
+
+.filter-btn {
+    position: absolute;
+    right: 40px; /* Se coloca justo antes de la lupa */
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, color 0.3s ease;
+    color: var(--text-muted);
+}
+
+.search-container.active .filter-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    color: var(--text-main);
+}
+
+/* Panel Desplegable */
+.filter-panel {
+    position: absolute;
+    top: 50px; /* Cae justo desde el borde de la navbar */
+    right: 0;
+    width: 280px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1002;
+}
+
+.filter-panel.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.filter-header {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding-bottom: 10px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-group:last-child { margin-bottom: 0; }
+
+.filter-group label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.filter-group select {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.filter-group select:focus { border-color: var(--text-main); }
+.filter-group select option { background: var(--card-bg); color: var(--text-main); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MEGA MENU (Jerarqua de izquierda a derecha)
+   ========================================= */
+.nav-item-dropdown { position: relative; }
+
+.mega-menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 999;
+}
+
+.mega-menu.active { height: 450px; }
+
+.menu-container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.menu-col {
+    flex: 1;
+    border-right: 1px solid rgba(255,255,255,0.05);
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    max-height: 370px; /* Lmite estricto de altura */
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.4s ease;
+}
+
+.menu-col.hidden {
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
+}
+
+.menu-list { 
+    list-style: none; 
+    overflow-y: auto; 
+    flex: 1;           /* Ocupa el espacio libre */
+    min-height: 0;     /* Obliga a Flexbox a crear un rea de scroll interna */
+    padding-right: 10px;
+    overscroll-behavior: contain; 
+}
+
+/* NUEVO: Indicador visual para cuando usas las flechas del teclado */
+.menu-item.highlight {
+    background: rgba(255,255,255,0.1);
+    border-left: 3px solid var(--text-main);
+    padding-left: 15px;
+}
+
+.menu-label {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    flex-shrink: 0; /* Evita que el ttulo se aplaste */
+}
+
+/* NUEVO: La lista ahora sabe que debe detenerse y hacer scroll */
+.menu-list { 
+    list-style: none; 
+    overflow-y: auto; 
+    flex-grow: 1; 
+    height: 0; /* Magia Flexbox: Obliga a la lista a respetar el lmite del contenedor */
+    padding-right: 10px;
+    overscroll-behavior: contain; /* Evita que la pgina baje cuando llegas al final de la lista */
+}
+
+.menu-item {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 12px 0;
+    cursor: pointer;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item:hover, .menu-item.selected {
+    color: var(--text-main);
+    padding-left: 10px;
+}
+
+.menu-item i { font-size: 0.8rem; opacity: 0; transition: 0.3s; }
+.menu-item:hover i, .menu-item.selected i { opacity: 1; }
+
+/* Scrollbar interno elegante para el mega men */
+.menu-list::-webkit-scrollbar { width: 6px; }
+.menu-list::-webkit-scrollbar-track { background: rgba(255,255,255,0.02); border-radius: 10px; }
+.menu-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+.menu-list::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
+
+
+
+
+/* =========================================
+   CARRITO DE COMPRAS (Dropdown Modal)
+   ========================================= */
+.cart-dropdown {
+    position: absolute;
+    top: 50px; /* Cae justo desde el nav */
+    right: 0;
+    width: 350px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1002;
+    cursor: default;
+}
+
+.cart-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.close-cart { color: var(--text-muted); transition: color 0.2s; }
+.close-cart:hover { color: var(--text-main); }
+
+
+
+/* =========================================
+   ESTRUCTURA DE PRODUCTOS EN CARRITO
+   ========================================= */
+.cart-item {
+    display: flex;
+    flex-direction: row; /* Alineacin horizontal */
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(255,255,255,0.05);
+}
+
+.cart-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+/* NUEVA MINIATURA */
+.cart-item-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #222;
+    flex-shrink: 0;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.cart-item-title { 
+    font-family: var(--font-heading); 
+    font-size: 0.9rem; 
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px; /* Evita que nombres largos rompan el layout */
+}
+
+.cart-item-actions { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.trash-btn {
+    color: var(--text-muted);
+    transition: all 0.2s;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    padding: 6px;
+    display: flex;
+}
+
+.trash-btn:hover { 
+    color: #ff4d4d; 
+    background: rgba(255, 77, 77, 0.1);
+    transform: scale(1.05); 
+}
+
+/* ANIMACIN FLOTANTE (Toast) TIPO CAJN */
+.toast-msg {
+    position: absolute;
+    bottom: -40px; /* Se ubica fsicamente por debajo de la tarjeta */
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px); /* Escondido "dentro" de la tarjeta */
+    background: #ff4d4d;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: -1; /* Magia: hace que el toast quede por detrs del fondo de la carta */
+}
+
+.toast-msg.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* Cae hacia abajo mostrando el mensaje */
+}
+
+/* TNEL DE PRODUCTOS: Altura mxima controlada para el scroll */
+.cart-items {
+    max-height: 280px; /* Lmite del tnel (aprox 3.5 productos) */
+    overflow-y: auto;  /* Obliga a hacer scroll si hay ms elementos */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-right: 10px; /* Espacio para que la barra lateral no pise el contenido */
+    overscroll-behavior: contain; /* Evita que la pgina de fondo se mueva al hacer scroll aqu */
+}
+
+/* Diseo elegante de la barra lateral del carrito */
+.cart-items::-webkit-scrollbar { 
+    width: 6px; 
+}
+.cart-items::-webkit-scrollbar-track { 
+    background: rgba(255,255,255,0.05); 
+    border-radius: 10px; 
+}
+.cart-items::-webkit-scrollbar-thumb { 
+    background: rgba(255,255,255,0.3); 
+    border-radius: 10px; 
+}
+.cart-items::-webkit-scrollbar-thumb:hover { 
+    background: rgba(255,255,255,0.5); 
+}
+
+
+
+/* =========================================
+   SISTEMA DE NOTIFICACIN DE USUARIO
+   ========================================= */
+.user-badge {
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+}
+
+.user-badge.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.user-badge.red {
+    background-color: #ff4d4d;
+    box-shadow: 0 0 8px rgba(255, 77, 77, 0.6);
+}
+
+.user-badge.green {
+    background-color: #00ff7f;
+    box-shadow: 0 0 8px rgba(0, 255, 127, 0.6);
+}
+
+/* Tooltip emergente al hacer hover */
+.user-tooltip {
+    position: absolute;
+    top: 150%;
+    right: 50%;
+    transform: translateX(50%) translateY(10px);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1005;
+    pointer-events: none;
+}
+
+/* El piquito del tooltip */
+.user-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 50%;
+    transform: translateX(50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+/* Solo aparece cuando el tooltip tiene la clase .active y pasamos el mouse por encima */
+.user-nav-container:hover .user-tooltip.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(50%) translateY(0);
+}
+
+/* Estado desactivado para botones del carrito */
+.btn-disabled {
+    background-color: #222 !important;
+    color: #555 !important;
+    border-color: #333 !important;
+    cursor: not-allowed !important;
+    pointer-events: none; /* Bloquea clics fsicos */
+    box-shadow: none !important;
+    transform: none !important;
+}
+.mini-card,
+.featured-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.upcoming-list .mini-card:nth-child(1)::before,
+.upcoming-list .mini-card:nth-child(2)::before,
+.featured-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.25);
+    z-index: 0;
+}
+
+.upcoming-list .mini-card:nth-child(1)::before {
+    background-image: url("https://res.cloudinary.com/dn8pns203/image/upload/v1777401916/geekwave_catalog/nnmxdnuvxkc9is5zakuy.webp");
+}
+
+.upcoming-list .mini-card:nth-child(2)::before {
+    background-image: url("https://res.cloudinary.com/dn8pns203/image/upload/v1777401873/geekwave_catalog/zfex0gmyocthd8qpgwqj.webp");
+}
+
+.featured-card::before {
+    background-image: url("https://res.cloudinary.com/dn8pns203/image/upload/v1777401889/geekwave_catalog/z5nufnxhmwhcqiytwj1c.webp");
+}
+
+.mini-card > *,
+.featured-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.featured-card .promo-tag {
+    position: relative;
+    z-index: 200;
+}
+
+
+/* --- CORRECCIONES DE DISEO --- */
+.nav-action-container { position: relative; display: inline-flex; }
+
+.btn-apply-filters {
+    width: 100%; 
+    padding: 0.8rem; 
+    margin-top: 10px; 
+    font-size: 0.85rem; 
+    border: none; 
+    border-radius: 8px;
+    background: var(--text-main);
+    color: var(--bg-color);
+    font-family: var(--font-heading);
+    font-weight: 800;
+}
+
+.btn-checkout {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 10px; 
+    border: none; 
+    font-size: 0.9rem;
+}
+
+.btn-save-cart {
+    width: 100%; 
+    padding: 12px; 
+    font-size: 0.9rem; 
+    text-align: center;
+}
+
+
+/* Estado "añadiendo" — botón plano, verde sólido, sin glow ni sombras */
+.main-purchase-btn.adding {
+  background: #10b981 !important; /* verde plano */
+  color: #fff !important;
+  transform: none !important;
+  box-shadow: none !important;
+  transition: background .12s ease, color .12s ease;
+}
+
+/* Asegurar que el span interno herede el color blanco */
+.main-purchase-btn.adding span,
+.main-purchase-btn.adding i {
+  color: #fff !important;
+}
+
+/* Hover mantiene el mismo verde plano (sin cambios visuales extra) */
+.main-purchase-btn.adding:hover {
+  background:  #10B981 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* REMOVE: Si añadiste esta animación antes, bórrala del CSS.
+@keyframes added-pulse { ... } */
+
+
+
+
+/* ===== Estilos mejorados para la zona de Colores (plano, redondeado) ===== */
+#colorOptions,
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+/* Botón base (píldora) */
+.color-chip,
+.color-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;             /* forma redondeada */
+  background: rgba(255,255,255,0.03); /* plano, sutil */
+  border: 1px solid rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.88);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .12s ease, transform .08s ease, border-color .12s ease;
+  min-height: 36px;
+  box-shadow: none; /* sin resplandores */
+}
+
+/* Swatch (cuadrado con color) */
+.color-chip .swatch,
+.color-btn .swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;                 /* esquinas suaves */
+  flex-shrink: 0;
+  background: var(--chip-color, #cfcfcf);
+  border: 1px solid rgba(0,0,0,0.10);
+}
+
+/* Texto del color */
+.color-chip .color-label,
+.color-btn .color-label {
+  font-size: 0.9rem;
+  color: inherit;
+  white-space: nowrap;
+}
+
+/* meta oculta (no usada visualmente) */
+.color-chip .meta,
+.color-btn .meta {
+  display: none;
+}
+
+/* Hover: pequeño levantamiento (muy sutil) pero sin brillo */
+.color-chip:hover,
+.color-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.055);
+  border-color: rgba(255,255,255,0.10);
+}
+
+/* Estado activo: fondo plano con el color (sin sombras).
+   Si el color es muy claro puede perder contraste; en la mayoría de casos queda bien.
+   Si quieres otra lógica (ej. forzar fondo blanco al activar), me lo dices. */
+.color-chip.active,
+.color-btn.active {
+  background: var(--chip-color, #ffffff);
+  color: #000; /* texto oscuro sobre fondo claro por defecto */
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Si el valor --chip-color es oscuro, forzamos texto blanco en el swatch + etiqueta.
+   Esto mejora legibilidad para colores oscuros. */
+.color-chip.active,
+.color-btn.active {
+  /* fallback: si el color activado es oscuro, el texto se verá blanco */
+  color: var(--chip-contrast, #000);
+}
+
+/* Forzar que el swatch no cambie su forma al activar */
+.color-chip.active .swatch,
+.color-btn.active .swatch {
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Focus accesible */
+.color-chip:focus,
+.color-btn:focus {
+  outline: 2px solid rgba(255,255,255,0.10);
+  outline-offset: 3px;
+  transform: translateY(-2px);
+}
+
+/* Pequeño ajuste en mobile para que no queden demasiado apretados */
+@media (max-width: 768px) {
+  .color-chip,
+  .color-btn {
+    padding: 0.36rem 0.56rem;
+    min-height: 34px;
+    font-size: 0.88rem;
+  }
+  .color-chip .swatch,
+  .color-btn .swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+  }
+}
+
+/* Estado activo: fondo claro y borde con el color seleccionado para mantener contraste */
+.color-chip.active,
+.color-btn.active {
+  background: #fff;                     /* fondo blanco plano */
+  color: #000;                          /* texto oscuro y legible */
+  border: 1px solid var(--chip-color, rgba(0,0,0,0.08)); /* borde con el color seleccionado */
+  box-shadow: none;
+}
+
+/* Asegurar que el swatch muestre el color (con borde para colores muy claros) */
+.color-chip.active .swatch,
+.color-btn.active .swatch {
+  background: var(--chip-color, #cfcfcf);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Hover del active: mantener contraste (ligero oscurecimiento del borde, sin cambiar background) */
+.color-chip.active:hover,
+.color-btn.active:hover {
+  background: #fff;
+  border-color: color-mix(in srgb, var(--chip-color, #000) 75%, black 25%); /* sutil cambio de borde si el navegador soporta color-mix */
+  transform: translateY(-2px);
+}
+
+/* Si el navegador no soporta color-mix, la línea anterior no rompe nada; opcional: fallback más simple */
+.color-chip.active:hover,
+.color-btn.active:hover {
+  border-color: rgba(0,0,0,0.12);
+}
+
+/* Mantener focus accesible */
+.color-chip:focus,
+.color-btn:focus {
+  outline: 3px solid rgba(0,0,0,0.06);
+  outline-offset: 3px;
+}
+
+
+/* Corregir la alineación del botón de productos */
+#productosBtn {
+    display: inline-flex;    /* Convierte el enlace en un contenedor Flex horizontal */
+    align-items: center;     /* Alinea verticalmente el texto y el icono al centro exacto */
+    gap: 6px;                /* Separa la palabra 'Productos' del icono para que no choquen */
+    text-decoration: none;   /* Por si acaso, quita el subrayado */
+}
+
+/* Forzar al SVG a comportarse correctamente */
+#productosBtn .icon-sm,
+#productosBtn svg {
+    display: inline-block;   /* Elimina espacios fantasmas de bloque */
+    vertical-align: middle;  /* Refuerza la alineación al centro */
+    width: 16px;             /* Ajusta el tamaño si se ve muy grande o chico */
+    height: 16px;
+    flex-shrink: 0;          /* Evita que el icono se aplaste si reduces la pantalla */
+}
+
+/* Evitar layout shift en la galería / imagen principal */
+#mainProductImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;   /* ajusta al ratio aproximado de tus fotos */
+  min-height: 320px;   /* reserva espacio vertical para evitar saltos */
+  object-fit: contain;
+  display: block;
+}
+
+/* Thumbs: tamaño fijo para evitar reflow al insertarlas */
+#galleryThumbs .thumb img,
+.gallery-thumb img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Evitar cambios drásticos en altura de secciones relacionadas */
+.related-grid,
+.product-details-grid {
+  min-height: 120px; /* ajusta según tu layout */
+}
