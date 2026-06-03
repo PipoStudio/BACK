@@ -1716,8 +1716,8 @@
       "descripcion_tecnica": "Figura estática en PVC de alta densidad que reproduce la armadura MJOLNIR Mark VI con pintado por capas y base de resina con fijación por perno.",
       "dimensiones": "254 mm (Alto) x 140 mm (Ancho)",
       "especificaciones": "Peso: ~850 g; material: PVC de alta densidad; base de resina con tornillo de anclaje; acabado: pintura weathering",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp",
-      "imagenes": ["https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/pvzil9yzibs1mktaxwnk.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401888/geekwave_catalog/gbiof9u0xzueu6yvw198.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401889/geekwave_catalog/kstzjkzxtn3thtb1wg7p.webp"],
+      "imagen_principal":  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/pvzil9yzibs1mktaxwnk.webp", 
+      "imagenes": ["https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/wlbschy5ewo0htvcqhbp.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401887/geekwave_catalog/pvzil9yzibs1mktaxwnk.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401889/geekwave_catalog/kstzjkzxtn3thtb1wg7p.webp", "https://res.cloudinary.com/dn8pns203/image/upload/v1777401888/geekwave_catalog/gbiof9u0xzueu6yvw198.webp"],
       "variantes": [
         {
           "id": "55-verde-oliva",
