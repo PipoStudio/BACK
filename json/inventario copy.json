@@ -207,7 +207,246 @@
       },
       "url": "info.html?id=4"
     },
-    
+    {
+      "id": 5,
+      "sku": "GW-005",
+      "categoria": "Consolas",
+      "subcategoria": "PlayStation",
+      "nombre": "PlayStation 2 Slim (Serie 7000)",
+      "precio_usd": 160,
+      "año": 2004,
+      "color": "Charcoal Black / Satin Silver",
+      "descripcion_tecnica": "Reducción drástica de volumen. Integra el puerto Ethernet (RJ-45) y módem de 56k directamente en la placa principal, eliminando la bahía de expansión.",
+      "dimensiones": "230 × 28 × 152 mm",
+      "especificaciones": "Salida AV Multi Out, salida digital óptica, 2 puertos USB 1.1, requiere transformador externo de 8.5V DC.",
+      "imagen_principal": "",
+      "imagenes": [
+       
+      ],
+      "variantes": [
+        {
+          "id": "5-charcoal-black",
+          "nombre": "PlayStation 2 Slim (Serie 7000) - Charcoal Black",
+          "color": "Charcoal Black",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "5-satin-silver",
+          "nombre": "PlayStation 2 Slim (Serie 7000) - Satin Silver",
+          "color": "Satin Silver",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "5-pearl-white",
+          "nombre": "PlayStation 2 Slim (Serie 7000) - Pearl White",
+          "color": "Pearl White",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Charcoal Black",
+        "Satin Silver",
+        "Pearl White"
+      ],
+      "highlights": [
+        "Diseño Slim: reducción significativa de volumen respecto al modelo Fat.",
+        "Ethernet y módem integrados en placa — menos necesidad de bahías de expansión.",
+        "Requiere transformador externo (8.5V DC) — fácil de sustituir."
+      ],
+      "technical": {
+        "connectividad": "Ethernet integrado, AV Multi Out",
+        "alimentacion": "8.5V DC (transformador externo)",
+        "display": null,
+        "autonomia": null,
+        "build": "Carcasa slim optimizada para ahorro de espacio"
+      },
+      "url": "info.html?id=5"
+    },
+    {
+      "id": 6,
+      "sku": "GW-006",
+      "categoria": "Consolas",
+      "subcategoria": "PlayStation",
+      "nombre": "PlayStation 2 Slim (Serie 9000)",
+      "precio_usd": 160,
+      "año": 2007,
+      "color": "Ceramic White / Piano Black",
+      "descripcion_tecnica": "Revisión final del chasis Slim. Integra la fuente de alimentación dentro de la carcasa, unificando el diseño y facilitando la conexión directa a corriente alterna.",
+      "dimensiones": "230 × 28 × 152 mm",
+      "especificaciones": "Fuente integrada 100-240V AC, puerto Ethernet integrado, peso total reducido a 720 gramos.",
+      "imagen_principal": "",
+      "imagenes": [
+        
+      ],
+      "variantes": [
+        {
+          "id": "6-ceramic-white",
+          "nombre": "PlayStation 2 Slim (Serie 9000) - Ceramic White",
+          "color": "Ceramic White",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "6-piano-black",
+          "nombre": "PlayStation 2 Slim (Serie 9000) - Piano Black",
+          "color": "Piano Black",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "6-graphite",
+          "nombre": "PlayStation 2 Slim (Serie 9000) - Graphite",
+          "color": "Graphite",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Ceramic White",
+        "Piano Black",
+        "Graphite"
+      ],
+      "highlights": [
+        "Fuente de alimentación integrada (100-240V AC) — sin transformador externo necesario.",
+        "Peso reducido (~720 g) y perfil muy compacto para instalación sencilla.",
+        "Puertos y conectividad manteniendo compatibilidad con accesorios clásicos."
+      ],
+      "technical": {
+        "alimentacion": "Fuente integrada 100-240V AC",
+        "peso": "≈720 gramos",
+        "display": null,
+        "autonomia": null,
+        "build": "Chasis slim con fuente integrada y estructura reforzada"
+      },
+      "url": "info.html?id=6"
+    },
+    {
+      "id": 7,
+      "sku": "GW-PSP-3000",
+      "categoria": "Consolas",
+      "subcategoria": "PlayStation",
+      "nombre": "PlayStation Portable (PSP-3000)",
+      "precio_usd": 95.0,
+      "año": 2008,
+      "color": "Piano Black, Mystic Silver, Pearl White",
+      "descripcion_tecnica": "Mejora del panel LCD con una gama de colores ampliada y reducción del tiempo de respuesta. Incorpora un micrófono integrado para aplicaciones de comunicación.",
+      "dimensiones": "169.4 × 18.6 × 71.4 mm",
+      "especificaciones": "CPU MIPS R4000 a 333 MHz, 64 MB RAM, pantalla de 4.3\" (480 x 272 px), altavoces estéreo, Wi-Fi 802.11b.",
+      "imagen_principal": "",
+      "imagenes": [
+       
+      ],
+      "variantes": [
+        {
+          "id": "7-piano-black",
+          "nombre": "PlayStation Portable (PSP-3000) - Piano Black",
+          "color": "Piano Black",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "7-mystic-silver",
+          "nombre": "PlayStation Portable (PSP-3000) - Mystic Silver",
+          "color": "Mystic Silver",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "7-pearl-white",
+          "nombre": "PlayStation Portable (PSP-3000) - Pearl White",
+          "color": "Pearl White",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "7-electric-blue",
+          "nombre": "PlayStation Portable (PSP-3000) - Electric Blue",
+          "color": "Electric Blue",
+          "imagenes": [
+            "https://res.cloudinary.com/dn8pns203/image/upload/v1777401895/geekwave_catalog/vdahw6nnonh2c1etnvgz.webp"
+          ],
+          "imagen_principal": ""
+        }
+      ],
+      "colores": [
+        "Piano Black",
+        "Mystic Silver",
+        "Pearl White",
+        "Electric Blue"
+      ],
+      "highlights": [
+        "Pantalla 4.3\" mejorada: reproducción de color superior y menor tiempo de respuesta.",
+        "Funcionalidad multimedia: altavoces estéreo y micrófono integrado.",
+        "Conectividad Wi‑Fi y CPU MIPS para ejecución de juegos y aplicaciones."
+      ],
+      "technical": {
+        "cpu": "MIPS R4000 @ 333 MHz",
+        "memoria": "64 MB RAM",
+        "display": {
+          "tipo": "LCD",
+          "tamaño_pulgadas": 4.3,
+          "resolucion": "480×272",
+          "ppi": 118
+        },
+        "autonomia": "4-6 horas (estimado según uso)",
+        "build": "Carcasa plástica con botones ergonómicos"
+      },
+      "url": "info.html?id=7"
+    },
+    {
+      "id": 8,
+      "sku": "GW-008",
+      "categoria": "Consolas",
+      "subcategoria": "PlayStation",
+      "nombre": "PlayStation 1 (SCPH-1001)",
+      "precio_usd": 120,
+      "año": 1994,
+      "color": "Gris Ceniza",
+      "descripcion_tecnica": "Modelo original con arquitectura RISC de 32 bits. Este modelo específico es valorado por audiófilos debido a su convertidor digital-analógico (DAC) AKM.",
+      "dimensiones": "270 × 60 × 188 mm",
+      "especificaciones": "CPU a 33.86 MHz, 2 MB RAM, 1 MB VRAM, unidad de CD-ROM de 2x de velocidad, salida AV Multi Out.",
+      "imagen_principal": "",
+      "imagenes": [
+        
+      ],
+      "variantes": [
+        {
+          "id": "8-gris-ceniza",
+          "nombre": "PlayStation 1 (SCPH-1001) - Gris Ceniza",
+          "color": "Gris Ceniza",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "8-beige-cl-sico",
+          "nombre": "PlayStation 1 (SCPH-1001) - Beige Clásico",
+          "color": "Beige Clásico",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Gris Ceniza",
+        "Beige Clásico"
+      ],
+      "highlights": [
+        "Arquitectura clásica RISC de 32 bits con convertidor DAC AKM, apreciada por audiófilos.",
+        "Unidad de CD-ROM y salidas AV Multi Out para la experiencia retro auténtica.",
+        "Diseño icónico y robusto, altamente coleccionable."
+      ],
+      "technical": {
+        "cpu": "33.86 MHz",
+        "memoria": "2 MB RAM",
+        "audio": "DAC AKM",
+        "display": null,
+        "autonomia": null,
+        "build": "Chasis plástico clásico de los 90"
+      },
+      "url": "info.html?id=8"
+    },
     {
       "id": 9,
       "sku": "GW-009",
@@ -248,7 +487,74 @@
       },
       "url": "info.html?id=9"
     },
-    
+    {
+      "id": 10,
+      "sku": "GW-NDS-LITE",
+      "categoria": "Consolas",
+      "subcategoria": "Nintendo",
+      "nombre": "Nintendo DS Lite",
+      "precio_usd": 65.0,
+      "año": 2006,
+      "color": "Polar White / Onyx Black / Coral Pink",
+      "descripcion_tecnica": "Rediseño con doble pantalla LCD de 3 pulgadas. Utiliza procesadores ARM946E-S y ARM7TDMI. Mantiene el procesador secundario para compatibilidad de hardware con cartuchos de GBA.",
+      "dimensiones": "133 × 73.9 × 21.5 mm",
+      "especificaciones": "Batería de 1000 mAh (15-19 horas de autonomía), 4 niveles de brillo, entrada para cartuchos de DS (Slot 1) y GBA (Slot 2).",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "10-polar-white",
+          "nombre": "Nintendo DS Lite - Polar White",
+          "color": "Polar White",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "10-onyx-black",
+          "nombre": "Nintendo DS Lite - Onyx Black",
+          "color": "Onyx Black",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "10-coral-pink",
+          "nombre": "Nintendo DS Lite - Coral Pink",
+          "color": "Coral Pink",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "10-crimson-red",
+          "nombre": "Nintendo DS Lite - Crimson Red",
+          "color": "Crimson Red",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Polar White",
+        "Onyx Black",
+        "Coral Pink",
+        "Crimson Red"
+      ],
+      "highlights": [
+        "Doble pantalla LCD de 3\" (pantalla táctil inferior) para gameplay innovador.",
+        "Batería 1000 mAh con 15‑19 horas de autonomía según brillo y uso.",
+        "Compatibilidad con cartuchos DS y GBA (Slot 1 y Slot 2) para backward compatibility."
+      ],
+      "technical": {
+        "cpu": "ARM946E-S + ARM7TDMI",
+        "display": {
+          "tipo": "LCD (dual)",
+          "tamaño_pulgadas": 3,
+          "resolucion": "256×192 (x2)",
+          "ppi": 106
+        },
+        "autonomia": "15-19 horas (batería 1000 mAh)",
+        "build": "Diseño plegable con pantalla táctil inferior"
+      },
+      "url": "info.html?id=10"
+    },
     {
       "id": 11,
       "sku": "GW-NDI-SIXL",
@@ -316,7 +622,45 @@
       },
       "url": "info.html?id=11"
     },
-    
+    {
+      "id": 12,
+      "sku": "GW-NGC-INDG",
+      "categoria": "Consolas",
+      "subcategoria": "Nintendo",
+      "nombre": "Nintendo GameCube (Indigo)",
+      "precio_usd": 110.0,
+      "año": 2001,
+      "color": "Indigo (Púrpura)",
+      "descripcion_tecnica": "Basada en el procesador IBM Gekko a 485 MHz. Utiliza un lector de discos ópticos de 8 cm (Panasonic) que reduce los tiempos de acceso a datos respecto al formato DVD estándar.",
+      "dimensiones": "149 × 160 × 112 mm",
+      "especificaciones": "24 MB de RAM principal, chip gráfico ATI Flipper, 4 puertos de mando, 2 slots para tarjetas de memoria, salida analógica de video.",
+      "imagen_principal": "",
+      "imagenes": [
+
+
+       
+      ],
+      
+      "colores": [
+        "Indigo (Púrpura)"
+      
+      ],
+      "highlights": [
+        "CPU IBM Gekko a 485 MHz con GPU ATI Flipper para rendimiento 3D eficiente.",
+        "Formato de disco compacto de 8 cm (reducción de tiempos de acceso).",
+        "Diseño compacto de sobremesa con 4 puertos de mando para juego local."
+      ],
+      "technical": {
+        "cpu": "IBM Gekko @ 485 MHz",
+        "gpu": "ATI Flipper",
+        "memoria": "24 MB RAM",
+        "disk_format": "8 cm optical disc (Proprietary)",
+        "video_output": "Composite / S-Video (analog)",
+        "power": "AC adapter (100-240V with console PSU)",
+        "build": "Chasis compacto de sobremesa con lector de discos de 8 cm"
+      },
+      "url": "info.html?id=12"
+    },
     {
       "id": 13,
       "sku": "GW-NES-SNES",
@@ -402,18 +746,8 @@
       "descripcion_tecnica": "Variante ultra-compacta fabricada en chasis de aluminio. Posee una pantalla de 2 pulgadas con la densidad de píxeles más alta de la familia GameBoy Advance (GBA).",
       "dimensiones": "101 × 50 × 17.2 mm",
       "especificaciones": "Pantalla retroiluminada con brillo ajustable, peso de 80 gramos, compatible únicamente con cartuchos de GameBoy Advance (no soporta GB/GBC).",
-      "imagen_principal": "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/whmfohauiqcid9c6iu3z.webp",
-      "imagenes": [
-
-  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/whmfohauiqcid9c6iu3z.webp",
-  
-  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401895/geekwave_catalog/vdahw6nnonh2c1etnvgz.webp",
-  "https://res.cloudinary.com/dn8pns203/image/upload/v1777401894/geekwave_catalog/bxumvrnbtsoch0rvygkk.webp"
- 
-
-
-
-      ],
+      "imagen_principal": "",
+      "imagenes": [],
       "variantes": [
         {
           "id": "15-black",
@@ -421,12 +755,42 @@
           "color": "Black",
           "imagen_principal": "",
           "imagenes": []
+        },
+        {
+          "id": "15-silver",
+          "nombre": "GameBoy Micro - Silver",
+          "color": "Silver",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "15-green",
+          "nombre": "GameBoy Micro - Green",
+          "color": "Green",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "15-blue",
+          "nombre": "GameBoy Micro - Blue",
+          "color": "Blue",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "15-crimson-red",
+          "nombre": "GameBoy Micro - Crimson Red",
+          "color": "Crimson Red",
+          "imagen_principal": "",
+          "imagenes": []
         }
-        
       ],
       "colores": [
-        "Black"
-        
+        "Black",
+        "Silver",
+        "Green",
+        "Blue",
+        "Crimson Red"
       ],
       "highlights": [
         "Diseño ultra-compacto en chasis de aluminio — extremadamente portátil.",
@@ -446,7 +810,66 @@
       },
       "url": "info.html?id=15"
     },
-    
+    {
+      "id": 16,
+      "sku": "GW-X36-SLIM",
+      "categoria": "Consolas",
+      "subcategoria": "Xbox",
+      "nombre": "Xbox 360 S (Slim)",
+      "precio_usd": 95.0,
+      "año": 2010,
+      "color": "Negro Mate, Negro Brillante",
+      "descripcion_tecnica": "Revisión con arquitectura \"Valhalla\", que integra CPU y GPU en un solo SoC de 45nm. Reduce la emisión de calor y el ruido operativo mediante un ventilador central de mayor diámetro.",
+      "dimensiones": "270 x 75 x 264 mm",
+      "especificaciones": "conexiones: 5 puertos USB 2.0, puerto auxiliar dedicado para Kinect, salida HDMI, Wi-Fi 802.11n integrado, puerto TOSLINK de audio óptico",
+      "imagen_principal": "",
+      "imagenes": [
+
+
+        
+      ],
+      "variantes": [
+        {
+          "id": "16-negro-mate",
+          "nombre": "Xbox 360 S (Slim) - Negro Mate",
+          "color": "Negro Mate",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "16-negro-brillante",
+          "nombre": "Xbox 360 S (Slim) - Negro Brillante",
+          "color": "Negro Brillante",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "16-charcoal-black",
+          "nombre": "Xbox 360 S (Slim) - Charcoal Black",
+          "color": "Charcoal Black",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Negro Mate",
+        "Negro Brillante",
+        "Charcoal Black"
+      ],
+      "highlights": [
+        "SoC integrado (arquitectura Valhalla) en proceso de 45nm para menor calor.",
+        "Conectividad avanzada: HDMI, Wi‑Fi integrado y soporte Kinect.",
+        "Diseño Slim con mejor refrigeración y reducción de ruido operativo."
+      ],
+      "technical": {
+        "cpu_gpu": "SoC integrado (45nm)",
+        "conectividad": "5x USB, HDMI, Wi‑Fi 802.11n, TOSLINK, Kinect port",
+        "storage_options": "HDD optional (varía por bundle), USB storage supported",
+        "power": "Internal PSU (100-240V) with improved thermal design",
+        "build": "Chasis Slim con ventilación optimizada y acabado en dos tonos"
+      },
+      "url": "info.html?id=16"
+    },
     {
       "id": 17,
       "sku": "GW-X36-ELIT",
@@ -1119,7 +1542,293 @@
       },
       "url": "info.html?id=33"
     },
-    
+    {
+      "id": 34,
+      "sku": "GW-034",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de Xbox 360",
+      "nombre": "Gears of War 3",
+      "precio_usd": 25,
+      "año": 2011,
+      "color": "Green (Verde)",
+      "descripcion_tecnica": "Ejecutado sobre Unreal Engine 3.5. Introduce mejoras en la oclusión ambiental, reflejos en tiempo real y un sistema de físicas para follaje y tejidos.",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "Shooter en tercera persona. Soporta juego cooperativo de hasta 4 jugadores simultáneos en línea.",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "34-green",
+          "nombre": "Gears of War 3 - Green",
+          "color": "Green",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "34-verde",
+          "nombre": "Gears of War 3 - Verde",
+          "color": "Verde",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Green",
+        "Verde"
+      ],
+      "highlights": [
+        "Desarrollado sobre Unreal Engine 3.5 con mejoras gráficas y físicas avanzadas.",
+        "Modo cooperativo y multijugador online para hasta 4 jugadores.",
+        "Efectos de oclusión y reflejos en tiempo real optimizados para Xbox 360."
+      ],
+      "technical": {
+        "engine": "Unreal Engine 3.5 (custom enhancements)",
+        "platform": "Xbox 360",
+        "graphics_features": "Ambient occlusion, real-time reflections, advanced foliage physics",
+        "multiplayer": "Co-op up to 4 players, online modes",
+        "media_format": "Xbox 360 disc",
+        "genre": "Third-person shooter"
+      },
+      "url": "info.html?id=34"
+    },
+    {
+      "id": 35,
+      "sku": "GW-GAM-HALR",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de Xbox 360",
+      "nombre": "Halo: Reach",
+      "precio_usd": 25.0,
+      "año": 2010,
+      "color": "Green (Verde)",
+      "descripcion_tecnica": "Utiliza una versión altamente modificada del motor de Halo 3. Aumenta el recuento de polígonos por modelo y permite distancias de dibujado significativamente mayores.",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "FPS (First Person Shooter). Resolución nativa de 1152x720p con antialiasing temporal.",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "35-green",
+          "nombre": "Halo: Reach - Green",
+          "color": "Green",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "35-verde",
+          "nombre": "Halo: Reach - Verde",
+          "color": "Verde",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Green",
+        "Verde"
+      ],
+      "highlights": [
+        "Motor optimizado con mayor recuento de polígonos y draw distance ampliada.",
+        "Campaña narrativa robusta y modos multijugador competitivos.",
+        "Resolución nativa aproximada 1152x720p con técnicas de post-procesado."
+      ],
+      "technical": {
+        "engine": "Modified Halo engine (multi-gen optimizations)",
+        "platform": "Xbox 360",
+        "resolution": "≈1152×720 (with temporal AA)",
+        "multiplayer": "Competitive & co-op modes, matchmaking via Xbox Live",
+        "media_format": "Xbox 360 disc",
+        "genre": "FPS"
+      },
+      "url": "info.html?id=35"
+    },
+    {
+      "id": 36,
+      "sku": "GW-036",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de Xbox 360",
+      "nombre": "Fable III",
+      "precio_usd": 25,
+      "año": 2010,
+      "color": "Green (Verde)",
+      "descripcion_tecnica": "Motor propietario de Lionhead Studios. Se centra en la transición dinámica de entornos y el modelado de personajes que evolucionan físicamente.",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "RPG de acción. Integración con el sistema de logros de Xbox Live y soporte para contenido descargable (DLC).",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "36-green",
+          "nombre": "Fable III - Green",
+          "color": "Green",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "36-verde",
+          "nombre": "Fable III - Verde",
+          "color": "Verde",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Green",
+        "Verde"
+      ],
+      "highlights": [
+        "RPG de acción con mundo dinámico y evolución física de personajes.",
+        "Integración de logros y soporte de DLC en Xbox Live.",
+        "Enfoque narrativo con decisiones que afectan el mundo y la historia."
+      ],
+      "technical": {
+        "engine": "Lionhead proprietary engine",
+        "platform": "Xbox 360",
+        "features": "Dynamic world transitions, character evolution systems",
+        "online": "Xbox Live support for achievements and DLC",
+        "media_format": "Xbox 360 disc",
+        "genre": "Action RPG"
+      },
+      "url": "info.html?id=36"
+    },
+    {
+      "id": 37,
+      "sku": "GW-037",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de PC",
+      "nombre": "The Elder Scrolls V: Skyrim",
+      "precio_usd": 25,
+      "año": 2011,
+      "color": "Chocolate Brown",
+      "descripcion_tecnica": "Estreno del Creation Engine. Implementa el sistema Radiant AI para el comportamiento de NPCs y Radiant Story para la generación dinámica de misiones secundarias.",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "Soporte para DirectX 9.0c. Requiere procesador Dual Core a 2.0 GHz y 2GB de RAM como mínimo funcional.",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "37-chocolate-brown",
+          "nombre": "The Elder Scrolls V: Skyrim - Chocolate Brown",
+          "color": "Chocolate Brown",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Chocolate Brown"
+      ],
+      "highlights": [
+        "Creation Engine con Radiant AI y generación dinámica de misiones (Radiant Story).",
+        "Mundo abierto masivo con alta libertad de exploración y modding en PC.",
+        "Requisitos modestos: Dual Core y 2GB RAM mínimo; ampliamente optimizable."
+      ],
+      "technical": {
+        "engine": "Creation Engine",
+        "platforms": "PC / Consoles",
+        "min_requirements": "Dual Core 2.0 GHz, 2GB RAM, DirectX 9.0c",
+        "features": "Radiant AI, Radiant Story, mod-friendly (PC)",
+        "media_format": "DVD / Digital",
+        "genre": "Open-world RPG"
+      },
+      "url": "info.html?id=37"
+    },
+    {
+      "id": 38,
+      "sku": "GW-038",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de PC",
+      "nombre": "Portal 2",
+      "precio_usd": 25,
+      "año": 2011,
+      "color": "Clear / Orange",
+      "descripcion_tecnica": "Desarrollado sobre el motor Source de Valve. Introduce físicas avanzadas para fluidos (geles de propulsión y salto) y un sistema de renderizado de portales optimizado.",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "Género de puzzles en primera persona. Compatible con Windows, macOS y Linux (vía Steam).",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "38-clear",
+          "nombre": "Portal 2 - Clear",
+          "color": "Clear",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "38-orange",
+          "nombre": "Portal 2 - Orange",
+          "color": "Orange",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Clear",
+        "Orange"
+      ],
+      "highlights": [
+        "Motor Source con nuevas físicas para geles y optimizaciones de portales.",
+        "Campaña cooperativa y puzzle design aclamado por la crítica.",
+        "Multiplataforma: Windows, macOS y Linux (vía Steam)."
+      ],
+      "technical": {
+        "engine": "Source engine (Valve)",
+        "platforms": "Windows / macOS / Linux",
+        "features": "Advanced portal rendering, gel physics, co-op campaign",
+        "media_format": "Physical / Digital (Steam)",
+        "genre": "Puzzle FPS",
+        "system_requirements": "Low–mid spec PCs supported; Steam compatibility"
+      },
+      "url": "info.html?id=38"
+    },
+    {
+      "id": 39,
+      "sku": "GW-039",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de PC",
+      "nombre": "StarCraft II: Wings of Liberty",
+      "precio_usd": 25,
+      "año": 2010,
+      "color": "Clear / Blue",
+      "descripcion_tecnica": "Motor 3D propietario capaz de gestionar cientos de unidades individuales con físicas de colisión y pathfinding avanzado. Utiliza el motor de físicas Havok.",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "Estrategia en tiempo real (RTS). Requiere conexión persistente a Battle.net para gestión de perfiles y multijugador.",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "39-clear",
+          "nombre": "StarCraft II: Wings of Liberty - Clear",
+          "color": "Clear",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "39-blue",
+          "nombre": "StarCraft II: Wings of Liberty - Blue",
+          "color": "Blue",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Clear",
+        "Blue"
+      ],
+      "highlights": [
+        "RTS de alto rendimiento con soporte para cientos de unidades simultáneas.",
+        "Sistema multijugador y gestión de perfil mediante Battle.net.",
+        "Motor optimizado y uso de Havok para físicas y pathfinding avanzado."
+      ],
+      "technical": {
+        "engine": "Proprietary 3D engine (Blizzard)",
+        "physics": "Havok integration for collision/pathfinding",
+        "platforms": "PC (Battle.net)",
+        "multiplayer": "Battle.net required for online play",
+        "media_format": "DVD / Digital",
+        "genre": "RTS",
+        "system_requirements": "Modern mid-spec PC recommended for multiplayer"
+      },
+      "url": "info.html?id=39"
+    },
     {
       "id": 40,
       "sku": "GW-040",
@@ -1171,7 +1880,55 @@
       },
       "url": "info.html?id=40"
     },
-    
+    {
+      "id": 41,
+      "sku": "GW-041",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de PS3",
+      "nombre": "Dark Souls",
+      "precio_usd": 40,
+      "año": 2011,
+      "color": "Dark Grey / Blue",
+      "descripcion_tecnica": "Utiliza el motor propietario PhyreEngine. Se caracteriza por un diseño de niveles interconectado que utiliza carga en segundo plano (streaming).",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "género: RPG de acción / Dungeon Crawler; motor_grafico: PhyreEngine (Sony); rendimiento: objetivo 30 FPS a 720p",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "41-dark-grey",
+          "nombre": "Dark Souls - Dark Grey",
+          "color": "Dark Grey",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "41-blue",
+          "nombre": "Dark Souls - Blue",
+          "color": "Blue",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Dark Grey",
+        "Blue"
+      ],
+      "highlights": [
+        "Diseño de niveles interconectado con streaming para explorar sin pantallas de carga visibles.",
+        "Combate exigente y diseño de encuentros que premia la paciencia y la habilidad.",
+        "Objetivo de rendimiento: 30 FPS a 720p en PS3, optimizado para la plataforma."
+      ],
+      "technical": {
+        "engine": "PhyreEngine",
+        "platform": "PS3",
+        "target_performance": "30 FPS target, 720p",
+        "media_format": "Blu-ray (PS3)",
+        "genre": "Action RPG / Dungeon Crawler",
+        "build": "Edición física PS3 estándar"
+      },
+      "url": "info.html?id=41"
+    },
     {
       "id": 42,
       "sku": "GW-042",
@@ -1265,7 +2022,63 @@
       },
       "url": "info.html?id=43"
     },
-   
+    {
+      "id": 44,
+      "sku": "GW-044",
+      "categoria": "Juegos",
+      "subcategoria": "Juegos de PS2",
+      "nombre": "Silent Hill 2",
+      "precio_usd": 140,
+      "año": 2001,
+      "color": "Original (Blue/Clear)",
+      "descripcion_tecnica": "Título de horror psicológico que utiliza el chip Emotion Engine para gestionar entornos 3D en tiempo real con cámaras dinámicas.",
+      "dimensiones": "19.0 x 13.5 x 1.5 mm",
+      "especificaciones": "género: Survival Horror; formato: DVD-ROM de una capa; audio: Soporte para Dolby Pro Logic II",
+      "imagen_principal": "",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "44-blue",
+          "nombre": "Silent Hill 2 - Blue",
+          "color": "Blue",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "44-clear",
+          "nombre": "Silent Hill 2 - Clear",
+          "color": "Clear",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "44-original",
+          "nombre": "Silent Hill 2 - Original",
+          "color": "Original",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "Blue",
+        "Clear",
+        "Original"
+      ],
+      "highlights": [
+        "Atmósfera psicológica y diseño de sonido que contribuye a una experiencia de horror único.",
+        "Uso del Emotion Engine para gestionar entornos 3D y cámaras dinámicas efectivas.",
+        "Edición física PS2 con soporte Dolby Pro Logic II para audio envolvente."
+      ],
+      "technical": {
+        "platform": "PS2",
+        "engine_features": "Real-time 3D environments, dynamic cameras",
+        "audio": "Dolby Pro Logic II support",
+        "media_format": "DVD-ROM",
+        "genre": "Survival Horror",
+        "build": "Edición física PS2 estándar"
+      },
+      "url": "info.html?id=44"
+    },
     {
       "id": 45,
       "sku": "GW-045",
@@ -1703,7 +2516,57 @@
       },
       "url": "info.html?id=53"
     },
-   
+    {
+      "id": 54,
+      "sku": "GW-054",
+      "categoria": "Accesorios",
+      "subcategoria": "Cables/Adaptadores",
+      "nombre": "Wii MotionPlus (RVL-026)",
+      "precio_usd": 35,
+      "año": 2009,
+      "color": "White / Black",
+      "descripcion_tecnica": "Adaptador/periférico que añade giroscopio multiaxial al Wii Remote para captura de movimiento 1:1 y mayor precisión en aplicaciones de orientación.",
+      "dimensiones": "40 x 38 x 33 mm",
+      "especificaciones": "Conector de 6 pines propietario para puerto de expansión del Wii Remote; sensores giroscópicos multiaxiales; compatibilidad: juegos con MotionPlus",
+      "imagen_principal": "",
+      "imagenes": [
+
+
+      ],
+      "variantes": [
+        {
+          "id": "54-white",
+          "nombre": "Wii MotionPlus (RVL-026) - White",
+          "color": "White",
+          "imagen_principal": "",
+          "imagenes": []
+        },
+        {
+          "id": "54-black",
+          "nombre": "Wii MotionPlus (RVL-026) - Black",
+          "color": "Black",
+          "imagen_principal": "",
+          "imagenes": []
+        }
+      ],
+      "colores": [
+        "White",
+        "Black"
+      ],
+      "highlights": [
+        "Proporciona seguimiento giroscópico de alta precisión (1:1) al Wii Remote.",
+        "Fácil de instalar: se conecta al puerto de expansión del mando sin herramientas.",
+        "Compatible con títulos que soportan MotionPlus para acciones de precisión."
+      ],
+      "technical": {
+        "sensors": "Multi-axis gyroscope",
+        "connection": "6-pin expansion port for Wii Remote",
+        "compatibility": "Works with MotionPlus-enabled Wii titles",
+        "power": "Draws power from the Wii Remote (no external power)",
+        "build": "Compact adapter module that attaches to the remote"
+      },
+      "url": "info.html?id=54"
+    },
     {
       "id": 55,
       "sku": "GW-055",

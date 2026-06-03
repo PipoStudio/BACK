@@ -704,3 +704,26 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupCartButton();
   await loadProduct();
 });
+
+
+const transformarImagenes = (data) => {
+  const transformacion = "/upload/w_500,c_scale/";
+
+  // Si 'data' es un array (como tu lista de productos)
+  return data.map(producto => {
+    return {
+      ...producto,
+      // Solo transformamos el array de imágenes
+      imagenes: producto.imagenes.map(url => url.replace("/upload/", transformacion)),
+      
+      // Si también quieres transformar las imágenes de las variantes:
+      variantes: producto.variantes.map(variante => ({
+        ...variante,
+        imagenes: variante.imagenes.map(url => url.replace("/upload/", transformacion))
+      }))
+    };
+  });
+};
+
+// Uso:
+const catalogoProcesado = transformarImagenes(jsonOriginal.productos);
