@@ -1896,3 +1896,16 @@ button {
 }
 
 
+/* =========================================
+   ZOOM GLOBAL GEEKWAVE
+   ========================================= */
+
+img {
+    transition:
+        transform .6s cubic-bezier(.2,.8,.2,1),
+        filter .3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}

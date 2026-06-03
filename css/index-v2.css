@@ -1,0 +1,619 @@
+/* =========================================
+   GEEKWAVE HOME V2
+   ========================================= */
+
+main,
+.gw-trust-bar,
+.gw-categories,
+.gw-featured,
+.gw-about,
+.gw-reviews,
+.gw-community,
+.gw-stats,
+.gw-newsletter {
+    position: relative;
+    z-index: 100;
+    background: var(--bg-color);
+}
+
+/* Primera sección después del Hero */
+.gw-trust-bar {
+    margin-top: 0vh;
+}
+
+/* =========================================
+   ESTRUCTURA GENERAL
+   ========================================= */
+
+.gw-categories,
+.gw-featured,
+.gw-about,
+.gw-reviews,
+.gw-community,
+.gw-stats,
+.gw-newsletter {
+    padding: 120px 5%;
+}
+
+.section-header {
+    margin-bottom: 60px;
+}
+
+.section-header span {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    font-family: var(--font-heading);
+    font-size: .8rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+
+    color: var(--text-muted);
+}
+
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* =========================================
+   TRUST BAR
+   ========================================= */
+
+.gw-trust-bar {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+
+    padding: 40px 5%;
+
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-weight: 600;
+    color: #ccc;
+}
+
+.trust-item svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* =========================================
+   CATEGORÍAS
+   ========================================= */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: brightness(.55);
+
+    transition: transform .6s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.08);
+}
+
+.category-card .overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 40px;
+}
+
+.category-card h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* =========================================
+   DESTACADOS
+   ========================================= */
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.featured-product {
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: .3s ease;
+}
+
+.featured-product:hover {
+    transform: translateY(-6px);
+}
+
+.featured-product img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.featured-product h3 {
+    font-family: var(--font-heading);
+
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    padding: 24px 24px 10px;
+}
+
+.featured-product p {
+    padding: 0 24px 24px;
+    color: var(--text-muted);
+}
+
+/* =========================================
+   DESCUBRE
+========================================= */
+
+.gw-discover {
+    position: relative;
+    z-index: 20;
+    padding: 2rem 0;
+    background: #050505;
+    overflow: hidden;
+}
+
+.gw-section-header {
+    width: min(1200px, 90%);
+    margin: 0 auto 4rem;
+}
+
+.gw-section-tag {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 999px;
+
+    font-family: var(--font-heading);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+    color: rgba(255,255,255,.7);
+}
+
+.gw-section-header h2 {
+    margin-top: 1.5rem;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem,5vw,4.5rem);
+    font-weight: 800;
+    line-height: .95;
+    color: #fff;
+}
+
+.gw-section-header p {
+    margin-top: 1rem;
+    max-width: 700px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,.6);
+}
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.discover-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.discover-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+
+    animation: discoverScroll 25s linear infinite;
+}
+
+.discover-slider:hover .discover-track {
+    animation-play-state: paused;
+}
+
+.discover-card {
+    flex-shrink: 0;
+
+    width: 600px;
+    height: 380px;
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    background: #111;
+    border: 1px solid rgba(255,255,255,.08);
+
+    position: relative;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform .6s ease;
+}
+
+.discover-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay elegante */
+
+.discover-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.05)
+        );
+
+    pointer-events: none;
+}
+
+/* =========================================
+   LOOP INFINITO
+========================================= */
+
+@keyframes discoverScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 1rem));
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .gw-discover {
+        padding: 5rem 0;
+    }
+
+    .discover-card {
+        width: 320px;
+        height: 220px;
+    }
+
+    .discover-track {
+        gap: 1rem;
+    }
+
+}
+
+
+/* =========================================
+   SOBRE GEEKWAVE
+   ========================================= */
+
+.gw-about {
+    text-align: center;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-content span {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-heading);
+    font-weight: 800;
+    letter-spacing: .15em;
+
+    color: var(--text-muted);
+}
+
+.about-content h2 {
+    font-family: var(--font-heading);
+
+    font-size: clamp(3rem,6vw,5rem);
+    line-height: 1.05;
+
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    color: #bbb;
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   RESEÑAS
+   ========================================= */
+.gw-reviews {
+    padding: 8rem 5%;
+    background: #050505;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.review-card {
+    background: #0d0d0d;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 24px;
+    padding: 2rem;
+    transition: all .3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,255,255,.15);
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.review-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,.1);
+}
+
+.review-meta h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.review-meta span {
+    color: rgba(255,255,255,.55);
+    font-size: .9rem;
+}
+
+.review-stars {
+    display: flex;
+    gap: .3rem;
+    margin-bottom: 1.5rem;
+}
+
+.review-stars svg {
+    width: 16px;
+    height: 16px;
+    color: #ffffff;
+    fill: currentColor;
+}
+
+.review-card blockquote {
+    margin: 0;
+    color: rgba(255,255,255,.75);
+    line-height: 1.8;
+    font-size: .95rem;
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(255,255,255,.15);
+    font-style: italic;
+}
+/* =========================================
+   COMUNIDAD
+   ========================================= */
+
+.gw-community {
+    text-align: center;
+}
+
+.community-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.community-content span {
+    color: var(--text-muted);
+
+    font-family: var(--font-heading);
+    font-weight: 800;
+    letter-spacing: .15em;
+}
+
+.community-content h2 {
+    margin: 20px 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(3rem,6vw,5rem);
+}
+
+.community-content p {
+    color: #bbb;
+
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   ESTADÍSTICAS
+   ========================================= */
+
+.gw-stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 40px;
+
+    text-align: center;
+}
+
+.stat h3 {
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.5rem,5vw,4rem);
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.stat span {
+    color: var(--text-muted);
+}
+
+/* =========================================
+   NEWSLETTER
+   ========================================= */
+
+.gw-newsletter {
+    text-align: center;
+}
+
+.gw-newsletter span {
+    font-family: var(--font-heading);
+
+    font-weight: 800;
+    letter-spacing: .15em;
+
+    color: var(--text-muted);
+}
+
+.gw-newsletter h2 {
+    margin: 20px 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem,5vw,4rem);
+}
+
+.gw-newsletter p {
+    color: #bbb;
+
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    max-width: 700px;
+    margin: auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+
+    height: 60px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+
+    padding: 0 24px;
+
+    color: white;
+}
+
+.newsletter-form button {
+    height: 60px;
+
+    padding: 0 30px;
+
+    border-radius: 50px;
+
+    background: white;
+    color: black;
+
+    font-family: var(--font-heading);
+    font-weight: 800;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .gw-trust-bar,
+    .category-grid,
+    .featured-grid,
+    .reviews-grid,
+    .gw-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .gw-trust-bar,
+    .category-grid,
+    .featured-grid,
+    .reviews-grid,
+    .gw-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .category-card {
+        height: 350px;
+    }
+}
