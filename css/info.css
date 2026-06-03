@@ -1636,3 +1636,7 @@
     bottom: 30px;
     right: 20px;
 }
+
+.product-image-stage .hero-product-image{
+    transform: scale(1.15);
+}

@@ -1796,7 +1796,7 @@ button {
 #mainProductImage {
   width: 100%;
   height: auto;
-  aspect-ratio: 4/3;   /* ajusta al ratio aproximado de tus fotos */
+  aspect-ratio: 4/7;   /* ajusta al ratio aproximado de tus fotos */
   min-height: 320px;   /* reserva espacio vertical para evitar saltos */
   object-fit: contain;
   display: block;
