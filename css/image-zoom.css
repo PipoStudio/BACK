@@ -1,0 +1,91 @@
+.zoom-wrapper{
+    position:relative;
+    display:inline-block;
+}
+
+.zoom-btn{
+    position:absolute;
+    right:12px;
+    bottom:12px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,.75);
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    opacity:0;
+    transform:translateY(8px);
+
+    transition:.25s;
+}
+
+.zoom-wrapper:hover .zoom-btn{
+    opacity:1;
+    transform:none;
+}
+
+.zoom-modal{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.95);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:99999;
+}
+
+.zoom-modal.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.zoom-modal img{
+    max-width:90vw;
+    max-height:90vh;
+    object-fit:contain;
+}
+
+.zoom-close{
+    position:absolute;
+    top:50px;
+    right: 350px;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#fff;
+    color:#000;
+
+    font-size:28px;
+    cursor:pointer;
+}
+
+.zoom-btn{
+    right:12px;
+    bottom:12px;
+}
+
+.productos-page .zoom-btn{
+    bottom: 50px;
+}
